@@ -4,7 +4,7 @@
 </p>
 
 ## Índice
-- #### [Objetivos del proyecto](https://github.com/Loloncio/App-Perm/edit/main/README.md#objetivos-del-proyecto-1)
+- #### [Objetivos del proyecto](https://github.com/Loloncio/App-Perm/tree/main#objetivos-del-proyecto-1)
 - #### [Funcionalidad](https://github.com/Loloncio/App-Perm/edit/main/README.md#funcionalidad-1)
 - #### [TODO](https://github.com/Loloncio/App-Perm/edit/main/README.md#todo-1)
 
