@@ -4,10 +4,9 @@
 </p>
 
 ## Índice
-
-* #### [Objetivos del proyecto](#objetivos-del-proyecto)
-* #### [Funcionalidad](#funcionalidad)
-* #### [TODO](#todo)
+- #### [Objetivos del proyecto](https://github.com/Loloncio/App-Perm/edit/main/README.md#objetivos-del-proyecto-1)
+- #### [Funcionalidad](https://github.com/Loloncio/App-Perm/edit/main/README.md#funcionalidad-1)
+- #### [TODO](https://github.com/Loloncio/App-Perm/edit/main/README.md#todo-1)
 
 ## Objetivos del proyecto
 Esta aplicación tiene por objetivo poder probar algunas preguntas que pueden surgir al iniciarse en los permisos de Android:
@@ -29,7 +28,7 @@ Esta aplicación tiene por objetivo poder probar algunas preguntas que pueden su
 * Dado un grupo de permisos, ¿es posible obtener qué permisos forman el grupo?
 * Si una app logra un permiso de tipo dangerous, ¿otra app firmada con el mismo certificado digital consigue automáticamente ese permiso (se lo concede el SO sin intervención del usuario)?
 * Si una app logra un permiso de tipo signature, ¿otra app firmada con el mismo certificado digital consigue automáticamente ese permiso?
-  
+
 ## Funcionalidad
 El proyecto constará de una aplicación Python y una app Android. La app Android ya está creada, con la aplicación Python endremos que crear distintos AndroidManifest.xml que usaremos en esa app. La aplicación Python también deberá compilar e instalar esa app Android. A partir de ahora cuando digamos app, estaremos refiriendonos a la app Android y cuando digamos aplicación, estaremos hablando de la aplicación Python. Las funciones que deberá realizar la aplicación serán:
 
