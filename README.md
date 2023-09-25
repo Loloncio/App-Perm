@@ -56,25 +56,19 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 	   <li>Cubrirá las 5 primeras opciones, en función de cual se pulse, se hará una u otra.</li>
 	   <li><b>Opción 1:</b></li>
 	   <li>No se mostrará la columna de protection level</li>
-	   <li>Solo puede seleccionarse 1 permisos</li>
-	   <li>Solo puede marcarse un grupo</li>
 	   <li>Al pulsar confirmar se cambia de ventana y se pasan las opciones marcadas </li>
 	   <li>Solo puede avanzar si hay 1 permiso y un grupo de permisos seleccionados</li>
 	   <li><b>Opción 2:</b></li>
-	   <li>Solo puede seleccionarse un permiso</li>
 	   <li>Solo pueden seleccionarse 2 grupos de permisos (Si solo hay uno seleccionado, el boton confirmar no funcionará)</li>
 	   <li>Para poder avanzar debe haber seleccionados 2 grupos de permisos y un permiso</li>
 	   <li><b>Opción 3:</b></li>
-	   <li>Solo pueden seleccionar un permiso y un protection leve</li>
 	   <li>El protection level ha de ser distinto al original</li>
 	   <li>Si no hay un permiso y un protection level marcados, no se puede avanzar</li>
 	   <li><b>Opción 4:</b></li>
 	   <li>Se muestran solo los permisos normales y la lista de grupos</li>
-	   <li>Solo puede seleccionarse un permiso y un grupo de permisos</li>
 	   <li>Si no hay un permiso y un grupo de permisos seleccionados no se puede avanzar</li>
 	   <li><b>Opción 5:</b></li>
 	   <li>Solo aparecen los permisos con protection level signature y los grupos de permisos</li>
-	   <li>Solo puede seleccionarse un permiso y un grupo de permisos</li>
 	   <li>Si no hay un permiso y un grupo de permisos seleccionados no se puede avanzar</li>
 	   <li><b>Variaciones</b></li>
 	   <li>En lugar de no mostrar algo, pueden mostrarse todas las listas pero alguna no puede seleccionarse</li>
