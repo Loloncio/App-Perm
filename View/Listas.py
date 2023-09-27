@@ -7,10 +7,13 @@ import tkinter as tk
 import customtkinter as ctk
 
 class listas(ctk.CTkToplevel):
+    # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
+    # la opción que se ha seleccionado y una etiqueta de errores
     PERMISO = ""
     GRUPO = []
     PROTECTION = ""
     OPT = 0
+    ERRORES = None
     def __init__(self, parent, opt, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
@@ -21,6 +24,7 @@ class listas(ctk.CTkToplevel):
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
         self.OPT = int(opt)
+        self.GRUPO.clear()
 
         # Variables necesarias
         listas, etiquetas, permisos, grupos, protection = [], [], [], [], []
@@ -59,6 +63,7 @@ class listas(ctk.CTkToplevel):
         # Fuentes de texto
         headersFont = ctk.CTkFont(family="Inter", size=40, weight="bold")
         textFont = ctk.CTkFont(family="Inter", size=30, weight="normal")
+        errorFont = ctk.CTkFont(family="Inter", size=15, weight="normal")
 
         # Creación de frames para las listas
         for i in range(0,3):
@@ -92,6 +97,17 @@ class listas(ctk.CTkToplevel):
         volver = ctk.CTkButton(self, command=self.volver, text="Volver", font=textFont, corner_radius=10,
                                 fg_color="#504F4F", text_color="white", height=50)
 
+        # Creación de etiqueta para mostrar errores
+        self.ERRORES = ctk.CTkLabel(self,text_color="red", font= errorFont, corner_radius=10)
+
+        # Desactivamos los checkboxes que no se puedan usar en el caso en el que estemos
+        if(self.OPT == 1 or self.OPT == 2 or self.OPT == 4 or self.OPT == 5):
+            for checkbox in protection:
+                checkbox.configure(state="disabled")
+        elif self.OPT == 3:
+            for checkbox in grupos:
+                checkbox.configure(state="disabled")
+
         # Colocación las etiquetas en la ventana utilizando grid
         for i, j in zip(range(3), valoresSticky):
             etiquetas[i].grid(row=0, column=i, sticky=j,padx=3, pady=3)
@@ -123,32 +139,42 @@ class listas(ctk.CTkToplevel):
         self.destroy()
 
     def confirmar(self):
-        print(self.OPT)
         if self.PERMISO == "":
+            self.ERRORES.configure(text="Debes seleccionar un permiso.")
+            self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
             return
         if self.OPT == 1:
             if len(self.GRUPO) != 1:
+                self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
+                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
                 print("OK1")
         elif self.OPT == 2:
-            print(len(self.GRUPO))
             if len(self.GRUPO) != 2:
+                self.ERRORES.configure(text="Debes seleccionar 2 grupos de permisos.")
+                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
                 print("OK2")
         elif self.OPT == 3:
             if self.PROTECTION == "":
+                self.ERRORES.configure(text="Debes seleccionar un protection level.")
+                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
                 print("OK3")
         elif self.OPT == 4:
             if len(self.GRUPO) != 1:
+                self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
+                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
                 print("OK4")
         elif self.OPT == 5:
             if len(self.GRUPO) != 1:
+                self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
+                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
                 print("OK5")

@@ -50,27 +50,18 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 
 ## TODO
 
-1. Menu.py: Métodos funcionales para todos los botones  
+1. Menu.py: Métodos funcionales para todos los botones (Faltan el primero y los dos últimos)
 2. Listas.py:
    <ul>
 	   <li>Cubrirá las 5 primeras opciones, en función de cual se pulse, se hará una u otra.</li>
-	   <li><b>Opción 1:</b></li>
-	   <li>No se mostrará la columna de protection level</li>
-	   <li>Al pulsar confirmar se cambia de ventana y se pasan las opciones marcadas </li>
-	   <li><b>Opción 2:</b></li>
-	   <li>No se mostrará la columna de protection level</li>
 	   <li><b>Opción 3:</b></li>
 	   <li>El protection level ha de ser distinto al original</li>
-	   <li>No se mostrará la columna de Gupos de permisos</li>
 	   <li><b>Opción 4:</b></li>
-	   <li>Se muestran solo los permisos normales y la lista de grupos</li>
+	   <li>Se muestran solo los permisos normales</li>
 	   <li><b>Opción 5:</b></li>
-	   <li>Solo aparecen los permisos con protection level signature y los grupos de permisos</li>
+	   <li>Solo aparecen los permisos con protection level signature</li>
 	   <li><b>General</b></li>
-	   <li>El boton confirmar lleva a una nueva vista</li>
-	   <li>Mostrar un mensaje en el hueco vacio que indique porque no se puede avanzar cuando falta algo de seleccionar</li>
-	   <li><b>Variaciones</b></li>
-	   <li>En lugar de no mostrar algo, pueden mostrarse todas las listas pero alguna no puede seleccionarse</li>
+	   <li>Al pulsar confirmar se cambia de ventana y se pasan las opciones marcadas </li>
    </ul>
 4. Crear un main que solo tenga la ventana principal y no la clase mainWindow, de esta forma no esta mainWindow siempre en segundo plano
 5. Modelo
