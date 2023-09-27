@@ -14,8 +14,8 @@ class mainWindow(ctk.CTkFrame):
         self.parent = parent
         self.configure(fg_color = "#4B4B4B")
         #Ejemplo de paso de variables a hijo
-        self.var_des = tk.StringVar(self)
-        self.var_des.set('Seleccionar...')
+        self.optList = tk.StringVar(self)
+
         # Variables
         # Diccionario que toma como clave el texto que tendra el botón y como valor la función que ejecutará
         variablesBotones = {
@@ -60,19 +60,27 @@ class mainWindow(ctk.CTkFrame):
         print("Defecto")
         return
     def cambioGrupo(self):
-        listas(self.parent, self.var_des.get())
-        print("Cambia Grupo")
+        self.optList.set(1)
+        listas(self.parent, self.optList.get())
         return
     def permisoADosGrupos(self):
+        self.optList.set(2)
+        listas(self.parent, self.optList.get())
         print("Añade a dos grupos")
         return
     def cambiaProtLevel(self):
+        self.optList.set(3)
+        listas(self.parent, self.optList.get())
         print("Cambia protection level")
         return
     def normalAGrupo(self):
+        self.optList.set(4)
+        listas(self.parent, self.optList.get())
         print("Añade normal a grupo")
         return
     def signaAGrupo(self):
+        self.optList.set(5)
+        listas(self.parent, self.optList.get())
         print("Añade signature a grupo")
         return
     def verDispositivo(self):

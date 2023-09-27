@@ -7,8 +7,11 @@ import tkinter as tk
 import customtkinter as ctk
 
 class listas(ctk.CTkToplevel):
-
-    def __init__(self, parent, vent, *args, **kwargs):
+    PERMISO = ""
+    GRUPO = []
+    PROTECTION = ""
+    OPT = 0
+    def __init__(self, parent, opt, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
         # Ajustes de ventana principal
@@ -17,6 +20,7 @@ class listas(ctk.CTkToplevel):
         self.geometry("1280x720")
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
+        self.OPT = int(opt)
 
         # Variables necesarias
         listas, etiquetas, permisos, grupos, protection = [], [], [], [], []
@@ -68,19 +72,19 @@ class listas(ctk.CTkToplevel):
             permisos.append(ctk.CTkCheckBox(listas[0], text=i, text_color="white", font= textFont,
                                 command=lambda check_var=check_var, permisos=permisos, textoPermisos= textoPermisos:
                                 self.checkboxPermisos(check_var, permisos, textoPermisos),
-                                variable=check_var, onvalue=i, offvalue="not"+i))
+                                variable=check_var, onvalue=i, offvalue="!"+i))
         # Creación de checkboxes para los grupos
         for i in textoGrupos:
             grupos.append(ctk.CTkCheckBox(listas[1], text=i, text_color="white", font= textFont,
                                 command=lambda check_var=check_var, grupos=grupos, textoGrupos= textoGrupos:
                                 self.checkboxGrupo(check_var, grupos, textoGrupos),
-                                variable=check_var, onvalue=i, offvalue="not"+i))
+                                variable=check_var, onvalue=i, offvalue="!"+i))
         # Creación de checkboxes para los protection level
         for i in textoProtection:
             protection.append(ctk.CTkCheckBox(listas[2], text=i, text_color="white", font= textFont,
                                 command=lambda check_var=check_var, protection=protection, textoProtection= textoProtection:
                                 self.checkboxProtection(check_var, protection, textoProtection),
-                                variable=check_var, onvalue=i, offvalue="not"+i))
+                                variable=check_var, onvalue=i, offvalue="!"+i))
 
         # Creación de botones para confirmar o volver al menú
         confirmacion = ctk.CTkButton(self, command=self.confirmar, text="Siguiente", font=textFont,
@@ -118,26 +122,70 @@ class listas(ctk.CTkToplevel):
         self.parent.deiconify()
         self.destroy()
 
-    def confirmar():
+    def confirmar(self):
+        print(self.OPT)
+        if self.PERMISO == "":
+            return
+        if self.OPT == 1:
+            if len(self.GRUPO) != 1:
+                return
+            else:
+                print("OK1")
+        elif self.OPT == 2:
+            print(len(self.GRUPO))
+            if len(self.GRUPO) != 2:
+                return
+            else:
+                print("OK2")
+        elif self.OPT == 3:
+            if self.PROTECTION == "":
+                return
+            else:
+                print("OK3")
+        elif self.OPT == 4:
+            if len(self.GRUPO) != 1:
+                return
+            else:
+                print("OK4")
+        elif self.OPT == 5:
+            if len(self.GRUPO) != 1:
+                return
+            else:
+                print("OK5")
+        print("Permiso: ",self.PERMISO, " Grupo: ",self.GRUPO, " Protection: ",self.PROTECTION)
         return
 
     def checkboxPermisos(self, check_var, permisos, textoPermisos):
-        clickedCheckbox = permisos[textoPermisos.index(check_var.get())]
-        for checkbox in permisos:
-            if checkbox != clickedCheckbox:
-                checkbox.deselect()
+        if(check_var.get()[0] != "!"):
+            clickedCheckbox = permisos[textoPermisos.index(check_var.get())]
+            self.PERMISO = check_var.get()
+            for checkbox in permisos:
+                if checkbox != clickedCheckbox:
+                    checkbox.deselect()
 
     def checkboxGrupo(self, check_var, grupos, textoGrupos):
-        clickedCheckbox = grupos[textoGrupos.index(check_var.get())]
-        for checkbox in grupos:
-            if checkbox != clickedCheckbox:
-                checkbox.deselect()
+        if(check_var.get()[0] != "!"):
+            clickedCheckbox = grupos[textoGrupos.index(check_var.get())]
+            self.GRUPO.append(check_var.get())
+            if(self.OPT != 2):
+                if len(self.GRUPO) > 1:
+                    self.GRUPO.pop(0)
+                for checkbox in grupos:
+                    if checkbox != clickedCheckbox:
+                        checkbox.deselect()
+            elif len(self.GRUPO) > 2:
+                self.GRUPO.pop(0)
+                for checkbox in grupos:
+                    if checkbox != grupos[textoGrupos.index(self.GRUPO[0])] and checkbox != grupos[textoGrupos.index(self.GRUPO[1])]:
+                        checkbox.deselect()
 
     def checkboxProtection(self, check_var, protection, textoProtection):
-        clickedCheckbox = protection[textoProtection.index(check_var.get())]
-        for checkbox in protection:
-            if checkbox != clickedCheckbox:
-                checkbox.deselect()
+        if(check_var.get()[0] != "!"):
+            clickedCheckbox = protection[textoProtection.index(check_var.get())]
+            self.PROTECTION = check_var.get()
+            for checkbox in protection:
+                if checkbox != clickedCheckbox:
+                    checkbox.deselect()
 
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
     def ajustarTamanos(self, event, etiquetas, listas, confirmacion, volver):

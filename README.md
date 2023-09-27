@@ -57,19 +57,18 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 	   <li><b>Opción 1:</b></li>
 	   <li>No se mostrará la columna de protection level</li>
 	   <li>Al pulsar confirmar se cambia de ventana y se pasan las opciones marcadas </li>
-	   <li>Solo puede avanzar si hay 1 permiso y un grupo de permisos seleccionados</li>
 	   <li><b>Opción 2:</b></li>
-	   <li>Solo pueden seleccionarse 2 grupos de permisos (Si solo hay uno seleccionado, el boton confirmar no funcionará)</li>
-	   <li>Para poder avanzar debe haber seleccionados 2 grupos de permisos y un permiso</li>
+	   <li>No se mostrará la columna de protection level</li>
 	   <li><b>Opción 3:</b></li>
 	   <li>El protection level ha de ser distinto al original</li>
-	   <li>Si no hay un permiso y un protection level marcados, no se puede avanzar</li>
+	   <li>No se mostrará la columna de Gupos de permisos</li>
 	   <li><b>Opción 4:</b></li>
 	   <li>Se muestran solo los permisos normales y la lista de grupos</li>
-	   <li>Si no hay un permiso y un grupo de permisos seleccionados no se puede avanzar</li>
 	   <li><b>Opción 5:</b></li>
 	   <li>Solo aparecen los permisos con protection level signature y los grupos de permisos</li>
-	   <li>Si no hay un permiso y un grupo de permisos seleccionados no se puede avanzar</li>
+	   <li><b>General</b></li>
+	   <li>El boton confirmar lleva a una nueva vista</li>
+	   <li>Mostrar un mensaje en el hueco vacio que indique porque no se puede avanzar cuando falta algo de seleccionar</li>
 	   <li><b>Variaciones</b></li>
 	   <li>En lugar de no mostrar algo, pueden mostrarse todas las listas pero alguna no puede seleccionarse</li>
    </ul>
