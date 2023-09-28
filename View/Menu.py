@@ -6,6 +6,7 @@
 import tkinter as tk
 import customtkinter as ctk
 from Listas import listas
+from Defecto import defecto
 
 class mainWindow(ctk.CTkFrame):
 
@@ -57,7 +58,7 @@ class mainWindow(ctk.CTkFrame):
 
     # Funciones para los botones
     def defecto(self):
-        print("Defecto")
+        defecto(self.parent)
         return
     def cambioGrupo(self):
         self.optList.set(1)

@@ -14,6 +14,8 @@ class listas(ctk.CTkToplevel):
     PROTECTION = ""
     OPT = 0
     ERRORES = None
+    HEIGHT = None
+    WIDTH = None
     def __init__(self, parent, opt, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
@@ -217,12 +219,14 @@ class listas(ctk.CTkToplevel):
     def ajustarTamanos(self, event, etiquetas, listas, confirmacion, volver):
         anchoVentana = self.winfo_width()  # Ancho de la ventana
         altoVentana = self.winfo_height()  # Alto de la ventana
-
-        for i, j in zip(etiquetas, listas):
-            i.configure(width=max(100, anchoVentana // 3 - 6))
-            j.configure(width=max(100, anchoVentana // 3 - 30))
-            j.configure(height=altoVentana - 180)
-            confirmacion.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
-            volver.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
-        # Actualiza la ventana
-        self.update_idletasks()
+        if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
+            self.HEIGHT = altoVentana
+            self.WIDTH = anchoVentana
+            for i, j in zip(etiquetas, listas):
+                i.configure(width=max(100, anchoVentana // 3 - 6))
+                j.configure(width=max(100, anchoVentana // 3 - 30))
+                j.configure(height=altoVentana - 180)
+                confirmacion.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
+                volver.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
+            # Actualiza la ventana
+            self.update_idletasks()
