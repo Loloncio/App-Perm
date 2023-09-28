@@ -63,7 +63,40 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 	   <li><b>General</b></li>
 	   <li>Al pulsar confirmar se cambia de ventana y se pasan las opciones marcadas </li>
    </ul>
-4. Crear un main que solo tenga la ventana principal y no la clase mainWindow, de esta forma no esta mainWindow siempre en segundo plano
-5. Modelo
-6. Controladores
+3. Defecto.py
+	<ul>
+		<li>Se mostrará la info requerida a la derecha de cada opción</li>
+		<li>Añadir boton para volver al menú principal</li>
+	</ul>
+4. Final.py
+	<ul>
+		<li>Aquí se mostraran varios mensajes de carga: Creando Manifest, compilando app, Instalando app y finalmente exito o fallo y mensaje de error en caso de fallo</li>
+		<li>Debe comprobar que haya un dispositivo adb conectado</li>
+		<li>Aquí podría ir un emulador android o un botón para abrir uno si fuese posible</li>
+	</ul>
+5. ADB.py
+	<ul>
+		<li>Mostrará opciones para hacer con apps firmadas</li>
+		<li>Comprobar si se conceden permisos dangerous a 2 apps firmadas con mismo certificado</li>
+		<li>Comprobar si se conceden permisos signature a 2 apps firmadas con mismo certificado</li>
+		<li>Comprobar que solo se conceden permisos signature a apps con el mismo dertificado</li>
+	</ul>
+
+6. PermisosMod.py
+	Guardará una lista con todos los permisos, a que grupo pertenece cada uno y su protection level.    
+	Permitira obtener toda esa información, o solo un permiso con su info.
+7. GruposMod.py
+	Guardará una lista con todos los permisos, a que grupo pertenece cada uno y su protection level.    
+	Permitira obtener toda esa información, o solo un permiso con su info.
+8. MenuContr.py
+	<ul>
+		<li>Se encargará de abrir las otras vistas</li>
+	</ul>
+9. DefectoContr.py
+	<ul>
+		<li>Permitira volver a Menu</li>
+		<li>Pedira los datos necesarios a los modelos de datos</li>
+		<li>Permitira ir a la vista Final</li>
+	</ul>
 7. Emulador Android incluido?
+4. Crear un main que solo tenga la ventana principal y no la clase mainWindow, de esta forma no esta mainWindow siempre en segundo plano

@@ -17,6 +17,7 @@ class defecto(ctk.CTkToplevel):
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
 
+        # Declaración e inicialización de variables
         frames, scrolls, permisos, grupos, protection, labels = [], [], [], [], [], []
         textoPermisos = [
             "Permiso1",
@@ -43,18 +44,20 @@ class defecto(ctk.CTkToplevel):
             "Signature"
         ]
 
+        # Fuente que usaremos en esta vista
         textFont = ctk.CTkFont(family="Inter", size=30, weight="normal")
 
+        # Creación de los frames base para cada lista
         for i in range(3):
             frames.append(ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.WIDTH-10))
-
+        # Creación de scrollFrames donde se vera la lista de botones y
+        # frames donde podremos la información correspondiente al pulsar un boton
         for i in range(3):
             scrolls.append(ctk.CTkScrollableFrame(master=frames[i],fg_color="#504F4F", corner_radius= 10, width = self.WIDTH/2-20))
-            frames.append(ctk.CTkFrame(master=frames[i],fg_color="#504F4F", corner_radius= 10, width = self.WIDTH/2-20))
-
+        # Creación de los labels que se colocan a la derecha de las listas
         for i in range(3):
-            labels.append(ctk.CTkLabel(frames[i+3], text="", text_color="white", fg_color="#504F4F",
-                                corner_radius=10, font=textFont))
+            labels.append(ctk.CTkLabel(frames[i], text="", text_color="white", fg_color="#504F4F",
+                                corner_radius=10, justify="center", font=textFont, width = self.WIDTH/2-20))
 
         for i in textoPermisos:
             permisos.append(ctk.CTkButton(scrolls[0], text=i, text_color="white", fg_color="#504F4F",
@@ -72,9 +75,9 @@ class defecto(ctk.CTkToplevel):
         for i in range(3):
             frames[i].pack(padx=5, pady=5, fill="x",expand = True)
 
-        for i in range(3):
-            scrolls[i].grid(row = 0, column=0, padx = 5, sticky="e")
-            frames[i+3].grid(row = 0, column=1,padx = 5, sticky="w")
+        for i, j in zip(scrolls, labels):
+            i.grid(row = 0, column=0, padx = 5, sticky="e")
+            j.grid(row = 0, column=1,padx = 5, sticky="nw")
 
         for permiso in permisos:
             permiso.pack(fill="x", padx = 3)
@@ -85,11 +88,8 @@ class defecto(ctk.CTkToplevel):
         for level in protection:
             level.pack(fill="x", padx = 3)
 
-        for label in labels:
-            label.pack(fill="x", padx = 3, sticky="nw")
-
-        self.bind("<Configure>", lambda event, frames = frames, scrolls = scrolls,
-                  self=self: self.ajustarTamanos(self, frames, scrolls))
+        self.bind("<Configure>", lambda event, frames = frames, scrolls = scrolls, labels= labels,
+                  self=self: self.ajustarTamanos(self, frames, scrolls, labels))
 
 
     def cerrar(self):
@@ -113,7 +113,7 @@ class defecto(ctk.CTkToplevel):
         return
 
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
-    def ajustarTamanos(self, event, frames, scrolls):
+    def ajustarTamanos(self, event, frames, scrolls, labels):
         anchoVentana = self.winfo_width()  # Ancho de la ventana
         altoVentana = self.winfo_height()  # Alto de la ventana
         if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
@@ -122,7 +122,7 @@ class defecto(ctk.CTkToplevel):
 
             for i in range(3):
                 frames[i].configure(width = anchoVentana-10,height=altoVentana/3-10)
-                frames[i+3].configure(width = (anchoVentana/2)-20,height=altoVentana/3-10)
+                labels[i].configure(width = anchoVentana-10,height=altoVentana/3-10)
                 scrolls[i].configure(width = (anchoVentana/2)-20,height=altoVentana/3-10)
             # Actualiza la ventana
             self.update_idletasks()
