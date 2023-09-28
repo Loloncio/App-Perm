@@ -82,10 +82,10 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 		<li>Comprobar que solo se conceden permisos signature a apps con el mismo dertificado</li>
 	</ul>
 
-6. PermisosMod.py
+6. PermisosMod.py    
 	Guardará una lista con todos los permisos, a que grupo pertenece cada uno y su protection level.    
 	Permitira obtener toda esa información, o solo un permiso con su info.
-7. GruposMod.py
+7. GruposMod.py    
 	Guardará una lista con todos los permisos, a que grupo pertenece cada uno y su protection level.    
 	Permitira obtener toda esa información, o solo un permiso con su info.
 8. MenuContr.py
@@ -98,5 +98,5 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 		<li>Pedira los datos necesarios a los modelos de datos</li>
 		<li>Permitira ir a la vista Final</li>
 	</ul>
-7. Emulador Android incluido?
-4. Crear un main que solo tenga la ventana principal y no la clase mainWindow, de esta forma no esta mainWindow siempre en segundo plano
+10. Emulador Android incluido?
+11. Crear un main que solo tenga la ventana principal y no la clase mainWindow, de esta forma no esta mainWindow siempre en segundo plano
