@@ -11,5 +11,17 @@ class ControladorDef:
 
     def getGrupos():
         return GruposMod.getGrupos()
+
     def getPermisos(grupo):
-        return GruposMod.getPermisos(grupo=grupo)
+        permisos = GruposMod.getPermisos(grupo=grupo)
+        lista = ""
+        for i in permisos:
+            lista += i+"\n"
+        return lista
+
+    def volver(vistaDefecto, vistaMenu):
+        vistaMenu.deiconify()
+        vistaDefecto.destroy()
+
+    def cerrar(vistMenu):
+        vistMenu.destroy()

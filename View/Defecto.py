@@ -1,3 +1,11 @@
+# Esta vista nos presentará 3 listas, una con los permisos, otra con los grupos
+# y otra con los protection level por defecto de android.
+# Cuando pulsamos en un permiso, vemos a que grupo pertence pertence por defecto
+# y su protection level.
+# Cuando pulsamos en un grupo, obtenemos una lista de los permisos que contiene
+# ese grupo.
+# Cuando pulsamos en un protection level, vemos los permisos que tienen ese
+# protection level.
 # Autor: Alejandro de la Cruz Garijo
 import os
 import sys
@@ -40,7 +48,6 @@ class defecto(ctk.CTkToplevel):
             "Permiso9",
         ]
         textoGrupos = ControladorDef.getGrupos()
-        print("Grupos: ",textoGrupos)
         textoProtection =[
             "Normal",
             "Dangerous",
@@ -48,7 +55,8 @@ class defecto(ctk.CTkToplevel):
         ]
 
         # Fuente que usaremos en esta vista
-        textFont = ctk.CTkFont(family="Inter", size=25, weight="normal")
+        leftFont = ctk.CTkFont(family="Inter", size=25, weight="normal")
+        rightFont = ctk.CTkFont(family="Inter", size=20, weight="normal")
 
         # Creación de los frames base para cada lista
         for i in range(3):
@@ -60,65 +68,73 @@ class defecto(ctk.CTkToplevel):
         # Creación de los labels que se colocan a la derecha de las listas
         for i in range(3):
             labels.append(ctk.CTkLabel(frames[i], text="", text_color="white", fg_color="#504F4F",
-                                corner_radius=10, justify="center", font=textFont, width = self.WIDTH/2-20))
-
+                                corner_radius=10, justify="center", font=rightFont, width = self.WIDTH/2-20))
+        # Creación de los botones para elegir permiso
         for i in textoPermisos:
             permisos.append(ctk.CTkButton(scrolls[0], text=i, text_color="white", fg_color="#504F4F",
-                                          font=textFont, corner_radius= 10,
+                                          font=leftFont, corner_radius= 10,
                                           command=lambda permiso = i, label = labels[0]: self.permisoClick(permiso, label)))
+        # Creación de los botones para elegir grupo
         for i in textoGrupos:
             grupos.append(ctk.CTkButton(scrolls[1], text=i, text_color="white", fg_color="#504F4F",
-                                          font=textFont, corner_radius= 10,
+                                          font=leftFont, corner_radius= 10,
                                           command=lambda grupo = i, label = labels[1]: self.grupoClick(grupo,label)))
+        # Creación de los botones para elegir nivel de protección
         for i in textoProtection:
             protection.append(ctk.CTkButton(scrolls[2], text=i, text_color="white", fg_color="#504F4F",
-                                          font=textFont, corner_radius= 10,
+                                          font=leftFont, corner_radius= 10,
                                           command=lambda protection = i, label = labels[2]: self.protectionClick(protection,label)))
-
+        # Creación del botón para volver al menu principal
+        volver = ctk.CTkButton(scrolls[2], command=self.volver, text="Volver", font=leftFont, corner_radius=10,
+                                fg_color="#1E1E1E", text_color="white", height=50)
+        # Colocación de los frame base para las listas
         for i in range(3):
             frames[i].pack(padx=5, pady=5, fill="x",expand = True)
-
+        # Colocación de los frames donde pondremos las listas de botones y el resultado de la elección
         for i, j in zip(scrolls, labels):
             i.grid(row = 0, column=0, padx = 5, sticky="e")
             j.grid(row = 0, column=1,padx = 5, sticky="nw")
-
+        # Colocación de los permisos
         for permiso in permisos:
             permiso.pack(fill="x", padx = 3)
-
+        # Colocación de los grupos
         for grupo in grupos:
             grupo.pack(fill="x", padx = 3)
-
+        # Colocación de los niveles de potección
         for level in protection:
             level.pack(fill="x", padx = 3)
-
+        # Colocación del botón de vuelta
+        volver.pack(anchor = "w", side = "bottom")
+        # Cuando se modifique el tamaño de la ventana se llama al método que reajusta los elementos
         self.bind("<Configure>", lambda event, frames = frames, scrolls = scrolls, labels= labels,
                   self=self: self.ajustarTamanos(self, frames, scrolls, labels))
-
-
+    # Método para cerrar toda la app al pulsar la x
     def cerrar(self):
-        self.parent.destroy()
-
+        ControladorDef.cerrar(self.parent)
+    # Método para vovler al menú principal
     def volver(self):
-        self.parent.deiconify()
-        self.destroy()
-
+        ControladorDef.volver(self, self.parent)
+    # Método para cuando se pulsa un permiso
     def permisoClick(self, permiso, label):
         label.configure(text=permiso)
         print(permiso)
         return
+    # Método para cuando se pulas un grupo
     def grupoClick(self, grupo, label):
-        label.configure(text=grupo)
-        print(grupo)
+        permisosGrupo = ControladorDef.getPermisos(grupo)
+        label.configure(text=permisosGrupo)
         return
+    # Método para cuando se pulsa un nivel de protección
     def protectionClick(self, protection, label):
         label.configure(text=protection)
         print(protection)
         return
-
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
     def ajustarTamanos(self, event, frames, scrolls, labels):
-        anchoVentana = self.winfo_width()  # Ancho de la ventana
-        altoVentana = self.winfo_height()  # Alto de la ventana
+        anchoVentana = self.winfo_width()
+        altoVentana = self.winfo_height()
+        # Si se ha generado un evento configure (como hacer scroll) pero no cambia el tamaño de pantalla,
+        # no hacemos nada.
         if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
             self.HEIGHT = altoVentana
             self.WIDTH = anchoVentana

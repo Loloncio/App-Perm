@@ -5,8 +5,14 @@
 # Autor: Alejandro de la Cruz Garijo
 import tkinter as tk
 import customtkinter as ctk
-from Listas import listas
-from Defecto import defecto
+import os
+import sys
+
+PROJECT_ROOT = os.path.abspath(os.path.join(
+               os.path.dirname(__file__),
+               os.pardir))
+sys.path.append(PROJECT_ROOT)
+from Controller.MenuContr import ControladorMenu
 
 class mainWindow(ctk.CTkFrame):
 
@@ -14,8 +20,6 @@ class mainWindow(ctk.CTkFrame):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
         self.configure(fg_color = "#4B4B4B")
-        #Ejemplo de paso de variables a hijo
-        self.optList = tk.StringVar(self)
 
         # Variables
         # Diccionario que toma como clave el texto que tendra el botón y como valor la función que ejecutará
@@ -58,31 +62,22 @@ class mainWindow(ctk.CTkFrame):
 
     # Funciones para los botones
     def defecto(self):
-        defecto(self.parent)
+        ControladorMenu.aDefecto(self.parent)
         return
     def cambioGrupo(self):
-        self.optList.set(1)
-        listas(self.parent, self.optList.get())
+        ControladorMenu.aListas(self, 1)
         return
     def permisoADosGrupos(self):
-        self.optList.set(2)
-        listas(self.parent, self.optList.get())
-        print("Añade a dos grupos")
+        ControladorMenu.aListas(self, 2)
         return
     def cambiaProtLevel(self):
-        self.optList.set(3)
-        listas(self.parent, self.optList.get())
-        print("Cambia protection level")
+        ControladorMenu.aListas(self, 3)
         return
     def normalAGrupo(self):
-        self.optList.set(4)
-        listas(self.parent, self.optList.get())
-        print("Añade normal a grupo")
+        ControladorMenu.aListas(self, 4)
         return
     def signaAGrupo(self):
-        self.optList.set(5)
-        listas(self.parent, self.optList.get())
-        print("Añade signature a grupo")
+        ControladorMenu.aListas(self, 5)
         return
     def verDispositivo(self):
         print("Ver dispositivo")

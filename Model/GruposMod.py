@@ -22,5 +22,5 @@ class GruposMod:
     def getGrupos():
         return GRUPOS.keys()
 
-    def getPermisos(self, grupo):
+    def getPermisos(grupo):
         return GRUPOS.get(grupo)

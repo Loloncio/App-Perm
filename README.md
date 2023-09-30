@@ -50,7 +50,7 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 
 ## TODO
 
-1. Menu.py: Métodos funcionales para todos los botones (Faltan el primero y los dos últimos)
+1. Menu.py: Métodos funcionales para todos los botones (Faltan los dos últimos)
 2. Listas.py:
    <ul>
 	   <li>Cubrirá las 5 primeras opciones, en función de cual se pulse, se hará una u otra.</li>
@@ -66,7 +66,6 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 3. Defecto.py
 	<ul>
 		<li>Se mostrará la info requerida a la derecha de cada opción</li>
-		<li>Añadir boton para volver al menú principal</li>
 	</ul>
 4. Final.py
 	<ul>
@@ -82,21 +81,12 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 		<li>Comprobar que solo se conceden permisos signature a apps con el mismo dertificado</li>
 	</ul>
 
-6. PermisosMod.py    
+6. PermisosMod.py
 	Guardará una lista con todos los permisos, a que grupo pertenece cada uno y su protection level.    
 	Permitira obtener toda esa información, o solo un permiso con su info.
-7. GruposMod.py    
-	Guardará una lista con todos los permisos, a que grupo pertenece cada uno y su protection level.    
-	Permitira obtener toda esa información, o solo un permiso con su info.
-8. MenuContr.py
+7. DefectoContr.py
 	<ul>
-		<li>Se encargará de abrir las otras vistas</li>
-	</ul>
-9. DefectoContr.py
-	<ul>
-		<li>Permitira volver a Menu</li>
 		<li>Pedira los datos necesarios a los modelos de datos</li>
-		<li>Permitira ir a la vista Final</li>
+		<li>Permitirá ir a la vista Final</li>
 	</ul>
-10. Emulador Android incluido?
-11. Crear un main que solo tenga la ventana principal y no la clase mainWindow, de esta forma no esta mainWindow siempre en segundo plano
+8. Emulador Android incluido?
