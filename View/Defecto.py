@@ -1,6 +1,15 @@
 # Autor: Alejandro de la Cruz Garijo
+import os
+import sys
+
+PROJECT_ROOT = os.path.abspath(os.path.join(
+               os.path.dirname(__file__),
+               os.pardir))
+sys.path.append(PROJECT_ROOT)
+
 import tkinter as tk
 import customtkinter as ctk
+from Controller.DefectoContr import ControladorDef
 
 class defecto(ctk.CTkToplevel):
     # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
@@ -30,14 +39,8 @@ class defecto(ctk.CTkToplevel):
             "Permiso8",
             "Permiso9",
         ]
-        textoGrupos = [
-            "Grupo1",
-            "Grupo2",
-            "Grupo3",
-            "Grupo4",
-            "Grupo5",
-            "Grupo6",
-        ]
+        textoGrupos = ControladorDef.getGrupos()
+        print("Grupos: ",textoGrupos)
         textoProtection =[
             "Normal",
             "Dangerous",
@@ -45,7 +48,7 @@ class defecto(ctk.CTkToplevel):
         ]
 
         # Fuente que usaremos en esta vista
-        textFont = ctk.CTkFont(family="Inter", size=30, weight="normal")
+        textFont = ctk.CTkFont(family="Inter", size=25, weight="normal")
 
         # Creación de los frames base para cada lista
         for i in range(3):
