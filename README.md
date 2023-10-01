@@ -65,8 +65,7 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
    </ul>
 3. Defecto.py
 	<ul>
-		<li>Se mostrará la info requerida a la derecha de cada opción</li>
-		<li>Convertir los label de la derecha a scrolls para que la lista de permisos según el protection level no de problemas</li>
+		<li>Añadir boton para ir a vista final</li>
 	</ul>
 4. Final.py
 	<ul>

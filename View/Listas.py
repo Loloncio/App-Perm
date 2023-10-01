@@ -25,6 +25,7 @@ class listas(ctk.CTkToplevel):
         self.geometry("1280x720")
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
+        self.title("Modificar permisos")
         self.OPT = int(opt)
         self.GRUPO.clear()
 
