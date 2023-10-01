@@ -9,13 +9,13 @@ from View.Defecto import defecto
 from View.Listas import listas
 
 class ControladorMenu:
-    def aDefecto(ventanaPrincipal):
+    def aDefecto(self, ventanaPrincipal):
         defecto(ventanaPrincipal)
         return
-    def aListas(ventanaMenu, opcion):
+    def aListas(self, ventanaMenu, opcion):
         listas(ventanaMenu.parent, opcion)
         return
-    def aFirmadas(ventanaPrincipal):
+    def aFirmadas(self, ventanaPrincipal):
         return
-    def aADB(ventanaPrincipal):
+    def aADB(self, ventanaPrincipal):
         return

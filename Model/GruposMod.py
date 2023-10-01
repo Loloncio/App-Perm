@@ -1,4 +1,6 @@
-GRUPOS = {
+class GruposMod:
+
+    GRUPOS = {
         "PHONE":["ANSWER_PHONE_CALLS", "READ_PHONE_NUMBERS", "READ_PHONE_STATE", "CALL_PHONE", "ACCEPT_HANDOVER", "USE_SIP", "ADD_VOICEMAIL"],
         "CONTACTS":["WRITE_CONTACTS", "GET_ACCOUNTS", "READ_CONTACTS"],
         "CALL_LOG":["READ_CALL_LOG", "WRITE_CALL_LOG", "PROCESS_OUTGOING_CALLS"],
@@ -17,10 +19,9 @@ GRUPOS = {
         "NEARBY_DEVICES":["NEARBY_WIFI_DEVICES", "BLUETOOTH_CONNECT", "BLUETOOTH_ADVERTISE", "UWB_RANGING", "BLUETOOTH_SCAN"],
         "SMS":["READ_SMS", "RECEIVE_WAP_PUSH", "RECEIVE_MMS", "RECEIVE_SMS", "SEND_SMS", "READ_CELL_BROADCASTS"]
     }
-class GruposMod:
 
-    def getGrupos():
-        return GRUPOS.keys()
+    def getGrupos(self):
+        return self.GRUPOS.keys()
 
-    def getPermisos(grupo):
-        return GRUPOS.get(grupo)
+    def getPermisos(self, grupo):
+        return self.GRUPOS.get(grupo)

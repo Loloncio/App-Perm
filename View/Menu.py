@@ -15,6 +15,7 @@ sys.path.append(PROJECT_ROOT)
 from Controller.MenuContr import ControladorMenu
 
 class mainWindow(ctk.CTkFrame):
+    controlador = ControladorMenu()
 
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
@@ -62,22 +63,22 @@ class mainWindow(ctk.CTkFrame):
 
     # Funciones para los botones
     def defecto(self):
-        ControladorMenu.aDefecto(self.parent)
+        self.controlador.aDefecto(self.parent)
         return
     def cambioGrupo(self):
-        ControladorMenu.aListas(self, 1)
+        self.controlador.aListas(self, 1)
         return
     def permisoADosGrupos(self):
-        ControladorMenu.aListas(self, 2)
+        self.controlador.aListas(self, 2)
         return
     def cambiaProtLevel(self):
-        ControladorMenu.aListas(self, 3)
+        self.controlador.aListas(self, 3)
         return
     def normalAGrupo(self):
-        ControladorMenu.aListas(self, 4)
+        self.controlador.aListas(self, 4)
         return
     def signaAGrupo(self):
-        ControladorMenu.aListas(self, 5)
+        self.controlador.aListas(self, 5)
         return
     def verDispositivo(self):
         print("Ver dispositivo")

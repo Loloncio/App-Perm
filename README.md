@@ -66,6 +66,7 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 3. Defecto.py
 	<ul>
 		<li>Se mostrará la info requerida a la derecha de cada opción</li>
+		<li>Convertir los label de la derecha a scrolls para que la lista de permisos según el protection level no de problemas</li>
 	</ul>
 4. Final.py
 	<ul>
@@ -80,13 +81,8 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 		<li>Comprobar si se conceden permisos signature a 2 apps firmadas con mismo certificado</li>
 		<li>Comprobar que solo se conceden permisos signature a apps con el mismo dertificado</li>
 	</ul>
-
-6. PermisosMod.py
-	Guardará una lista con todos los permisos, a que grupo pertenece cada uno y su protection level.    
-	Permitira obtener toda esa información, o solo un permiso con su info.
-7. DefectoContr.py
+6. DefectoContr.py
 	<ul>
-		<li>Pedira los datos necesarios a los modelos de datos</li>
 		<li>Permitirá ir a la vista Final</li>
 	</ul>
-8. Emulador Android incluido?
+7. Emulador Android incluido?
