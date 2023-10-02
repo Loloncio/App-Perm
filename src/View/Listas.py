@@ -5,6 +5,14 @@
 # Autor: Alejandro de la Cruz Garijo
 import tkinter as tk
 import customtkinter as ctk
+import os
+import sys
+
+PROJECT_ROOT = os.path.abspath(os.path.join(
+               os.path.dirname(__file__),
+               os.pardir))
+sys.path.append(PROJECT_ROOT)
+from Controller.ListasContr import ListasContr
 
 class listas(ctk.CTkToplevel):
     # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
@@ -16,6 +24,7 @@ class listas(ctk.CTkToplevel):
     ERRORES = None
     HEIGHT = None
     WIDTH = None
+    controlador = ListasContr()
     def __init__(self, parent, opt, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
@@ -36,25 +45,8 @@ class listas(ctk.CTkToplevel):
             "Grupos de permisos",
             "Protection level"
         ]
-        textoPermisos = [
-            "Permiso1",
-            "Permiso2",
-            "Permiso3",
-            "Permiso4",
-            "Permiso5",
-            "Permiso6",
-            "Permiso7",
-            "Permiso8",
-            "Permiso9",
-        ]
-        textoGrupos = [
-            "Grupo1",
-            "Grupo2",
-            "Grupo3",
-            "Grupo4",
-            "Grupo5",
-            "Grupo6",
-        ]
+        textoPermisos = self.controlador.getPermisos(opt)
+        textoGrupos = self.controlador.getGrupos()
         textoProtection =[
             "Normal",
             "Dangerous",
@@ -65,7 +57,7 @@ class listas(ctk.CTkToplevel):
 
         # Fuentes de texto
         headersFont = ctk.CTkFont(family="Inter", size=40, weight="bold")
-        textFont = ctk.CTkFont(family="Inter", size=30, weight="normal")
+        textFont = ctk.CTkFont(family="Inter", size=15, weight="normal")
         errorFont = ctk.CTkFont(family="Inter", size=15, weight="normal")
 
         # Creación de frames para las listas
@@ -80,7 +72,7 @@ class listas(ctk.CTkToplevel):
             permisos.append(ctk.CTkCheckBox(listas[0], text=i, text_color="white", font= textFont,
                                 command=lambda check_var=check_var, permisos=permisos, textoPermisos= textoPermisos:
                                 self.checkboxPermisos(check_var, permisos, textoPermisos),
-                                variable=check_var, onvalue=i, offvalue="!"+i))
+                                variable=check_var, onvalue="Perm"+i, offvalue="!"+i))
         # Creación de checkboxes para los grupos
         for i in textoGrupos:
             grupos.append(ctk.CTkCheckBox(listas[1], text=i, text_color="white", font= textFont,
@@ -152,42 +144,44 @@ class listas(ctk.CTkToplevel):
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                print("OK1")
+                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 2:
             if len(self.GRUPO) != 2:
                 self.ERRORES.configure(text="Debes seleccionar 2 grupos de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                print("OK2")
+                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 3:
             if self.PROTECTION == "":
                 self.ERRORES.configure(text="Debes seleccionar un protection level.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                print("OK3")
+                error = self.controlador.aFinal(self.PERMISO,None,self.PROTECTION, self.OPT)
         elif self.OPT == 4:
             if len(self.GRUPO) != 1:
                 self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                print("OK4")
+                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 5:
             if len(self.GRUPO) != 1:
                 self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                print("OK5")
-        print("Permiso: ",self.PERMISO, " Grupo: ",self.GRUPO, " Protection: ",self.PROTECTION)
+                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
+        if error != "OK":
+            self.ERRORES.configure(text=error)
+            self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
         return
 
     def checkboxPermisos(self, check_var, permisos, textoPermisos):
         if(check_var.get()[0] != "!"):
-            clickedCheckbox = permisos[textoPermisos.index(check_var.get())]
-            self.PERMISO = check_var.get()
+            clickedCheckbox = permisos[textoPermisos.index(check_var.get()[4::])]
+            self.PERMISO = check_var.get()[4::]
             for checkbox in permisos:
                 if checkbox != clickedCheckbox:
                     checkbox.deselect()
@@ -207,6 +201,10 @@ class listas(ctk.CTkToplevel):
                 for checkbox in grupos:
                     if checkbox != grupos[textoGrupos.index(self.GRUPO[0])] and checkbox != grupos[textoGrupos.index(self.GRUPO[1])]:
                         checkbox.deselect()
+        elif self.OPT != 2:
+            self.GRUPO.clear()
+        else:
+            self.GRUPO.pop(self.GRUPO.index(check_var.get()[1::]))
 
     def checkboxProtection(self, check_var, protection, textoProtection):
         if(check_var.get()[0] != "!"):

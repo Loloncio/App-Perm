@@ -4,6 +4,7 @@
 # Este menú nos permite ir a las distintas pruebas que se han planteado.
 # Autor: Alejandro de la Cruz Garijo
 import tkinter as tk
+from PIL import Image, ImageTk
 import customtkinter as ctk
 import os
 import sys
@@ -49,6 +50,10 @@ class mainWindow(ctk.CTkFrame):
             boton = ctk.CTkButton(gridBotones, command=funcion, text=texto, font=textFont, corner_radius=10,
                                   fg_color="#D9D9D9", text_color="black", width=250, height=100)
             botones.append(boton)
+        imagePath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../assets/ayuda.png")
+        imagenAyuda = Image.open(imagePath)
+        imagenAyuda = ctk.CTkImage(imagenAyuda, size=(40,40))
+        ayuda = ctk.CTkButton(self, text="",image= imagenAyuda,command=self.ayuda, text_color="black", corner_radius=5,width=40, height=40, font=textFont, fg_color="#D9D9D9")
 
         # Colocación de los botones en el Frame para los botones
         cont = 0;
@@ -60,6 +65,7 @@ class mainWindow(ctk.CTkFrame):
         # Mostramos la etiqueta de texto y el frame de los botones
         mainText.pack()
         gridBotones.pack()
+        ayuda.pack(side="bottom", anchor="e",padx = 10, pady = 10)
 
     # Funciones para los botones
     def defecto(self):
@@ -85,6 +91,10 @@ class mainWindow(ctk.CTkFrame):
         return
     def appsFirmadas(self):
         print("Apps firmadas")
+        return
+    def ayuda(self):
+        self.controlador.aAyuda(self.parent)
+        print("ayuda")
         return
 
 if __name__ == "__main__":
