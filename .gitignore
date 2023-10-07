@@ -1,2 +1,17 @@
 __pycache__
 *cache*
+Android/App-Perm/*.iml
+Android/App-Perm/.gradle
+Android/App-Perm/local.properties
+Android/App-Perm/.idea/caches
+Android/App-Perm/.idea/libraries
+Android/App-Perm/.idea/modules.xml
+Android/App-Perm/.idea/workspace.xml
+Android/App-Perm/.idea/navEditor.xml
+Android/App-Perm/.idea/assetWizardSettings.xml
+Android/App-Perm/.DS_Store
+Android/App-Perm/build
+Android/App-Perm/captures
+Android/App-Perm/.externalNativeBuild
+Android/App-Perm/.cxx
+Android/App-Perm/local.properties

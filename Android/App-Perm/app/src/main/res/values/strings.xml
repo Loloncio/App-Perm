@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">App-Perm</string>
+    <string name="descripcion_telefono">Grupo de prueba con permisos de teléfono</string>
+    <string name="descripcion_mixtos">Grupo de prueba con permisos varios</string>
+    <string name="grupo_permisos_mixtos">Grupo de permisos Mixtos</string>
+    <string name="grupo_permisos_telefono">Grupo de permisos Telefono</string>
+    <string name="descripcion_camara">Permiso que otorga acceso a la camara</string>
+    <string name="descripción_prueba1">Permiso de prueba para TFG</string>
+    <string name="descripción_prueba2">Permiso signature de prueba para TFG</string>
+    <string name="descripción_prueba3">Permiso dangerous de prueba para TFG</string>
+    <string name="permiso_camara">Permiso de camara</string>
+    <string name="revocarPermios">Para revocar permisos deberas entrar en los ajustes de la app y
+        revocarlos manualmente.\n Pulsa el botón a continuación para ira a los ajsutes de la aplicación.</string>
+</resources>

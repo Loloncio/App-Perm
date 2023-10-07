@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingVertical="20dp">
+
+            <Button
+                android:id="@+id/solicitaPermisos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickSolicitaPermisos"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="SOLICITAr PERMISOS" />
+            <Button
+                android:id="@+id/Ajustes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickAjustes"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="REVOCAR PERMISOS" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|center_horizontal"
+            android:paddingVertical="20dp">
+
+            <Button
+                android:id="@+id/Grupos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickGrupos"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="Grupos" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickNoSysGrupos"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="NoSysGrupos" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingVertical="20dp">
+
+            <Button
+                android:id="@+id/Permisos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickPermisos"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="Permisos" />
+
+            <Button
+                android:id="@+id/NoPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickNoPhone"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="Ver Phone" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingVertical="20dp">
+
+
+
+            <Button
+                android:id="@+id/Phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickPhone1"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="Phone 1" />
+
+            <Button
+                android:id="@+id/Phone2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:onClick="clickPhone2"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="Phone 2" />
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

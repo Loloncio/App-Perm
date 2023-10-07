@@ -6,10 +6,18 @@ import customtkinter as ctk
 from PIL import Image, ImageTk
 import os
 import time
+import sys
+PROJECT_ROOT = os.path.abspath(os.path.join(
+               os.path.dirname(__file__),
+               os.pardir))
+sys.path.append(PROJECT_ROOT)
+from Controller.FinalContr import FinalContr
 
 class final(ctk.CTkToplevel):
     DONE = False
-    def __init__(self, parent, opt, *args, **kwargs):
+    realizando = None
+    controlador = FinalContr()
+    def __init__(self, parent, opt, permiso, grupos, protection, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
         # Ajustes de ventana principal
@@ -22,6 +30,50 @@ class final(ctk.CTkToplevel):
         self.canvas.pack(anchor="center", pady = 200)
         self.update = self.draw().__next__
         self.after(100, self.update)
+        
+        textFont = ctk.CTkFont(family="Inter", size=15, weight="normal")
+        
+        opt = int(opt)
+        permiso = str(permiso)
+        self.realizando = ctk.CTkLabel(self,text_color="white", font= textFont, corner_radius=10)
+        self.realizando.configure(text="Creando archivo AndroidManifest.xml...")
+        self.realizando.pack(pady= 10)
+        if(opt == 1):
+            grupos = list(grupos)
+            self.creaManifestGrupos(permiso, grupos)
+            self.compila()
+        elif opt == 2:
+            grupos = list(grupos)
+            self.creaManifestGrupos(permiso, grupos)
+            self.compila()
+        elif opt == 3:
+            protection = str(protection)
+            self.creaManifestProtection(permiso, protection)
+            self.compila()
+        elif opt == 4:
+            grupos = list(grupos)
+            self.creaManifestGrupos(permiso, grupos)
+            self.compila()
+        elif opt == 5:
+            grupos = list(grupos)
+            self.creaManifestGrupos(permiso, grupos)
+            self.compila()
+
+    def cerrar(self):
+        self.parent.destroy()
+
+    def creaManifestGrupos(self, permisso, grupos):
+        self.controlador.creaManifestGrupo(permisso, grupos)
+        return
+    def creaManifestProtection(self, permiso, protection):
+        self.controlador.creaManifestProtection(permiso, protection)
+        return
+    def compila(self):
+        self.realizando.configure(text="Compilando apk...")
+        self.controlador.compilar()
+        self.DONE = True
+        self.realizando.configure(text="Apk creada, puedes encontrarla en XXXXX")
+        return
 
     def draw(self):
         imagePath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../assets/cargando.png")
@@ -38,5 +90,3 @@ class final(ctk.CTkToplevel):
             angle -= 10
             angle %= 360
             time.sleep(0.02)
-    def cerrar(self):
-        self.parent.destroy()

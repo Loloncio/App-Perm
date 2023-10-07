@@ -144,35 +144,35 @@ class listas(ctk.CTkToplevel):
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 2:
             if len(self.GRUPO) != 2:
                 self.ERRORES.configure(text="Debes seleccionar 2 grupos de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 3:
             if self.PROTECTION == "":
                 self.ERRORES.configure(text="Debes seleccionar un protection level.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.PERMISO,None,self.PROTECTION, self.OPT)
+                error = self.controlador.aFinal(self.parent,self.PERMISO,None,self.PROTECTION, self.OPT)
         elif self.OPT == 4:
             if len(self.GRUPO) != 1:
                 self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 5:
             if len(self.GRUPO) != 1:
                 self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
         if error != "OK":
             self.ERRORES.configure(text=error)
             self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
