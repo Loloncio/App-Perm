@@ -109,13 +109,13 @@ class PermisosMod:
         return listaPermisos
 
     def getPermisosNormales(self):
-        normales = ""
+        Normales = ""
         for permiso in self.PERMISOS:
             permiso = permiso.split(sep=";")
             if permiso[2] == "Normal":
-                normales += permiso[0]+"\n"
-        return normales
-    def getPermisosDangerous(self):
+                Normales += permiso[0]+"\n"
+        return Normales
+    def getPermisosdangerous(self):
         dangerous = ""
         for permiso in self.PERMISOS:
             permiso = permiso.split(sep=";")

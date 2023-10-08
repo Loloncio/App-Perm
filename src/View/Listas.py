@@ -93,7 +93,7 @@ class listas(ctk.CTkToplevel):
                                 fg_color="#504F4F", text_color="white", height=50)
 
         # Creación de etiqueta para mostrar errores
-        self.ERRORES = ctk.CTkLabel(self,text_color="red", font= errorFont, corner_radius=10)
+        self.ERRORES = ctk.CTkLabel(self,text_color="red", text = "", font= errorFont, corner_radius=10)
 
         # Desactivamos los checkboxes que no se puedan usar en el caso en el que estemos
         if(self.OPT == 1 or self.OPT == 2 or self.OPT == 4 or self.OPT == 5):
@@ -144,35 +144,35 @@ class listas(ctk.CTkToplevel):
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 2:
             if len(self.GRUPO) != 2:
                 self.ERRORES.configure(text="Debes seleccionar 2 grupos de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 3:
             if self.PROTECTION == "":
                 self.ERRORES.configure(text="Debes seleccionar un protection level.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.parent,self.PERMISO,None,self.PROTECTION, self.OPT)
+                error = self.controlador.aFinal(self,self.PERMISO,None,self.PROTECTION, self.OPT)
         elif self.OPT == 4:
             if len(self.GRUPO) != 1:
                 self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
         elif self.OPT == 5:
             if len(self.GRUPO) != 1:
                 self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
                 self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self.parent,self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
         if error != "OK":
             self.ERRORES.configure(text=error)
             self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
@@ -213,7 +213,9 @@ class listas(ctk.CTkToplevel):
             for checkbox in protection:
                 if checkbox != clickedCheckbox:
                     checkbox.deselect()
-
+    def aMenu(self):
+        self.parent.deiconify()
+        self.destroy()
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
     def ajustarTamanos(self, event, etiquetas, listas, confirmacion, volver):
         anchoVentana = self.winfo_width()  # Ancho de la ventana

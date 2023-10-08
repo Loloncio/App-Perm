@@ -51,37 +51,25 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 ## TODO
 
 1. Menu.py: Métodos funcionales para todos los botones (Faltan los dos últimos)
-2. Listas.py:
-   <ul>
-	   <li>Cubrirá las 5 primeras opciones, en función de cual se pulse, se hará una u otra.</li>
-	   <li><b>Opción 3:</b></li>
-	   <li>El protection level ha de ser distinto al original</li>
-	   <li><b>Opción 4:</b></li>
-	   <li>Se muestran solo los permisos normales</li>
-	   <li><b>Opción 5:</b></li>
-	   <li>Solo aparecen los permisos con protection level signature</li>
-	   <li><b>General</b></li>
-	   <li>Al pulsar confirmar se cambia de ventana y se pasan las opciones marcadas </li>
-   </ul>
-3. Defecto.py
+2. Defecto.py
 	<ul>
 		<li>Añadir boton para ir a vista final</li>
 	</ul>
-4. Final.py
+3. Final.py
 	<ul>
-		<li>Aquí se mostraran varios mensajes de carga: Creando Manifest, compilando app, Instalando app y finalmente exito o fallo y mensaje de error en caso de fallo</li>
-		<li>Debe comprobar que haya un dispositivo adb conectado</li>
+		<li>Debe comprobar que haya un dispositivo adb conectado y permitir usar el boton de instalar o no</li>
+		<li>Hay que mostrar la salida del intento de instalación correctamente</li>
 		<li>Aquí podría ir un emulador android o un botón para abrir uno si fuese posible</li>
 	</ul>
-5. ADB.py
+4. ADB.py
 	<ul>
 		<li>Mostrará opciones para hacer con apps firmadas</li>
 		<li>Comprobar si se conceden permisos dangerous a 2 apps firmadas con mismo certificado</li>
 		<li>Comprobar si se conceden permisos signature a 2 apps firmadas con mismo certificado</li>
 		<li>Comprobar que solo se conceden permisos signature a apps con el mismo dertificado</li>
 	</ul>
-6. DefectoContr.py
+5. DefectoContr.py
 	<ul>
 		<li>Permitirá ir a la vista Final</li>
 	</ul>
-7. Emulador Android incluido?
+6. Emulador Android incluido?
