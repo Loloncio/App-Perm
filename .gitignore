@@ -12,6 +12,8 @@ Android/App-Perm/.idea/assetWizardSettings.xml
 Android/App-Perm/.DS_Store
 Android/App-Perm/build
 Android/App-Perm/captures
+Android/App-Perm/app/release
+Android/App-Perm/app/build
 Android/App-Perm/.externalNativeBuild
 Android/App-Perm/.cxx
 Android/App-Perm/local.properties
