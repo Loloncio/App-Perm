@@ -55,18 +55,25 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 	<ul>
 		<li>Añadir boton para ir a vista final</li>
 	</ul>
-3. Final.py
+3. Listas.py
 	<ul>
-		<li>Debe comprobar que haya un dispositivo adb conectado y permitir usar el boton de instalar o no</li>
-		<li>Hay que mostrar la salida del intento de instalación correctamente</li>
+		<li>Si estamos en las opciones 2 a 5, no funciona el botón confirmar</li>
+	</ul>
+4. Final.py
+	<ul>
+		<li>Arreglar bug por el cual a veces no se muestra nada hasta que no se ha compilado el apk</li>
 		<li>Aquí podría ir un emulador android o un botón para abrir uno si fuese posible</li>
 	</ul>
-4. ADB.py
+5. Firmadas.py
 	<ul>
 		<li>Mostrará opciones para hacer con apps firmadas</li>
 		<li>Comprobar si se conceden permisos dangerous a 2 apps firmadas con mismo certificado</li>
 		<li>Comprobar si se conceden permisos signature a 2 apps firmadas con mismo certificado</li>
 		<li>Comprobar que solo se conceden permisos signature a apps con el mismo dertificado</li>
+	</ul>
+6. ADB.py
+	<ul>
+		<li>Mostrará todos los permisos del dispositivo conectado, de forma similar a Defecto.py</li>
 	</ul>
 5. DefectoContr.py
 	<ul>

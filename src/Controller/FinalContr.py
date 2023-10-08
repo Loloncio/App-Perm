@@ -33,6 +33,15 @@ class FinalContr():
         manifest = self.modeloManifest.getManifest1+nuevoProtection+self.modeloManifest.getManifest2
         self.modeloManifest.setManifest(manifest)
         return
+    def creaManifestGrupos(self,permiso, grupos):
+        nuevoGrupo = '\n<permission\
+            \nandroid:name="android.permission.'+permiso+\
+            '"\nandroid:protectionLevel="'+self.modeloPermisos.getProtection(permiso).lower()+\
+            '"\nandroid:permissionGroup="android.permission-group.'+grupos[0]+'",android.permission-group."'+grupos[2]+'"/>'\
+            '\n<uses-permission android:name="android.permission.'+permiso+'"/>'
+        manifest = self.modeloManifest.getManifest1()+nuevoGrupo+self.modeloManifest.getManifest2()
+        self.modeloManifest.setManifest(manifest)
+        return
     def compilar(self):
         manifest = self.modeloManifest.getManifest()
         rutaManifest = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm/app/src/main/AndroidManifest.xml")
