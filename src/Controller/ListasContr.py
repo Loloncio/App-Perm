@@ -14,7 +14,8 @@ from View.Final import final
 class ListasContr():
     modeloPermisos = PermisosMod()
     modeloGrupos = GruposMod()
-
+    # Obtenemos una lista de permisos, si opcion es 4 o 5 solo se dan
+    # permisos normales o signature respectivamente
     def getPermisos(self, opcion):
         if opcion == 4:
             return self.modeloPermisos.getPermisosNormales()
@@ -22,11 +23,13 @@ class ListasContr():
             return self.modeloPermisos.getPermisosSignature()
         else:
             return self.modeloPermisos.getPermisos()
+    # Obtenemos una lista con todos los grupos
     def getGrupos(self):
         return list(self.modeloGrupos.getGrupos())
+    # Vamos a la vista final pasandole permiso, grupo, protectionLevel y opcion indicados,
+    # Si la opción seleccionada no necesita alguno de estos valores, se manda None en su lugar
     def aFinal(self, parent, permiso, grupos, protection, opcion):
         if opcion == 1:
-            #print(grupos[0], self.modeloPermisos.getGrupo(permiso))
             if grupos[0] == self.modeloPermisos.getGrupo(permiso):
                 return "El permiso ya pertenece a ese grupo"
             else:

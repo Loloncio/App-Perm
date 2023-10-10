@@ -1,145 +1,68 @@
+# Clase PermisosMod del modelo de datos de la aplicación App-perm.
+# Obtiene los datos de los permisos y su grupo y protection level asociados.
+# Permite acceder a estos datos de varias formas.
+# Autor: Alejandro de la Cruz Garijo
+import csv
+import os
 class PermisosMod:
-    PERMISOS = [
-        "DELIVER_COMPANION_MESSAGES;-;Normal",
-        "HIDE_OVERLAY_WINDOWS;-;Normal",
-        "READ_ASSISTANT_APP_SEARCH_DATA;-;Internal",
-        "READ_BASIC_PHONE_STATE;-;Normal",
-        "READ_HOME_APP_SEARCH_DATA;-;Internal",
-        "USE_EXACT_ALARM;-;Normal",
-        "ACCESS_BACKGROUND_LOCATION;LOCATION;Dangerous",
-        "ACCESS_COARSE_LOCATION;LOCATION;Dangerous",
-        "ACCESS_FINE_LOCATION;LOCATION;Dangerous",
-        "ACCESS_MEDIA_LOCATION;READ_MEDIA_VISUAL;Dangerous",
-        "ACTIVITY_RECOGNITION;ACTIVITY_RECOGNITION;Dangerous",
-        "ADD_VOICEMAIL;PHONE;Dangerous",
-        "ANSWER_PHONE_CALLS;PHONE;Dangerous",
-        "BLUETOOTH_ADVERTISE;NEARBY_DEVICES;Dangerous",
-        "ACCEPT_HANDOVER;PHONE;Dangerous",
-        "BLUETOOTH_CONNECT;NEARBY_DEVICES;Dangerous",
-        "BLUETOOTH_SCAN;NEARBY_DEVICES;Dangerous",
-        "BODY_SENSORS;SENSORS;Dangerous",
-        "BODY_SENSORS_BACKGROUND;SENSORS;Dangerous",
-        "CALL_PHONE;PHONE;Dangerous",
-        "UNINSTALL_SHORTCUT;-;Normal",
-        "REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE;-;Normal",
-        "REQUEST_COMPANION_PROFILE_AUTOMOTIVE_PROJECTION;-;Internal",
-        "CAMERA;CAMERA;Dangerous",
-        "GET_ACCOUNTS;CONTACTS;Dangerous",
-        "POST_NOTIFICATIONS;NOTIFICATIONS;Dangerous",
-        "READ_CALENDAR;CALENDAR;Dangerous",
-        "READ_MEDIA_IMAGES;READ_MEDIA_VISUAL;Dangerous",
-        "READ_MEDIA_AUDIO;READ_MEDIA_AURAL;Dangerous",
-        "READ_CALL_LOG;CALL_LOG;Dangerous",
-        "READ_EXTERNAL_STORAGE;STORAGE;Dangerous",
-        "NEARBY_WIFI_DEVICES;NEARBY_DEVICES;Dangerous",
-        "READ_CONTACTS;CONTACTS;Dangerous",
-        "READ_MEDIA_VIDEO;READ_MEDIA_VISUAL;Dangerous",
-        "READ_PHONE_NUMBERS;PHONE;Dangerous",
-        "READ_PHONE_STATE;PHONE;Dangerous",
-        "READ_SMS;SMS;Dangerous",
-        "RECEIVE_MMS;SMS;Dangerous",
-        "RECEIVE_SMS;SMS;Dangerous",
-        "RECEIVE_WAP_PUSH;SMS;Dangerous",
-        "RECORD_AUDIO;MICROPHONE;Dangerous",
-        "SEND_SMS;SMS;Dangerous",
-        "UWB_RANGING;NEARBY_DEVICES;Dangerous",
-        "WRITE_CALL_LOG;CALL_LOG;Dangerous",
-        "WRITE_CALENDAR;CALENDAR;Dangerous",
-        "WRITE_EXTERNAL_STORAGE;STORAGE;Dangerous",
-        "WRITE_CONTACTS;CONTACTS;Dangerous",
-        "USE_SIP;PHONE;Dangerous",
-        "ACCESS_LOCATION_EXTRA_COMMANDS;-;Normal",
-        "ACCESS_NETWORK_STATE;-;Normal",
-        "ACCESS_NOTIFICATION_POLICY;-;Normal",
-        "ACCESS_WIFI_STATE;-;Normal",
-        "BLUETOOTH;-;Normal",
-        "BLUETOOTH_ADMIN;-;Normal",
-        "BROADCAST_STICKY;-;Normal",
-        "CALL_COMPANION_APP;-;Normal",
-        "CHANGE_NETWORK_STATE;-;Normal",
-        "CHANGE_WIFI_MULTICAST_STATE;-;Normal",
-        "CHANGE_WIFI_STATE;-;Normal",
-        "DISABLE_KEYGUARD;-;Normal",
-        "EXPAND_STATUS_BAR;-;Normal",
-        "GET_PACKAGE_SIZE;-;Normal",
-        "INSTALL_SHORTCUT;-;Normal",
-        "INTERNET;-;Normal",
-        "KILL_BACKGROUND_PROCESSES;-;Normal",
-        "HIGH_SAMPLING_RATE_SENSORS;-;Normal",
-        "MANAGE_OWN_CALLS;-;Normal",
-        "MODIFY_AUDIO_SETTINGS;-;Normal",
-        "NFC;-;Normal",
-        "NFC_TRANSACTION_EVENT;-;Normal",
-        "READ_SYNC_SETTINGS;-;Normal",
-        "RECEIVE_BOOT_COMPLETED;-;Normal",
-        "READ_SYNC_STATS;-;Normal",
-        "FOREGROUND_SERVICE;-;Normal",
-        "NFC_PREFERRED_PAYMENT_INFO;-;Normal",
-        "QUERY_ALL_PACKAGES;-;Normal",
-        "REQUEST_COMPANION_PROFILE_WATCH;-;Normal",
-        "REORDER_TASKS;-;Normal",
-        "REQUEST_COMPANION_RUN_IN_BACKGROUND;-;Normal",
-        "REQUEST_COMPANION_USE_DATA_IN_BACKGROUND;-;Normal",
-        "REQUEST_DELETE_PACKAGES;-;Normal",
-        "REQUEST_IGNORE_BATTERY_OPTIMIZATIONS;-;Normal",
-        "REQUEST_PASSWORD_COMPLEXITY;-;Normal",
-        "REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND;-;Normal",
-        "SET_ALARM;-;Normal",
-        "SET_WALLPAPER;-;Normal",
-        "SET_WALLPAPER_HINTS;-;Normal",
-        "TRANSMIT_IR;-;Normal",
-        "UPDATE_PACKAGES_WITHOUT_USER_ACTION;-;Normal",
-        "USE_BIOMETRIC;-;Normal",
-        "USE_FULL_SCREEN_INTENT;-;Normal",
-        "VIBRATE;-;Normal",
-        "WAKE_LOCK;-;Normal",
-        "WRITE_SYNC_SETTINGS;-;Normal",
-        "REQUEST_INSTALL_PACKAGES;-;Signature",
-        "MANAGE_EXTERNAL_STORAGE;-;Signature",
-        "SCHEDULE_EXACT_ALARM;-;Normal",
-        "SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE;-;Internal",
-        "SYSTEM_ALERT_WINDOW;-;Signature",
-    ]
-
+    # Abrimos el fichero csv de datos y obtenemos una matriz con los datos de los permisos
+    def __init__(self):
+        self.permisos = []
+        ruta_csv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "./Permisos.csv")
+        with open(ruta_csv) as file:
+            csv_reader = csv.DictReader(file, delimiter=';')
+            for row in csv_reader:
+                permiso = row['Permiso']
+                grupo = row['Grupo']
+                protection = row['Protection']
+                self.permisos.append([permiso, grupo, protection])
+    # Obtenemos una lista con todos los permisos
     def getPermisos(self):
         listaPermisos = []
-        for permiso in self.PERMISOS:
-            info = permiso.split(sep=";")
-            listaPermisos.append(info[0])
+        for permiso in self.permisos:
+            listaPermisos.append(permiso[0][permiso[0].rfind('.')+1::1])
         return listaPermisos
-
+    # Obtenemos una lista con todos los permisos cuyo protection level sea normal
     def getPermisosNormales(self):
-        Normales = ""
-        for permiso in self.PERMISOS:
-            permiso = permiso.split(sep=";")
+        normales = []
+        for permiso in self.permisos:
             if permiso[2] == "Normal":
-                Normales += permiso[0]+"\n"
-        return Normales
-    def getPermisosdangerous(self):
-        dangerous = ""
-        for permiso in self.PERMISOS:
-            permiso = permiso.split(sep=";")
+                normales.append(permiso[0][permiso[0].rfind('.')+1::1])
+        return normales
+    # Obtenemos una lista con todos los permisos cuyo protection level sea dangerous
+    def getPermisosDangerous(self):
+        dangerous = []
+        for permiso in self.permisos:
             if permiso[2] == "Dangerous":
-                dangerous += permiso[0]+"\n"
+                dangerous.append(permiso[0][permiso[0].rfind('.')+1::1])
         return dangerous
-
+    # Obtenemos una lista con todos los permisos cuyo protection level sea signature
     def getPermisosSignature(self):
-        signature = ""
-        for permiso in self.PERMISOS:
-            permiso = permiso.split(sep=";")
+        signature = []
+        for permiso in self.permisos:
             if permiso[2] == "Signature":
-                signature += permiso[0]+"\n"
+                signature.append(permiso[0][permiso[0].rfind('.')+1::1])
         return signature
+    # Obtenemos el grupo asociado a un permiso
     def getGrupo(self, permiso):
-        for perm in self.PERMISOS:
-            perm = perm.split(sep=";")
-            if perm[0] == permiso:
+        for perm in self.permisos:
+            if perm[0][perm[0].rfind('.')+1::1] == permiso:
                 if perm[1] != "-":
-                    return perm[1]
+                    return perm[1][perm[1].rfind('.')+1::1]
                 else:
                     return "No pertenece a ningún grupo"
+    # Obtenemos el protection level asociado a un permiso
     def getProtection(self,permiso):
-        for perm in self.PERMISOS:
-            perm = perm.split(sep=";")
-            if perm[0] == permiso:
+        for perm in self.permisos:
+            if perm[0][perm[0].rfind('.')+1::1] == permiso:
                 return perm[2]
+    # Obtenemos el nombre completo del permiso dado
+    def getPermisoCompleto(self, permiso):
+        for perm in self.permisos:
+            if permiso in perm[0]:
+                return perm[0]
+    # Obtenemos el nombre completo del grupo dado
+    def getGrupoCompleto(self, grupo):
+        for perm in self.permisos:
+            if grupo in perm[1]:
+                return perm[1]

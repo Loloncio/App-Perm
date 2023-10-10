@@ -1,27 +1,38 @@
+# Clase GruposMod del modelo de datos de la aplicación App-perm.
+# Obtiene los datos de los grupos de permisos y sus permisos asociados
+# y permite acceder a estos datos.
+# Autor: Alejandro de la Cruz Garijo
+import csv
+import os
 class GruposMod:
-
-    GRUPOS = {
-        "PHONE":["ANSWER_PHONE_CALLS", "READ_PHONE_NUMBERS", "READ_PHONE_STATE", "CALL_PHONE", "ACCEPT_HANDOVER", "USE_SIP", "ADD_VOICEMAIL"],
-        "CONTACTS":["WRITE_CONTACTS", "GET_ACCOUNTS", "READ_CONTACTS"],
-        "CALL_LOG":["READ_CALL_LOG", "WRITE_CALL_LOG", "PROCESS_OUTGOING_CALLS"],
-        "READ_MEDIA_VISUAL":["READ_MEDIA_IMAGES", "READ_MEDIA_VIDEO", "ACCESS_MEDIA_LOCATION"],
-        "READ_MEDIA_AURAL":["READ_MEDIA_AUDIO"],
-        "CAR_INFORMATION":["No hay permisos"],
-        "ACTIVITY_RECOGNITION":["ACTIVITY_RECOGNITION"],
-        "UNDEFINED":["No hay permisos"],
-        "SENSORS":["BODY_SENSORS", "BODY_SENSORS_BACKGROUND"],
-        "STORAGE":["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
-        "NOTIFICATIONS":["POST_NOTIFICATIONS"],
-        "LOCATION":["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "ACCESS_BACKGROUND_LOCATION"],
-        "CALENDAR":["READ_CALENDAR", "WRITE_CALENDAR"],
-        "CAMERA":["CAMERA", "BACKGROUND_CAMERA"],
-        "MICROPHONE":["RECORD_BACKGROUND_AUDIO", "RECORD_AUDIO"],
-        "NEARBY_DEVICES":["NEARBY_WIFI_DEVICES", "BLUETOOTH_CONNECT", "BLUETOOTH_ADVERTISE", "UWB_RANGING", "BLUETOOTH_SCAN"],
-        "SMS":["READ_SMS", "RECEIVE_WAP_PUSH", "RECEIVE_MMS", "RECEIVE_SMS", "SEND_SMS", "READ_CELL_BROADCASTS"]
-    }
-
+    # Abrimos el csv con los datos y creamos un diccionario con los grupos como clave y
+    # una lista de sus permsios como valor
+    def __init__(self):
+        self.grupos = {}
+        ruta_csv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "./Permisos.csv")
+        with open(ruta_csv) as file:
+            csv_reader = csv.DictReader(file, delimiter=';')
+            for row in csv_reader:
+                permiso = row['Permiso']
+                grupo = row['Grupo']
+                if grupo in self.grupos:
+                    self.grupos[grupo].append(permiso)
+                else:
+                    self.grupos.update({grupo:[permiso]})
+    # Obtenemos todas las claves del diccionario, es decir, los grupos
     def getGrupos(self):
-        return self.GRUPOS.keys()
-
+        grupos = self.grupos.keys()
+        lista = []
+        for key in grupos:
+            lista.append(key[key.rfind('.')+1::1])
+        return lista
+    # Obtenemos todos los permisos de un grupo
     def getPermisos(self, grupo):
-        return self.GRUPOS.get(grupo)
+        permisos = self.grupos.get(self.getGrupoCompleto(grupo))
+        lista = [permiso[permiso.rfind('.')+1::1] for permiso in permisos]
+        return lista
+    # Obtenemos el nombre completo de un grupo dado
+    def getGrupoCompleto(self, grupo):
+        for group in self.grupos.keys():
+            if grupo in group:
+                return group

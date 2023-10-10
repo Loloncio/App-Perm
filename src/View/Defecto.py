@@ -128,7 +128,7 @@ class defecto(ctk.CTkToplevel):
             label.configure(text=self.controlador.getPermisosNormales())
         elif protection == "Dangerous":
             label.configure(text=self.controlador.getPermisosDangerous())
-        elif protection == "Dangerous":
+        elif protection == "Signature":
             label.configure(text=self.controlador.getPermisosSignature())
         return
     # Método para que cambie de color un widget al pasar el ratón por encima

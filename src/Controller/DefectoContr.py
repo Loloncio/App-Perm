@@ -35,13 +35,25 @@ class ControladorDef:
         return texto
     # Obtenemos todos los permisos normales
     def getPermisosNormales(self):
-        return self.modeloPermisos.getPermisosNormales()
+        permisos = self.modeloPermisos.getPermisosNormales()
+        lista = ""
+        for permiso in permisos:
+            lista += permiso+"\n"
+        return lista
     # Obtenemos todos los permisos dangerous
     def getPermisosDangerous(self):
-        return self.modeloPermisos.getPermisosDangerous()
+        permisos = self.modeloPermisos.getPermisosDangerous()
+        lista = ""
+        for permiso in permisos:
+            lista += permiso+"\n"
+        return lista
     # Obtenemos todos los permisos signatures
     def getPermisosSignature(self):
-        return self.modeloPermisos.getPermisosSignature()
+        permisos = self.modeloPermisos.getPermisosSignature()
+        lista = ""
+        for permiso in permisos:
+            lista += permiso+"\n"
+        return lista
     # Método para vovler al menú principal
     def volver(self, vistaDefecto, vistaMenu):
         vistaMenu.deiconify()
