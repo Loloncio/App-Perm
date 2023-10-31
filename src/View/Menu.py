@@ -87,7 +87,7 @@ class mainWindow(ctk.CTkFrame):
         self.controlador.aListas(self, 5)
         return
     def verDispositivo(self):
-        print("Ver dispositivo")
+        self.controlador.aADB(self.parent)
         return
     def appsFirmadas(self):
         print("Apps firmadas")

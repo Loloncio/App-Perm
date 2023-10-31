@@ -8,6 +8,7 @@ sys.path.append(PROJECT_ROOT)
 from View.Defecto import defecto
 from View.Listas import listas
 from View.Final import final
+from View.ADB import adb
 
 class ControladorMenu:
     def aDefecto(self, ventanaPrincipal):
@@ -19,6 +20,7 @@ class ControladorMenu:
     def aFirmadas(self, ventanaPrincipal):
         return
     def aADB(self, ventanaPrincipal):
+        adb(ventanaPrincipal)
         return
     def aAyuda(self, ventanaPrincipal):
         return
