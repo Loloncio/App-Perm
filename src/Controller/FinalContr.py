@@ -1,7 +1,6 @@
 import sys
 import os
 import subprocess
-import subprocess
 import platform
 PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
@@ -17,7 +16,7 @@ class FinalContr():
     # el permiso y el grupo de permisos los ha elegido el usuario.
     def creaManifestGrupo(self,permiso, grupos):
         nuevoGrupo = '\n<permission\
-            \nandroid:name="android.permission.'+self.modeloPermisos.getPermisoCompleto(permiso)+\
+            \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+\
             '"\nandroid:protectionLevel="'+self.modeloPermisos.getProtection(permiso).lower()+\
             '"\nandroid:permissionGroup="'+self.modeloPermisos.getGrupoCompleto(grupos[0])+'"/>'\
             '\n<uses-permission android:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"/>'
@@ -28,10 +27,10 @@ class FinalContr():
     # y el protection level los ha elegido el usuario.
     def creaManifestProtection(self, permiso, protection):
         nuevoProtection = '\n<permission\
-            \nandroid:name="android.permission.'+permiso+\
+            \nandroid:name="'+permiso+\
             '"\nandroid:protectionLevel="'+protection.lower()+\
-            '"\nandroid:permissionGroup="android.permission-group.'+self.modeloPermisos.getGrupo(permiso)+'"/>'\
-            '\n<uses-permission android:name="android.permission.'+permiso+'"/>'
+            '"\nandroid:permissionGroup="'+self.modeloPermisos.getGrupo(permiso)+'"/>'\
+            '\n<uses-permission android:'+permiso+'"/>'
         manifest = self.modeloManifest.getManifest1+nuevoProtection+self.modeloManifest.getManifest2
         self.modeloManifest.setManifest(manifest)
         return
@@ -42,7 +41,7 @@ class FinalContr():
             \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"'\
             '\nandroid:protectionLevel="'+self.modeloPermisos.getProtection(permiso).lower()+'"'\
             '\nandroid:permissionGroup="'+self.modeloPermisos.getGrupoCompleto(grupos[0])+'","'+self.modeloPermisos.getGrupoCompleto(grupos[1])+'"/>'\
-            '\n<uses-permission android:name="android.permission.'+permiso+'"/>'
+            '\n<uses-permission android:name="'+permiso+'"/>'
         manifest = self.modeloManifest.getManifest1()+nuevoGrupo+self.modeloManifest.getManifest2()
         self.modeloManifest.setManifest(manifest)
         return
@@ -62,7 +61,7 @@ class FinalContr():
             print(e)
             return
         rutaProyecto = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm")
-        comando = f"{rutaProyecto}/gradlew assembleDebug"
+        comando = f"{rutaProyecto}/gradlew.bat assembleDebug"
         subprocess.run(comando, shell=True, cwd=rutaProyecto)
         return
     # Abre en el explorador la ruta al archivo apk, funciona en Windows y Linux

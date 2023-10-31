@@ -46,7 +46,7 @@ class PresenterPermisos constructor() {
     // Funcion que ibtiene una lista de todos los permisos declarados en el Manifest
     fun getPermisos(): Array<String> {
         // Obtener información sobre una aplicación específica por su nombre de paquete
-        val packageInfo = view.packageManager.getPackageInfo("com.example.tfg", PackageManager.PackageInfoFlags.of(
+        val packageInfo = view.packageManager.getPackageInfo("com.example.appPerm", PackageManager.PackageInfoFlags.of(
             GET_PERMISSIONS.toLong()
         ))
 

@@ -35,11 +35,16 @@ class ListasContr():
             else:
                 final(parent, opcion, permiso, grupos, protection)
         elif opcion == 2:
-            return "OK"
+            if grupos[0] == self.modeloPermisos.getGrupo(permiso):
+                return "El permiso ya pertenece a ese grupo"+grupos[0]
+            elif grupos[1] == self.modeloPermisos.getGrupo(permiso):
+                return "El permiso ya pertenece al grupo"+grupos[1]
+            else:
+                final(parent, opcion, permiso, grupos, protection)
         elif opcion == 3:
             if protection == self.modeloPermisos.getProtection(permiso):
                 return "El permiso ya tiene ese protection level"
             else:
-                return "OK"
+                final(parent, opcion, permiso, grupos, protection)
         else:
-            return "OK"
+            final(parent, opcion, permiso, grupos, protection)

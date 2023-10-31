@@ -66,11 +66,11 @@ class final(ctk.CTkToplevel):
         permiso = str(permiso)
         if self.opt == 1:
             grupos = list(grupos)
-            self.creaManifestGrupos(permiso, grupos)
+            self.creaManifestGrupo(permiso, grupos)
             thread.start()
         elif self.opt == 2:
             grupos = list(grupos)
-            self.creaManifestGrupos(permiso, grupos)
+            self.creaManifestGrupo(permiso, grupos)
             thread.start()
         elif self.opt == 3:
             protection = str(protection)
@@ -97,7 +97,7 @@ class final(ctk.CTkToplevel):
         self.parent.aMenu()
         self.destroy()
     # Le pedimos al controlador que cree un Manifest para modificar el grupo de un permiso
-    def creaManifestGrupos(self, permisso, grupos):
+    def creaManifestGrupo(self, permisso, grupos):
         if(self.opt == 2):
             self.controlador.creaManifestGrupos(permisso, grupos)
         else:
