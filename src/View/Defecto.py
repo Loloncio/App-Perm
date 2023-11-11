@@ -138,6 +138,9 @@ class defecto(ctk.CTkToplevel):
     def onExit(self,event, permiso):
         permiso.configure(fg_color = "#504F4F")
 
+    def instalaApp(self):
+        self.controlador.isntalaApp()
+
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
     def ajustarTamanos(self, event, frames, scrolls, labels):
         anchoVentana = self.winfo_width()

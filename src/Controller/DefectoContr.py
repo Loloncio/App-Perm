@@ -1,6 +1,7 @@
 # Controlador para la vista Defecto de la app App-Perm
 # Autor: Alejandro de la Cruz Garijo
 import os
+import subprocess
 import sys
 
 PROJECT_ROOT = os.path.abspath(os.path.join(
@@ -61,3 +62,9 @@ class ControladorDef:
     # Método para cerrar del todo la app al pulsar en cerrar
     def cerrar(self, vistMenu):
         vistMenu.destroy()
+    # Instalación de la app App-Perm en dispositivo adb conectado
+    def isntalaApp():
+        ruta_apk = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/App-Perm/App-Perm.apk")
+        ruta_adb = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/Sdk/platform-tools/adb")
+        comando = f'{ruta_adb} install "{ruta_apk}"'
+        subprocess.run(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)

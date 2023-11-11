@@ -10,7 +10,7 @@ sys.path.append(PROJECT_ROOT)
 class ControladorADB:
     def ejecutar(self):
         ruta_adb = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/Sdk/platform-tools/adb")
-        comando = f'{ruta_adb} shell pm list permissions'
+        comando = f'{ruta_adb} shell pm list permissions -g'
 
         resultado = subprocess.run(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         salida = []

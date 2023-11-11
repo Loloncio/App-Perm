@@ -126,7 +126,7 @@ class final(ctk.CTkToplevel):
         if salida[1] != "":
             self.resultado.configure(text = salida[1], text_color="red")
         else:
-            self.resultado.configure(text = salida[0])
+            self.resultado.configure(text = salida[0], text_color="white")
     # Recargamos el icono de carga rotado para que de el efecto de que gira
     def draw(self, canvas):
         imagePath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../assets/cargando.png")

@@ -50,33 +50,20 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 
 ## TODO
 
-1. Menu.py: Métodos funcionales para todos los botones (Faltan los dos últimos)
-2. Defecto.py
-	<ul>
-		<li>Añadir boton para ir a vista final</li>
-	</ul>
-3. Listas.py
-	<ul>
-		<li>Si estamos en las opciones 2 a 5, no funciona el botón confirmar</li>
-	</ul>
-4. Final.py
+1. Final.py
 	<ul>
 		<li>Arreglar bug por el cual a veces no se muestra nada hasta que no se ha compilado el apk</li>
 		<li>Aquí podría ir un emulador android o un botón para abrir uno si fuese posible</li>
 	</ul>
-5. Firmadas.py
+2. Firmadas.py
 	<ul>
-		<li>Mostrará opciones para hacer con apps firmadas</li>
-		<li>Comprobar si se conceden permisos dangerous a 2 apps firmadas con mismo certificado</li>
-		<li>Comprobar si se conceden permisos signature a 2 apps firmadas con mismo certificado</li>
-		<li>Comprobar que solo se conceden permisos signature a apps con el mismo dertificado</li>
+		<li> Mostrar mensaje de exito o error al instalar las apps </li>
+		<li> Mostrar mensaje del resultado de comprobar la firma de las apks</li>
+		<li> Compilar las apks firmadas </li>
 	</ul>
-6. ADB.py
+3. Ayuda.py
 	<ul>
-		<li>Mostrará todos los permisos del dispositivo conectado, de forma similar a Defecto.py</li>
+		<li> Añadir textos explicando casa sección </li>
+		<li> Añadir imágenes para acompañar el texto de cada sección </li>
 	</ul>
-5. DefectoContr.py
-	<ul>
-		<li>Permitirá ir a la vista Final</li>
-	</ul>
-6. Emulador Android incluido?
+4. Emulador Android incluido?

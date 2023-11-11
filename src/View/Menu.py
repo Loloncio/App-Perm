@@ -90,11 +90,10 @@ class mainWindow(ctk.CTkFrame):
         self.controlador.aADB(self.parent)
         return
     def appsFirmadas(self):
-        print("Apps firmadas")
+        self.controlador.aFirmadas(self.parent)
         return
     def ayuda(self):
         self.controlador.aAyuda(self.parent)
-        print("ayuda")
         return
 
 if __name__ == "__main__":

@@ -67,7 +67,7 @@ class adb(ctk.CTkToplevel):
     def ejecutar(self, texto):
         mensaje = self.controlador.ejecutar()
         if mensaje[1] == "":
-            texto.configure(text=mensaje[0], anchor="nw")
+            texto.configure(text=mensaje[0], anchor="w", text_color="white")
         else:
             texto.configure(text=mensaje[1], text_color="red")
 
