@@ -63,8 +63,11 @@ class ControladorDef:
     def cerrar(self, vistMenu):
         vistMenu.destroy()
     # Instalación de la app App-Perm en dispositivo adb conectado
-    def isntalaApp():
-        ruta_apk = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/App-Perm/App-Perm.apk")
+    def isntalaApp(self):
+        ruta_apk = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/App-Perm.apk")
         ruta_adb = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/Sdk/platform-tools/adb")
         comando = f'{ruta_adb} install "{ruta_apk}"'
-        subprocess.run(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        resultado = subprocess.run(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+
+        print("Salida: ", resultado.stdout)
+        print("Error: ", resultado.stderr)

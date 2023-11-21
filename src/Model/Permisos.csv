@@ -1,4 +1,7 @@
 Permiso;Grupo;Protection
+appperm.permission.TEST_PERMISSION1;;Dangerous
+appperm.permission.TEST_PERMISSION2;appperm.permission-group.TEST_GROUP;Normal
+appperm.permission.TEST_PERMISSION3;appperm.permission-group.TEST_GROUP1;Signature
 android.permission.DELIVER_COMPANION_MESSAGES;;Normal
 android.permission.HIDE_OVERLAY_WINDOWS;;Normal
 android.permission.READ_ASSISTANT_APP_SEARCH_DATA;;Internal

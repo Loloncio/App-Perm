@@ -27,11 +27,11 @@ class FinalContr():
     # y el protection level los ha elegido el usuario.
     def creaManifestProtection(self, permiso, protection):
         nuevoProtection = '\n<permission\
-            \nandroid:name="'+permiso+\
+            \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+\
             '"\nandroid:protectionLevel="'+protection.lower()+\
             '"\nandroid:permissionGroup="'+self.modeloPermisos.getGrupo(permiso)+'"/>'\
-            '\n<uses-permission android:'+permiso+'"/>'
-        manifest = self.modeloManifest.getManifest1+nuevoProtection+self.modeloManifest.getManifest2
+            '\n<uses-permission android:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"/>'
+        manifest = self.modeloManifest.getManifest1()+nuevoProtection+self.modeloManifest.getManifest2()
         self.modeloManifest.setManifest(manifest)
         return
     # Creamos un permiso para el manifest que tendrá un unico permiso, dos grupo y  un protectionLevel
@@ -41,7 +41,7 @@ class FinalContr():
             \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"'\
             '\nandroid:protectionLevel="'+self.modeloPermisos.getProtection(permiso).lower()+'"'\
             '\nandroid:permissionGroup="'+self.modeloPermisos.getGrupoCompleto(grupos[0])+'","'+self.modeloPermisos.getGrupoCompleto(grupos[1])+'"/>'\
-            '\n<uses-permission android:name="'+permiso+'"/>'
+            '\n<uses-permission android:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"/>'
         manifest = self.modeloManifest.getManifest1()+nuevoGrupo+self.modeloManifest.getManifest2()
         self.modeloManifest.setManifest(manifest)
         return
@@ -61,9 +61,10 @@ class FinalContr():
             print(e)
             return
         rutaProyecto = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm")
-        comando = f"{rutaProyecto}/gradlew.bat assembleDebug"
-        subprocess.run(comando, shell=True, cwd=rutaProyecto)
-        return
+        comando = f"{rutaProyecto}/gradlew.bat assembleDebug --stacktrace"
+        resultado = subprocess.run(comando, shell=True, cwd=rutaProyecto, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        
+        return resultado
     # Abre en el explorador la ruta al archivo apk, funciona en Windows y Linux
     def abrirExplorador(self):
         ruta = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/App-Perm/app/build/outputs/apk/debug")

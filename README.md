@@ -55,15 +55,9 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 		<li>Arreglar bug por el cual a veces no se muestra nada hasta que no se ha compilado el apk</li>
 		<li>Aquí podría ir un emulador android o un botón para abrir uno si fuese posible</li>
 	</ul>
-2. Firmadas.py
-	<ul>
-		<li> Mostrar mensaje de exito o error al instalar las apps </li>
-		<li> Mostrar mensaje del resultado de comprobar la firma de las apks</li>
-		<li> Compilar las apks firmadas </li>
-	</ul>
-3. Ayuda.py
+2. Ayuda.py
 	<ul>
 		<li> Añadir textos explicando casa sección </li>
 		<li> Añadir imágenes para acompañar el texto de cada sección </li>
 	</ul>
-4. Emulador Android incluido?
+3. Emulador Android incluido?

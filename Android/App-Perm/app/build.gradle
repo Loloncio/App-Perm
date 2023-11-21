@@ -8,7 +8,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId 'com.example.appPerm'
+        applicationId 'com.example.appPermDang'
         minSdk 33
         targetSdk 33
         versionCode 1

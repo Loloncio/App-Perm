@@ -35,6 +35,7 @@ class defecto(ctk.CTkToplevel):
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
         self.title("Permisos y grupos por defecto")
+        self.controlador.isntalaApp()
 
         # Declaración e inicialización de variables
         frames, scrolls, permisos, grupos, protection, labels = [], [], [], [], [], []
