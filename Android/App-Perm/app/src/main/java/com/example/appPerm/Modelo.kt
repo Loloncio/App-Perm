@@ -5,6 +5,7 @@ import android.content.pm.PermissionGroupInfo
 
 class Modelo constructor() {
     private var permisos = arrayOf(
+        "appperm.permission.TEST_PERMISSION3",
         Manifest.permission.ACCEPT_HANDOVER,
         Manifest.permission.ACCESS_COARSE_LOCATION,
         Manifest.permission.ACCESS_FINE_LOCATION,

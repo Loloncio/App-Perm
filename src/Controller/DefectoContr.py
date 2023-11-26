@@ -11,7 +11,7 @@ sys.path.append(PROJECT_ROOT)
 from Model.GruposMod import GruposMod
 from Model.PermisosMod import PermisosMod
 
-class ControladorDef:
+class DefectoContr():
     # Cargamos los modelos de datos necesarios
     modeloGrupos = GruposMod()
     modeloPermisos = PermisosMod()

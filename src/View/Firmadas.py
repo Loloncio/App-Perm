@@ -10,7 +10,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.FirmadasContr import FirmadasContr
 
-class firmadas(ctk.CTkToplevel):
+class Firmadas(ctk.CTkToplevel):
 
     HEIGHT = 720
     WIDTH = 1280

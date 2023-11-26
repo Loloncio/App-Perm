@@ -17,14 +17,14 @@ sys.path.append(PROJECT_ROOT)
 
 import tkinter as tk
 import customtkinter as ctk
-from Controller.DefectoContr import ControladorDef
+from Controller.DefectoContr import DefectoContr
 
-class defecto(ctk.CTkToplevel):
+class Defecto(ctk.CTkToplevel):
     # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
     # la opción que se ha seleccionado y una etiqueta de errores
     HEIGHT = 720
     WIDTH = 1280
-    controlador = ControladorDef()
+    controlador = DefectoContr()
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent

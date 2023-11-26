@@ -14,7 +14,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.ListasContr import ListasContr
 
-class listas(ctk.CTkToplevel):
+class Listas(ctk.CTkToplevel):
     # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
     # la opción que se ha seleccionado y una etiqueta de errores
     PERMISO = ""

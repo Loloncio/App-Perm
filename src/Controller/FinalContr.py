@@ -47,23 +47,12 @@ class FinalContr():
         return
     # Crea un archivo AndroidManifest.xml y se compila el apk con ese Manifest
     def compilar(self):
-        manifest = self.modeloManifest.getManifest()
-        rutaManifest = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm/app/src/main/AndroidManifest.xml")
-        try:
-            with open(rutaManifest, "w") as salida:
-                for linea in manifest:
-                    salida.write(linea)
-        except FileNotFoundError:
-            print("No existe el archivo")
-            return
-        except Exception as e:
-            print("Se ha producido un error", end=" ")
-            print(e)
-            return
+        self.modeloManifest.creaManifest()
+
         rutaProyecto = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm")
         comando = f"{rutaProyecto}/gradlew.bat assembleDebug --stacktrace"
         resultado = subprocess.run(comando, shell=True, cwd=rutaProyecto, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        
+
         return resultado
     # Abre en el explorador la ruta al archivo apk, funciona en Windows y Linux
     def abrirExplorador(self):

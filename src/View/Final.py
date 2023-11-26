@@ -14,7 +14,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.FinalContr import FinalContr
 
-class final(ctk.CTkToplevel):
+class Final(ctk.CTkToplevel):
     DONE = False
     realizando = None
     controlador = FinalContr()

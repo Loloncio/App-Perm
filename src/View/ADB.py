@@ -8,14 +8,14 @@ sys.path.append(PROJECT_ROOT)
 
 import tkinter as tk
 import customtkinter as ctk
-from Controller.ADBContr import ControladorADB
+from Controller.ADBContr import ADBContr
 
-class adb(ctk.CTkToplevel):
+class ADB(ctk.CTkToplevel):
     # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
     # la opción que se ha seleccionado y una etiqueta de errores
     HEIGHT = 720
     WIDTH = 1280
-    controlador = ControladorADB()
+    controlador = ADBContr()
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent

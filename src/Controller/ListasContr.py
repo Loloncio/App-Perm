@@ -9,7 +9,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Model.GruposMod import GruposMod
 from Model.PermisosMod import PermisosMod
-from View.Final import final
+from View.Final import Final
 
 class ListasContr():
     modeloPermisos = PermisosMod()
@@ -33,18 +33,18 @@ class ListasContr():
             if grupos[0] == self.modeloPermisos.getGrupo(permiso):
                 return "El permiso ya pertenece a ese grupo"
             else:
-                final(parent, opcion, permiso, grupos, protection)
+                Final(parent, opcion, permiso, grupos, protection)
         elif opcion == 2:
             if grupos[0] == self.modeloPermisos.getGrupo(permiso):
                 return "El permiso ya pertenece a ese grupo"+grupos[0]
             elif grupos[1] == self.modeloPermisos.getGrupo(permiso):
                 return "El permiso ya pertenece al grupo"+grupos[1]
             else:
-                final(parent, opcion, permiso, grupos, protection)
+                Final(parent, opcion, permiso, grupos, protection)
         elif opcion == 3:
             if protection == self.modeloPermisos.getProtection(permiso):
                 return "El permiso ya tiene ese protection level"
             else:
-                final(parent, opcion, permiso, grupos, protection)
+                Final(parent, opcion, permiso, grupos, protection)
         else:
-            final(parent, opcion, permiso, grupos, protection)
+            Final(parent, opcion, permiso, grupos, protection)

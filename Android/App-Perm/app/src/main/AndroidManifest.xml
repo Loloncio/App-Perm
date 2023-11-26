@@ -7,13 +7,11 @@ android:required="false" />
 <uses-feature
 android:name="android.hardware.telephony"
 android:required="false" />
-
-    <permission android:name="appperm.permission.TEST_PERMISSION3"
-        android:description="@string/descripción_prueba1"
-        android:protectionLevel="dangerous"/>
-
-    <uses-permission android:name="appperm.permission.TEST_PERMISSION3"/>
-
+<permission            
+android:name="android.permission.READ_HOME_APP_SEARCH_DATA"
+android:protectionLevel="internal"
+android:permissionGroup="android.permission-group.NEARBY_DEVICES"/>
+<uses-permission android:name="android.permission.READ_HOME_APP_SEARCH_DATA"/>
 <application
  android:allowBackup="true"
  android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,13 +20,16 @@ android:required="false" />
  android:label="@string/app_name"
  android:roundIcon="@mipmap/ic_launcher_round"
  android:supportsRtl="true"
- android:theme="@style/Theme.TFG">
+ android:theme="@style/Theme.AppPerm"> 
 <activity
 android:name=".RevocarPermisos"
 android:exported="false" /> 
 <activity
 android:name=".GruposNoSys"
-android:exported="false" />
+android:exported="false" /> 
+<activity
+android:name=".Phone"
+android:exported="false" /> 
 <activity
 android:name=".Grupos"
 android:exported="false" /> 

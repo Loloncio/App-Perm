@@ -10,7 +10,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.AyudaContr import AyudaContr
 
-class ayuda(ctk.CTkToplevel):
+class Ayuda(ctk.CTkToplevel):
     HEIGHT = 720
     WIDTH = 1280
     controlador = AyudaContr()

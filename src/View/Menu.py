@@ -13,10 +13,10 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
                os.pardir))
 sys.path.append(PROJECT_ROOT)
-from Controller.MenuContr import ControladorMenu
+from Controller.MenuContr import MenuContr
 
-class mainWindow(ctk.CTkFrame):
-    controlador = ControladorMenu()
+class Menu(ctk.CTkFrame):
+    controlador = MenuContr()
 
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
@@ -102,5 +102,5 @@ if __name__ == "__main__":
     root.geometry("1280x720")
     root.minsize(width=1280,height=720)
     root.title("App-Perm")
-    mainWindow(root).pack(side="top", fill="both", expand=True)
+    Menu(root).pack(side="top", fill="both", expand=True)
     root.mainloop()
