@@ -15,7 +15,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.MenuContr import MenuContr
 
-class Menu(ctk.CTkFrame):
+class VistaMenu(ctk.CTkFrame):
     controlador = MenuContr()
 
     def __init__(self, parent, *args, **kwargs):
@@ -102,5 +102,5 @@ if __name__ == "__main__":
     root.geometry("1280x720")
     root.minsize(width=1280,height=720)
     root.title("App-Perm")
-    Menu(root).pack(side="top", fill="both", expand=True)
+    VistaMenu(root).pack(side="top", fill="both", expand=True)
     root.mainloop()

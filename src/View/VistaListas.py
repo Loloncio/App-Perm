@@ -14,19 +14,17 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.ListasContr import ListasContr
 
-class Listas(ctk.CTkToplevel):
-    # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
-    # la opción que se ha seleccionado y una etiqueta de errores
-    PERMISO = ""
-    GRUPO = []
-    PROTECTION = ""
-    OPT = 0
-    ERRORES = None
-    HEIGHT = None
-    WIDTH = None
+class VistaListas(ctk.CTkToplevel):
     controlador = ListasContr()
     def __init__(self, parent, opt, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
+        self.permiso = ""
+        self.grupo = []
+        self.protection = ""
+        self.opt = 0
+        self.errores = None
+        self.height = 720
+        self.width = 1280
         self.parent = parent
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
@@ -35,8 +33,8 @@ class Listas(ctk.CTkToplevel):
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
         self.title("Modificar permisos")
-        self.OPT = int(opt)
-        self.GRUPO.clear()
+        self.opt = int(opt)
+        self.grupo.clear()
 
         # Variables necesarias
         listas, etiquetas, permisos, grupos, protection = [], [], [], [], []
@@ -93,13 +91,13 @@ class Listas(ctk.CTkToplevel):
                                 fg_color="#504F4F", text_color="white", height=50)
 
         # Creación de etiqueta para mostrar errores
-        self.ERRORES = ctk.CTkLabel(self,text_color="red", text = "", font= errorFont, corner_radius=10)
+        self.errores = ctk.CTkLabel(self,text_color="red", text = "", font= errorFont, corner_radius=10)
 
         # Desactivamos los checkboxes que no se puedan usar en el caso en el que estemos
-        if(self.OPT == 1 or self.OPT == 2 or self.OPT == 4 or self.OPT == 5):
+        if(self.opt == 1 or self.opt == 2 or self.opt == 4 or self.opt == 5):
             for checkbox in protection:
                 checkbox.configure(state="disabled")
-        elif self.OPT == 3:
+        elif self.opt == 3:
             for checkbox in grupos:
                 checkbox.configure(state="disabled")
 
@@ -134,54 +132,54 @@ class Listas(ctk.CTkToplevel):
         self.destroy()
 
     def confirmar(self):
-        if self.PERMISO == "":
-            self.ERRORES.configure(text="Debes seleccionar un permiso.")
-            self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
+        if self.permiso == "":
+            self.errores.configure(text="Debes seleccionar un permiso.")
+            self.errores.grid(row = 2, column = 1, padx=3, pady=3)
             return
-        if self.OPT == 1:
-            if len(self.GRUPO) != 1:
-                self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
-                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
+        if self.opt == 1:
+            if len(self.grupo) != 1:
+                self.errores.configure(text="Debes seleccionar un grupo de permisos.")
+                self.errores.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
-        elif self.OPT == 2:
-            if len(self.GRUPO) != 2:
-                self.ERRORES.configure(text="Debes seleccionar 2 grupos de permisos.")
-                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
+                error = self.controlador.aFinal(self,self.permiso,self.grupo,None, self.opt)
+        elif self.opt == 2:
+            if len(self.grupo) != 2:
+                self.errores.configure(text="Debes seleccionar 2 grupos de permisos.")
+                self.errores.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
-        elif self.OPT == 3:
-            if self.PROTECTION == "":
-                self.ERRORES.configure(text="Debes seleccionar un protection level.")
-                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
+                error = self.controlador.aFinal(self,self.permiso,self.grupo,None, self.opt)
+        elif self.opt == 3:
+            if self.protection == "":
+                self.errores.configure(text="Debes seleccionar un protection level.")
+                self.errores.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self,self.PERMISO,None,self.PROTECTION, self.OPT)
-        elif self.OPT == 4:
-            if len(self.GRUPO) != 1:
-                self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
-                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
+                error = self.controlador.aFinal(self,self.permiso,None,self.protection, self.opt)
+        elif self.opt == 4:
+            if len(self.grupo) != 1:
+                self.errores.configure(text="Debes seleccionar un grupo de permisos.")
+                self.errores.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
-        elif self.OPT == 5:
-            if len(self.GRUPO) != 1:
-                self.ERRORES.configure(text="Debes seleccionar un grupo de permisos.")
-                self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
+                error = self.controlador.aFinal(self,self.permiso,self.grupo,None, self.opt)
+        elif self.opt == 5:
+            if len(self.grupo) != 1:
+                self.errores.configure(text="Debes seleccionar un grupo de permisos.")
+                self.errores.grid(row = 2, column = 1, padx=3, pady=3)
                 return
             else:
-                error = self.controlador.aFinal(self,self.PERMISO,self.GRUPO,None, self.OPT)
+                error = self.controlador.aFinal(self,self.permiso,self.grupo,None, self.opt)
         if error != "OK":
-            self.ERRORES.configure(text=error)
-            self.ERRORES.grid(row = 2, column = 1, padx=3, pady=3)
+            self.errores.configure(text=error)
+            self.errores.grid(row = 2, column = 1, padx=3, pady=3)
         return
 
     def checkboxPermisos(self, check_var, permisos, textoPermisos):
         if(check_var.get()[0] != "!"):
             clickedCheckbox = permisos[textoPermisos.index(check_var.get()[4::])]
-            self.PERMISO = check_var.get()[4::]
+            self.permiso = check_var.get()[4::]
             for checkbox in permisos:
                 if checkbox != clickedCheckbox:
                     checkbox.deselect()
@@ -189,27 +187,27 @@ class Listas(ctk.CTkToplevel):
     def checkboxGrupo(self, check_var, grupos, textoGrupos):
         if(check_var.get()[0] != "!"):
             clickedCheckbox = grupos[textoGrupos.index(check_var.get())]
-            self.GRUPO.append(check_var.get())
-            if(self.OPT != 2):
-                if len(self.GRUPO) > 1:
-                    self.GRUPO.pop(0)
+            self.grupo.append(check_var.get())
+            if(self.opt != 2):
+                if len(self.grupo) > 1:
+                    self.grupo.pop(0)
                 for checkbox in grupos:
                     if checkbox != clickedCheckbox:
                         checkbox.deselect()
-            elif len(self.GRUPO) > 2:
-                self.GRUPO.pop(0)
+            elif len(self.grupo) > 2:
+                self.grupo.pop(0)
                 for checkbox in grupos:
-                    if checkbox != grupos[textoGrupos.index(self.GRUPO[0])] and checkbox != grupos[textoGrupos.index(self.GRUPO[1])]:
+                    if checkbox != grupos[textoGrupos.index(self.grupo[0])] and checkbox != grupos[textoGrupos.index(self.grupo[1])]:
                         checkbox.deselect()
-        elif self.OPT != 2:
-            self.GRUPO.clear()
+        elif self.opt != 2:
+            self.grupo.clear()
         else:
-            self.GRUPO.pop(self.GRUPO.index(check_var.get()[1::]))
+            self.grupo.pop(self.grupo.index(check_var.get()[1::]))
 
     def checkboxProtection(self, check_var, protection, textoProtection):
         if(check_var.get()[0] != "!"):
             clickedCheckbox = protection[textoProtection.index(check_var.get())]
-            self.PROTECTION = check_var.get()
+            self.protection = check_var.get()
             for checkbox in protection:
                 if checkbox != clickedCheckbox:
                     checkbox.deselect()
@@ -220,9 +218,9 @@ class Listas(ctk.CTkToplevel):
     def ajustarTamanos(self, event, etiquetas, listas, confirmacion, volver):
         anchoVentana = self.winfo_width()  # Ancho de la ventana
         altoVentana = self.winfo_height()  # Alto de la ventana
-        if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
-            self.HEIGHT = altoVentana
-            self.WIDTH = anchoVentana
+        if(self.height != altoVentana or self.width != anchoVentana):
+            self.height = altoVentana
+            self.width = anchoVentana
             for i, j in zip(etiquetas, listas):
                 i.configure(width=max(100, anchoVentana // 3 - 6))
                 j.configure(width=max(100, anchoVentana // 3 - 30))

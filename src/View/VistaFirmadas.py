@@ -10,14 +10,13 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.FirmadasContr import FirmadasContr
 
-class Firmadas(ctk.CTkToplevel):
-
-    HEIGHT = 720
-    WIDTH = 1280
+class VistaFirmadas(ctk.CTkToplevel):
     controlador = FirmadasContr()
 
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
+        self.height = 720
+        self.width = 1280
         self.parent = parent
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
@@ -34,9 +33,9 @@ class Firmadas(ctk.CTkToplevel):
 
         titulo = ctk.CTkLabel(self, text="Apps firmadas", text_color="white", font=tittleFont, pady=40)
 
-        frameBotonesUp = ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.WIDTH-10, height=40);
-        frameBotonesDown = ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.WIDTH-10, height=40);
-        frameSalida = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,width = ((self.WIDTH)-40),height=self.HEIGHT-300);
+        frameBotonesUp = ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.width-10, height=40);
+        frameBotonesDown = ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.width-10, height=40);
+        frameSalida = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,width = ((self.width)-40),height=self.height-300);
         self.salida = ctk.CTkLabel(frameSalida, text="", text_color="white", font=infoFont, pady=60)
         # Creación del botón para volver al menu principal
         instDang = ctk.CTkButton(frameBotonesUp, command=self.instalaDangerous, text="Instalar apps firmadas dangerous", font=buttonFont, corner_radius=10,
@@ -60,7 +59,7 @@ class Firmadas(ctk.CTkToplevel):
         self.salida.pack()
         frameBotonesDown.pack(fill="x")
         volver.grid(column = 0, row = 0,pady= 10, padx=20, sticky="W")
-        testFirma.grid(column = 1, row = 0,pady= 10,padx=self.WIDTH-380, sticky="E")
+        testFirma.grid(column = 1, row = 0,pady= 10,padx=self.width-380, sticky="E")
 
     # Método para cerrar toda la app al pulsar la x
     def cerrar(self):
@@ -95,10 +94,10 @@ class Firmadas(ctk.CTkToplevel):
         altoVentana = self.winfo_height()
         # Si se ha generado un evento configure (como hacer scroll) pero no cambia el tamaño de pantalla,
         # no hacemos nada.
-        if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
-            self.HEIGHT = altoVentana
-            self.WIDTH = anchoVentana
-            textFrame.configure(width = ((self.WIDTH)-40),height=self.HEIGHT-300)
-            botonFirmas.grid(column = 1, row = 0,pady= 10, sticky="E",padx=self.WIDTH-380)
+        if(self.height != altoVentana or self.width != anchoVentana):
+            self.height = altoVentana
+            self.width = anchoVentana
+            textFrame.configure(width = ((self.width)-40),height=self.height-300)
+            botonFirmas.grid(column = 1, row = 0,pady= 10, sticky="E",padx=self.width-380)
             # Actualiza la ventana
             self.update_idletasks()

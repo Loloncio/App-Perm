@@ -19,14 +19,12 @@ import tkinter as tk
 import customtkinter as ctk
 from Controller.DefectoContr import DefectoContr
 
-class Defecto(ctk.CTkToplevel):
-    # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
-    # la opción que se ha seleccionado y una etiqueta de errores
-    HEIGHT = 720
-    WIDTH = 1280
+class VistaDefecto(ctk.CTkToplevel):
     controlador = DefectoContr()
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
+        self.height = 720
+        self.width = 1280
         self.parent = parent
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
@@ -53,19 +51,19 @@ class Defecto(ctk.CTkToplevel):
 
         # Creación de los frames base para cada lista
         for i in range(3):
-            frames.append(ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.WIDTH-10, height=self.HEIGHT/3-46))
+            frames.append(ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.width-10, height=self.height/3-46))
         # Creación de scrollFrames donde se vera la lista de botones y
         # frames donde podremos la información correspondiente al pulsar un boton
         for i in range(6):
-            scrolls.append(ctk.CTkScrollableFrame(master=frames[i%3],fg_color="#504F4F", corner_radius= 10,width = ((self.WIDTH/2)-40)))
+            scrolls.append(ctk.CTkScrollableFrame(master=frames[i%3],fg_color="#504F4F", corner_radius= 10,width = ((self.width/2)-40)))
         # Creación de los labels que se colocan a la derecha de las listas
         for i in range(3):
             labels.append(ctk.CTkLabel(scrolls[i+3], text="", text_color="white", fg_color="#504F4F",
-                                corner_radius=10, justify="center", font=rightFont,wraplength=((self.WIDTH/2)-45), height=self.HEIGHT/3-46))
+                                corner_radius=10, justify="center", font=rightFont,wraplength=((self.width/2)-45), height=self.height/3-46))
         # Creación de los botones para elegir permiso
         for i in textoPermisos:
             permiso = ctk.CTkLabel(scrolls[0], text=i, text_color="white", fg_color="#504F4F",
-                                          font=leftFont, corner_radius= 10, wraplength=self.WIDTH/2-20, justify= "center"
+                                          font=leftFont, corner_radius= 10, wraplength=self.width/2-20, justify= "center"
                                           )
             permiso.bind("<Button-1>",lambda event, permiso = i, label = labels[0]: self.permisoClick(self, permiso, label))
             permiso.bind("<Enter>", lambda event, permiso = permiso: self.onEnter(self, permiso))
@@ -148,9 +146,9 @@ class Defecto(ctk.CTkToplevel):
         altoVentana = self.winfo_height()
         # Si se ha generado un evento configure (como hacer scroll) pero no cambia el tamaño de pantalla,
         # no hacemos nada.
-        if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
-            self.HEIGHT = altoVentana
-            self.WIDTH = anchoVentana
+        if(self.height != altoVentana or self.width != anchoVentana):
+            self.height = altoVentana
+            self.width = anchoVentana
 
             for i in range(3):
                 frames[i].configure(width = anchoVentana-10,height=altoVentana/3-10)

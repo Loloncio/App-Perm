@@ -14,12 +14,12 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.FinalContr import FinalContr
 
-class Final(ctk.CTkToplevel):
-    DONE = False
-    realizando = None
+class VistaFinal(ctk.CTkToplevel):
     controlador = FinalContr()
     def __init__(self, parent, opt, permiso, grupos, protection, *args, **kwargs):
         super().__init__(parent.parent, *args, **kwargs)
+        self.done = False
+        self.realizando = None
         self.parent = parent
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
@@ -28,7 +28,7 @@ class Final(ctk.CTkToplevel):
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
         self.title("APK")
-        self.WIDTH=1280
+        self.width=1280
         # Fuentes que usaremos para los botones y etiquetas
         titleFont = ctk.CTkFont(family="Inter", size=30, weight="normal")
         textFont = ctk.CTkFont(family="Inter", size=20, weight="normal")
@@ -53,7 +53,7 @@ class Final(ctk.CTkToplevel):
         botonVolver = ctk.CTkButton(frameBotones, text="Menu", command = self.volver, font = textFont, fg_color="#D9D9D9",
                                 text_color="black", width=170, height=60)
         # Salida del botón instalar y mensaje con los requisitos para usarlo
-        frameSalida = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,width = ((self.WIDTH)-40),height=400);
+        frameSalida = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,width = ((self.width)-40),height=400);
         self.resultado = ctk.CTkLabel(frameSalida,text_color="white", text="Para usar el botón instalar debes tener conectado\
                                 un dispositivo con depuración USB habilitada y Android 13 o superior", font= textFont,
                                 wraplength=650)
@@ -117,12 +117,12 @@ class Final(ctk.CTkToplevel):
         self.DONE = True
         if resultado.returncode == 0:
             self.realizando.configure(text="APK compilado con éxito")
-            self.resultado.configure(text = resultado.stdout, text_color="white", wraplength = self.WIDTH-150)
+            self.resultado.configure(text = resultado.stdout, text_color="white", wraplength = self.width-150)
             botonAbrir.configure(state="normal")
             botonInstalar.configure(state="normal")
         else:
             self.realizando.configure(text="Error al compilar apk")
-            self.resultado.configure(text = resultado.stderr, text_color="red", wraplength = self.WIDTH-150)
+            self.resultado.configure(text = resultado.stderr, text_color="red", wraplength = self.width-150)
         canvas.destroy()
         return
     # Abrimos el explorador de archivos donde se encuentra el apk

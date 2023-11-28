@@ -4,7 +4,7 @@
 # Autor: Alejandro de la Cruz Garijo
 import csv
 import os
-class PermisosMod():
+class Permisos():
     # Abrimos el fichero csv de datos y obtenemos una matriz con los datos de los permisos
     def __init__(self):
         self.permisos = []

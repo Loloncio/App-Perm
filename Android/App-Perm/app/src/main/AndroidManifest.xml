@@ -8,10 +8,10 @@ android:required="false" />
 android:name="android.hardware.telephony"
 android:required="false" />
 <permission            
-android:name="android.permission.READ_HOME_APP_SEARCH_DATA"
-android:protectionLevel="internal"
-android:permissionGroup="android.permission-group.NEARBY_DEVICES"/>
-<uses-permission android:name="android.permission.READ_HOME_APP_SEARCH_DATA"/>
+android:name="android.permission.BLUETOOTH_CONNECT"
+android:protectionLevel="dangerous"
+android:permissionGroup="android.permission-group.ACTIVITY_RECOGNITION"/>
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
 <application
  android:allowBackup="true"
  android:dataExtractionRules="@xml/data_extraction_rules"

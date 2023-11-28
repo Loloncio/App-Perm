@@ -10,15 +10,13 @@ import tkinter as tk
 import customtkinter as ctk
 from Controller.ADBContr import ADBContr
 
-class ADB(ctk.CTkToplevel):
-    # Algunas variables globales para los parametros que pasaremos a la siguiente vista,
-    # la opción que se ha seleccionado y una etiqueta de errores
-    HEIGHT = 720
-    WIDTH = 1280
+class VistaADB(ctk.CTkToplevel):
     controlador = ADBContr()
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
+        self.height = 720
+        self.width = 1280
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
         self.parent.withdraw()
@@ -33,8 +31,8 @@ class ADB(ctk.CTkToplevel):
 
         titulo = ctk.CTkLabel(self, text="Permisos del dispositivo", text_color="white",
                                 corner_radius=10, justify="center", font=tittleFont, height=100)
-        frameTexto = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,width = self.WIDTH-40, height=self.HEIGHT-200)
-        frameInferior = ctk.CTkFrame(master=self, corner_radius=10, width = self.WIDTH-10, fg_color = "#1E1E1E", height=100)
+        frameTexto = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,width = self.width-40, height=self.height-200)
+        frameInferior = ctk.CTkFrame(master=self, corner_radius=10, width = self.width-10, fg_color = "#1E1E1E", height=100)
         volver = ctk.CTkButton(frameInferior, command=self.volver, text="Menu", font=textFont, corner_radius=10,
                                 fg_color="#504F4F", text_color="white", height=40)
         permisos = ctk.CTkLabel(frameTexto, text="", text_color="white", fg_color="#504F4F",
@@ -43,7 +41,7 @@ class ADB(ctk.CTkToplevel):
                                 self.ejecutar(texto)
                                 , text="Ejecutar adb", font=textFont, corner_radius=10,
                                 fg_color="#504F4F", text_color="white", height=40)
-        info = ctk.CTkLabel(frameInferior, corner_radius=10, justify="center", font=textFont, wraplength=self.WIDTH- 400,
+        info = ctk.CTkLabel(frameInferior, corner_radius=10, justify="center", font=textFont, wraplength=self.width- 400,
                             text="Conecta un dispositivo con depuración USB activada y pulsa el boton para ver los permisos disponibles en el dispositivo", text_color="white",
                             )
         titulo.pack()
@@ -75,9 +73,9 @@ class ADB(ctk.CTkToplevel):
     def ajustarTamanos(self, event, frame):
         anchoVentana = self.winfo_width()  # Ancho de la ventana
         altoVentana = self.winfo_height()  # Alto de la ventana
-        if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
-            self.HEIGHT = altoVentana
-            self.WIDTH = anchoVentana
-            frame.configure(width = self.WIDTH-40, height=self.HEIGHT-200)
+        if(self.height != altoVentana or self.width != anchoVentana):
+            self.height = altoVentana
+            self.width = anchoVentana
+            frame.configure(width = self.width-40, height=self.height-200)
             # Actualiza la ventana
             self.update_idletasks()

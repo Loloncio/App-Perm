@@ -10,14 +10,14 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Controller.AyudaContr import AyudaContr
 
-class Ayuda(ctk.CTkToplevel):
-    HEIGHT = 720
-    WIDTH = 1280
+class VistaAyuda(ctk.CTkToplevel):
     controlador = AyudaContr()
 
     def __init__(self, parent, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.parent = parent
+        self.height = 720
+        self.width = 1280
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
         self.parent.withdraw()
@@ -37,9 +37,9 @@ class Ayuda(ctk.CTkToplevel):
         textFont = ctk.CTkFont(family="Inter", size=20, weight="normal")
 
         titulo = ctk.CTkLabel(self, text="Apps firmadas", text_color="white", font=tittleFont, pady=20)
-        frameMain = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.WIDTH-10, height=self.HEIGHT-180);
+        frameMain = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.width-10, height=self.height-180);
         for i in range(4):
-            frameSeccion = ctk.CTkFrame(frameMain,fg_color="#D9D9D9", corner_radius= 10,width = ((self.WIDTH)-40),height=self.HEIGHT-300);
+            frameSeccion = ctk.CTkFrame(frameMain,fg_color="#D9D9D9", corner_radius= 10,width = ((self.width)-40),height=self.height-300);
             tituloSeccion = ctk.CTkLabel(frameSeccion, text=seccionesKeys[i], corner_radius= 10,text_color="black", font=sectionFont, pady=10, anchor="center")
             textoSeccion = ctk.CTkLabel(frameSeccion, text=secciones.get(seccionesKeys[i]), corner_radius= 10,text_color="black", font=textFont, pady=10)
             secciones[seccionesKeys[i]]=[frameSeccion, tituloSeccion, textoSeccion]
@@ -72,9 +72,9 @@ class Ayuda(ctk.CTkToplevel):
         altoVentana = self.winfo_height()
         # Si se ha generado un evento configure (como hacer scroll) pero no cambia el tamaño de pantalla,
         # no hacemos nada.
-        if(self.HEIGHT != altoVentana or self.WIDTH != anchoVentana):
-            self.HEIGHT = altoVentana
-            self.WIDTH = anchoVentana
-            mainFrame.configure(height=self.HEIGHT-180, width=self.WIDTH-10)
+        if(self.height != altoVentana or self.width != anchoVentana):
+            self.height = altoVentana
+            self.width = anchoVentana
+            mainFrame.configure(height=self.height-180, width=self.width-10)
             # Actualiza la ventana
             self.update_idletasks()

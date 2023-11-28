@@ -4,7 +4,7 @@
 # Autor: Alejandro de la Cruz Garijo
 import csv
 import os
-class GruposMod():
+class Grupos():
     # Abrimos el csv con los datos y creamos un diccionario con los grupos como clave y
     # una lista de sus permsios como valor
     def __init__(self):

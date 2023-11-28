@@ -8,13 +8,13 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
                os.pardir))
 sys.path.append(PROJECT_ROOT)
-from Model.GruposMod import GruposMod
-from Model.PermisosMod import PermisosMod
+from Model.Grupos import Grupos
+from Model.Permisos import Permisos
 
 class DefectoContr():
     # Cargamos los modelos de datos necesarios
-    modeloGrupos = GruposMod()
-    modeloPermisos = PermisosMod()
+    modeloGrupos = Grupos()
+    modeloPermisos = Permisos()
     # Obtenemos el nombre de todos los grupos
     def getGrupos(self):
         return self.modeloGrupos.getGrupos()

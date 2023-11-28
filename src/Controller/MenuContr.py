@@ -5,25 +5,25 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
                os.pardir))
 sys.path.append(PROJECT_ROOT)
-from View.Defecto import Defecto
-from View.Listas import Listas
-from View.ADB import ADB
-from View.Firmadas import Firmadas
-from View.Ayuda import Ayuda
+from View.VistaDefecto import VistaDefecto
+from View.VistaListas import VistaListas
+from View.VistaADB import VistaADB
+from View.VistaFirmadas import VistaFirmadas
+from View.VistaAyuda import VistaAyuda
 
 class MenuContr:
     def aDefecto(self, ventanaPrincipal):
-        Defecto(ventanaPrincipal)
+        VistaDefecto(ventanaPrincipal)
         return
     def aListas(self, ventanaMenu, opcion):
-        Listas(ventanaMenu.parent, opcion)
+        VistaListas(ventanaMenu.parent, opcion)
         return
     def aFirmadas(self, ventanaPrincipal):
-        Firmadas(ventanaPrincipal)
+        VistaFirmadas(ventanaPrincipal)
         return
     def aADB(self, ventanaPrincipal):
-        ADB(ventanaPrincipal)
+        VistaADB(ventanaPrincipal)
         return
     def aAyuda(self, ventanaPrincipal):
-        Ayuda(ventanaPrincipal)
+        VistaAyuda(ventanaPrincipal)
         return

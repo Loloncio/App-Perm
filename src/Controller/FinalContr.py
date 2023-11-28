@@ -6,12 +6,12 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
                os.pardir))
 sys.path.append(PROJECT_ROOT)
-from Model.ManifestMod import ManifestMod
-from Model.PermisosMod import PermisosMod
+from Model.Manifest import Manifest
+from Model.Permisos import Permisos
 
 class FinalContr():
-    modeloPermisos = PermisosMod()
-    modeloManifest = ManifestMod()
+    modeloPermisos = Permisos()
+    modeloManifest = Manifest()
     # Creamos un permiso para el manifest que tendrá un unico permiso, grupo y protectionLevel
     # el permiso y el grupo de permisos los ha elegido el usuario.
     def creaManifestGrupo(self,permiso, grupos):
