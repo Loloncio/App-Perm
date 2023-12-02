@@ -46,7 +46,7 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 
 * Ver los permisos y grupos del dispositivo: Se hará mediante adb, se manda el comando y se muestra el resultado en la aplicación, es decir, en este caso no haríamos nada de la app Android.
 
-* Pruebas con apps firmadas: En este caso se abrirá una pestaña similar al menu principal con más opciones sobre estas pruebas.
+* Pruebas con apps firmadas: En este caso se abrirá una pestaña similar al menu principal con más opciones sobre estas pruebas, instlar una app firmada con permisos dangerous o una con permisos signature y otra opción para comprobar que las firmas de las apks es la misma.
 
 ## TODO
 
@@ -55,9 +55,3 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 		<li>Arreglar bug por el cual a veces no se muestra nada hasta que no se ha compilado el apk</li>
 		<li>Aquí podría ir un emulador android o un botón para abrir uno si fuese posible</li>
 	</ul>
-2. Ayuda.py
-	<ul>
-		<li> Añadir textos explicando casa sección </li>
-		<li> Añadir imágenes para acompañar el texto de cada sección </li>
-	</ul>
-3. Emulador Android incluido?
