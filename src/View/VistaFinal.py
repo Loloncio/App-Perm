@@ -44,7 +44,7 @@ class VistaFinal(ctk.CTkToplevel):
         # Zona para poner botones de ir al menú, abrir la ubicación del apk o instalar el apk
         frameBotones = ctk.CTkFrame(self, fg_color="#1E1E1E")
         # Abre la ubicación del apk
-        botonAbrir = ctk.CTkButton(frameBotones, text = "Abrir ruta a apk", command = self.motrarApk,
+        botonAbrir = ctk.CTkButton(frameBotones, text = "Abrir ruta a apk", command = self.mostrarApk,
                                 font= textFont, fg_color="#D9D9D9", text_color="black",width = 170, height=60)
         # Instala el apk
         botonInstalar = ctk.CTkButton(frameBotones, text = "Instalar apk",command = self.instalaApk,
@@ -126,7 +126,7 @@ class VistaFinal(ctk.CTkToplevel):
         canvas.destroy()
         return
     # Abrimos el explorador de archivos donde se encuentra el apk
-    def motrarApk(self):
+    def mostrarApk(self):
         self.controlador.abrirExplorador()
     # Intentamos instalar el apk y mostramos el resultado
     def instalaApk(self):

@@ -211,9 +211,6 @@ class VistaListas(ctk.CTkToplevel):
             for checkbox in protection:
                 if checkbox != clickedCheckbox:
                     checkbox.deselect()
-    def aMenu(self):
-        self.parent.deiconify()
-        self.destroy()
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
     def ajustarTamanos(self, event, etiquetas, listas, confirmacion, volver):
         anchoVentana = self.winfo_width()  # Ancho de la ventana

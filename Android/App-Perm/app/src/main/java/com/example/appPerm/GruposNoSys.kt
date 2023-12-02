@@ -56,8 +56,6 @@ class GruposNoSys : AppCompatActivity() {
         }
         // Mostramos en los logs los grupos que tienen permisos y que permisos contiene.
         presenter.getPermissionsInGroups()
-        // Comprobamos los grupos creados por nosotros
-        presenter.compruebaCamara()
     }
 
     // Método para que funcione el botón de vuelta al menu

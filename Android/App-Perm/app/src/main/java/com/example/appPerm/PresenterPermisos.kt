@@ -22,14 +22,13 @@ import java.nio.charset.Charset
 
 class PresenterPermisos constructor() {
 
-    private lateinit var modelo: Modelo
     private lateinit var view: AppCompatActivity
-
+    private lateinit var permisosMod: PermisosMod
     private lateinit var permissions: Array<String>
 
     constructor(activity: AppCompatActivity) : this() {
         this.view = activity
-        modelo = Modelo(view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA))
+        permisosMod = PermisosMod()
     }
 
     //Boton para volver al menu principal de la app
@@ -45,17 +44,7 @@ class PresenterPermisos constructor() {
 
     // Funcion que ibtiene una lista de todos los permisos declarados en el Manifest
     fun getPermisos(): Array<String> {
-        // Obtener información sobre una aplicación específica por su nombre de paquete
-        val packageInfo = view.packageManager.getPackageInfo("com.example.appPermDang", PackageManager.PackageInfoFlags.of(
-            GET_PERMISSIONS.toLong()
-        ))
-
-        if (packageInfo.requestedPermissions != null) {
-            permissions = packageInfo.requestedPermissions
-        } else {
-            Log.w("Permisos", "Permisos es null")
-        }
-        return permissions
+        return permisosMod.getPermisos("com.example.appPermDang",view)
     }
 
     //Obtenemos información de un permiso

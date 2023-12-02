@@ -9,12 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 
 class PresenterRevocarPermisos constructor() {
 
-    private lateinit var modelo: Modelo
     private lateinit var view: AppCompatActivity
 
     constructor(activity: AppCompatActivity) : this() {
         this.view = activity
-        modelo = Modelo(view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA))
     }
 
     // Vamos a los ajustes de la app

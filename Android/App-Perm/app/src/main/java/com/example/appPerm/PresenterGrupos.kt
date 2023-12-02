@@ -22,13 +22,11 @@ import java.nio.charset.Charset
 
 class PresenterGrupos constructor() {
 
-    private lateinit var modelo: Modelo
     private lateinit var view: AppCompatActivity
     private lateinit var grupos: List<PermissionGroupInfo>
 
     constructor(activity: AppCompatActivity) : this() {
         this.view = activity
-        modelo = Modelo(view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA))
         grupos = view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA)
     }
 
@@ -44,7 +42,7 @@ class PresenterGrupos constructor() {
     }
 
     // Esta función crea una lista con todos los grupos de permisos y la devuelve
-    fun getGrupos(listaGrupos: ListView): MutableList<String> {
+    fun getGrupos(): MutableList<String> {
         grupos = view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA)
         // Obtenemos solo el nombre de los grupos
         var nombreGrupos: MutableList<String> = mutableListOf()

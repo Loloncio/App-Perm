@@ -1,6 +1,7 @@
 # Autor: Alejandro de la Cruz Garijo
 import tkinter as tk
 import customtkinter as ctk
+from PIL import Image, ImageTk
 import os
 import sys
 
@@ -24,41 +25,44 @@ class VistaAyuda(ctk.CTkToplevel):
         self.geometry("1280x720")
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
-        self.title("Apps firmadas")
+        self.title("Ayuda")
 
-        secciones = {"Permisos según la web":"En esta sección..."
-                     ,"Modificación de permisos":"x",
-                     "Permisos del dispositivo":"x",
-                     "Aplicaciones firmadas":"x"}
-        seccionesKeys = list(secciones.keys())
-        # Fuente que usaremos en esta vista
-        tittleFont = ctk.CTkFont(family="Inter", size=40, weight="normal")
-        sectionFont = ctk.CTkFont(family="Inter", size=25, weight="normal")
-        textFont = ctk.CTkFont(family="Inter", size=20, weight="normal")
+        # Fuente que se usará en la app, tamaños para título y texto
+        tittleFont = ctk.CTkFont(family="Inter", size=40, weight="bold")
+        headerFont = ctk.CTkFont(family="Inter", size=25, weight="bold")
+        textFont = ctk.CTkFont(family="Inter", size=15, weight="normal")
 
-        titulo = ctk.CTkLabel(self, text="Apps firmadas", text_color="white", font=tittleFont, pady=20)
-        frameMain = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.width-10, height=self.height-180);
-        for i in range(4):
-            frameSeccion = ctk.CTkFrame(frameMain,fg_color="#D9D9D9", corner_radius= 10,width = ((self.width)-40),height=self.height-300);
-            tituloSeccion = ctk.CTkLabel(frameSeccion, text=seccionesKeys[i], corner_radius= 10,text_color="black", font=sectionFont, pady=10, anchor="center")
-            textoSeccion = ctk.CTkLabel(frameSeccion, text=secciones.get(seccionesKeys[i]), corner_radius= 10,text_color="black", font=textFont, pady=10)
-            secciones[seccionesKeys[i]]=[frameSeccion, tituloSeccion, textoSeccion]
+        titulo = ctk.CTkLabel(self, text="Ayuda", text_color="white", font=tittleFont, pady=40)
+        frameMain = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,
+                                           width = ((self.width)-40), height=(self.height-200));
 
-        # Creación del botón para volver al menu principal
+        elementos = self.controlador.getTutorial()
+        labels = []
+        images = []
+        for elemento in elementos:
+            tipo = elemento[1]
+            if tipo == 1:
+                labels.append(ctk.CTkLabel(frameMain, text=elemento[0], text_color="white", font=textFont,
+                                           wraplength=self.width-50, anchor="w", justify="left"))
+                labels[-1].pack(fill="x")
+            elif tipo == 2:
+                labels.append(ctk.CTkLabel(frameMain, text=elemento[0], text_color="white", font=headerFont,
+                                           wraplength=self.width-50, anchor="w", justify="left"))
+                labels[-1].pack(fill="x")
+            elif tipo == 3:
+                imagePath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../assets/"+elemento[0][:-1:])
+                my_image = ctk.CTkImage(light_image=Image.open(imagePath),
+                                  size=(711, 400))
+                images.append(my_image)
+                ctk.CTkLabel(frameMain, image=my_image, text="").pack()
+                continue
+
+        titulo.pack()
+        frameMain.pack(padx=10)
         volver = ctk.CTkButton(self, command=self.volver, text="Volver", font=textFont, corner_radius=10,
                                 fg_color="#D9D9D9", text_color="black", height=40)
-        titulo.pack()
-        frameMain.pack(pady=10)
-        for i in range(4):
-            print(seccionesKeys[i])
-            elementos = secciones.get(seccionesKeys[i])
-            elementos[0].pack(fill="x", padx=20, pady=10)
-            elementos[1].grid(column=0,row = 0, pady=5,padx=5,sticky="we")
-            elementos[2].grid(column=0,row=1, padx=5, sticky="nw")
-        volver.pack(padx=10,pady=10,side="left")
-        # Cuando se modifique el tamaño de la ventana se llama al método que reajusta los elementos
-        self.bind("<Configure>", lambda event, self=self, mainFrame=frameMain:
-            self.ajustarTamanos(self,mainFrame))
+        volver.pack(anchor = "w", side="left", padx = 10, pady = 10)
+        self.bind("<Configure>", lambda event, self=self, mainFrame=frameMain, labels = labels, imagenes = images: self.ajustarTamanos(self,mainFrame, labels, imagenes))
 
     # Método para cerrar toda la app al pulsar la x
     def cerrar(self):
@@ -67,14 +71,22 @@ class VistaAyuda(ctk.CTkToplevel):
     def volver(self):
         self.controlador.volver(self, self.parent)
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
-    def ajustarTamanos(self, event, mainFrame):
+    def ajustarTamanos(self, event, mainFrame, labels, images):
         anchoVentana = self.winfo_width()
         altoVentana = self.winfo_height()
+        print("ancho: ", anchoVentana)
+        print("alto: ", altoVentana)
         # Si se ha generado un evento configure (como hacer scroll) pero no cambia el tamaño de pantalla,
         # no hacemos nada.
         if(self.height != altoVentana or self.width != anchoVentana):
             self.height = altoVentana
             self.width = anchoVentana
-            mainFrame.configure(height=self.height-180, width=self.width-10)
+            mainFrame.configure(height=self.height-300, width=self.width-40)
+            for label in labels:
+                label.configure(wraplength=self.width-50)
+            for imagen in images:
+                h = self.height-320
+                w = h*1.77777
+                imagen.configure(size = (w, h))
             # Actualiza la ventana
             self.update_idletasks()

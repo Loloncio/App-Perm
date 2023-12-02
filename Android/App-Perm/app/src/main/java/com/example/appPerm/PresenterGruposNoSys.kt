@@ -17,13 +17,11 @@ import java.nio.charset.Charset
 
 class PresenterGruposNoSys constructor() {
 
-    private lateinit var modelo: Modelo
     private lateinit var view: AppCompatActivity
     private lateinit var grupos: List<PermissionGroupInfo>
 
     constructor(activity: AppCompatActivity) : this() {
         this.view = activity
-        modelo = Modelo(view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA))
         // Obtenemos una lista con todos los grupos que existen en la app
         grupos = view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA)
     }
@@ -72,24 +70,6 @@ class PresenterGruposNoSys constructor() {
             }
         }
         return info
-    }
-
-    // Comprueba los grupos creados por nosotros
-    fun compruebaCamara() {
-        val permissions = view.packageManager.getInstalledPackages(PackageManager.GET_PERMISSIONS)
-            .flatMap { it.requestedPermissions?.toList() ?: emptyList() }.distinct()
-
-        // Filtrar los permisos que pertenecen al grupo "tfg.prueba.MIXTOS"
-        val mixtosPermissions = permissions.filter { permission ->
-            try {
-                val permissionInfo = view.packageManager.getPermissionInfo(permission, 0)
-                permissionInfo.group == "tfg.prueba.MIXTOS"
-            } catch (e: PackageManager.NameNotFoundException) {
-                false
-            }
-        }
-        // Imprimir los permisos que pertenecen al grupo "tfg.prueba.MIXTOS"
-        Log.i("MIXTOS", "Permisos en MIXTOS: $mixtosPermissions")
     }
 
     //Muestra información de todos los permisos de todos los grupos.

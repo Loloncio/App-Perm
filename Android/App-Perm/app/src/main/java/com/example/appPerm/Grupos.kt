@@ -25,7 +25,7 @@ class Grupos : AppCompatActivity() {
         grupoView = findViewById(R.id.PermissionsInGroup)
 
         //Obtenemos una lista con el nombre de todos los grupos y la mostramos en la lista
-        val nombreGrupos: MutableList<String> = presenter.getGrupos(listaGrupos)
+        val nombreGrupos: MutableList<String> = presenter.getGrupos()
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, nombreGrupos)
         listaGrupos.adapter = adapter
 

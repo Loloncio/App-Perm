@@ -1,0 +1,64 @@
+<Introducción
+Esta ayuda tiene como objetivo mostrar el funcionamiento de la aplicació App-Perm, la cual tiene como objetivo poder dar respuesta a las siguientes preguntas sobre los permisos y grupos de permisos de Android:
+1. ¿Existe alg ́un permiso de tipo “dangerous” que no pertenezca a ningú grupo de permisos?
+2. ¿Quéocurre si declaramos permisos y los asignamos a sus grupos de forma manual?
+3. ¿Qué ocurre si declaramos permisos y los asignamos a un grupo que no es el suyo por defecto?
+4. ¿A qué grupo asigna el sistema operativo los permisos, al declarado en el fichero AndroidManifest.xml o al predefinido por Google?
+5. ¿Puede un permiso estar en más de un grupo a la vez?
+6. Dado un grupo de permisos, ¿es posible obtener qué permisos forman el grupo?
+7. ¿A qué protection level asigna el sistema operativo los permisos, al declarado en el fichero Manifest.xml o al predefinido por Google?
+8. ¿Es posible asociar un permiso que no sea de tipo dangerous a un grupo de permisos?
+9. ¿En qué fichero define Android los grupos de permisos soportados? ¿Puede conocerse vía adb?
+10. ¿En qué fichero define Android los permisos soportados? ¿Puede conocerse vía adb?
+11. Si una app logra un permiso de tipo dangerous, ¿otra app firmada con el mismo certificado digital consigue automáticamente ese permiso (se lo concede el SO sin intervención del usuario)?
+12. Si una app logra un permiso de tipo signature, ¿otra app firmada con el mismo certificado digital consigue automáticamente ese permiso?
+Para responder estas preguntas, App-Perm cuenta con 8 opciones disponibles dispuestas en 2 filas de 4 como se ve en la siguiente imagen:
+>Ayuda/PC/Menu.png
+<Grupos y permisos por defecto
+Esta opción nos permite ver la información sobre los grupos de permisos y sus permisos según viene definida en la web de desarrolladores de Android.
+>Ayuda/PC/Defecto.png
+El objetivo de este botón es permitir ver de forma sencilla la información que Google proporciona sobre los permisos y grupos de permisos. Como vemos en la sigueinte imagén, tenemos 3 apartados, el primero contiene una lista de permisos en la cual podemos seleccionar uno y veremos su nombre, a que grupo pertenece y su protection level. El segundo apartado contiene una lista de grupos de permisos donde, si pulsamos en uno de los grupos, veremos los permisos que componen dicho grupo. Finalmente tenemos el tercer apartado que nos presenta los protection level más importantes y donde podemos ver que permisos cuentan con dicho protection level si pulsamos sobre alguno de ellos. Con esta opci ́on podemos ver todos los permisos dangerous y luego ir mirando uno a uno si pertencen a un grupo y vemos que asi es, todos los permisos dangerous pertencen a un grupo de permisos.
+Además de las funciones mencionadas, si se conecta un dispositivo con Android 13 o superior con depuración USB activada, se instalará la aplicación móvil App-Perm en el dispositivo. Con esta App podremos  contestar a las preguntas 1 y 6 y confirmar algunas de las afirmaciones que se har ́an al contestar el resto de preguntas.
+<Modificación de permisos
+En esta sección veremos la funcionalidad de los siguientes 5 botones: "Cambiar grupo de permisos", "Añadir un permiso a dos grupos", "Cambiar protection level", "Asignar permiso normal a un grupo" y "Asignar permiso signature a un grupo".
+Todos ellos tienen en común que crean un nuevo AndroidManifest con el cual luego creamos una apk que se puede instalar en el dispositivo para ver que ocurre. Será necesario usar Android Studio para realizar las comprobaciones y dar respuesta a las preguntas previamente indicadas.
+Cambiar grupo de permisos:
+>Ayuda/PC/OP1.png
+Como su nombre indica, esta opción nos permitirá cambiar el grupo de permisos de un permiso, para ello simplemente debemos seleccionar un permiso y el grupo al que queremos asignarlo, una vez hehco esto, pulsamos sobre siguiente y se nos mostrara una ventana en la cual se crea un AndroidManifest.xml con la configuración indicada y a continuación se compilará un apk con ese AndroidManifest que posteriormente podremos instalar o abrirlo en el explorador de archivos.
+>Ayuda/PC/Compilado exito.png
+En este punto el apk no es necesario pues si instalamos la app veremos que el permiso esta correctamente declarado y concedido si es de tipo normal pero su grupo no habrá cambiado, si abrimos el proyecto en Android Studio y editamos el AndroidManifest.xml veremos que nos da el error "<Permiso> is a reserved permission" que indica que no se pueden modificar los grupos de permisos por defecto.
+Añadir permiso a dos grupos:
+En esta sección, podemos probar que ocurre si añadimos un permiso a 2 grupos, para ello elegimos el permiso, 2 grupos y pulsamos en siguiente. Se nos mostrará la misma ventana de antes pero esta vez nos encontramos un error de compilación donde, al final, podemos ver una linea que dice que el elemento permission debe estar seguido de > o />, es decir, la etiqueta xml no esta cerrada, esto es porque no es posible añadir un permiso a dos grupos por lo que al intentarlo cometemos un error de sintaxis y da error.
+>Ayuda/PC/CompiladoError.png
+Cambiar protection level:
+Este botón nos permite probar que ocurre si intentamos cambiar el protection level de un permiso, en este caso, ya podemos acceder a la columna ``Protection level'' y debemos elegir uno de estos y un permiso al que intentaremos cambiar el protection level. Una vez pulsamos sobre siguiente vemos que esta vez no da fallos de compilación, sin embargo al ejecutar la app y ver este permiso, vemos que no ha surgido efecto el cambio.
+>Ayuda/PC/ProtectionLevel.png
+Si vovlemos a Android Studio y abrimos el Manifest, vemos que volvemos a tener el error que indica que es un permiso  reservado por lo que no puede modificarse y en la compilación simplemente se ingora la declaración del permiso.
+Asignar permiso normal a un grupo:
+En este caso, veremos una lista con los permisos normales y otra con los grupos, de nuevo debemos seleccionar uno de cada y al pulsar sigueinte se compilara el apk que, de nuevo, no dara errores, sin embargo, si entramos en Android Studio otra vez vemos que da un error porque es un permiso reservado.
+Asignar permiso signature a un grupo:
+Como antes, veremos una lista con los permisos signature y otra con los grupos, debemos seleccionar uno de cada y al pulsar siguiente se compilara el apk que no dara errores, sin embargo, si entramos en Android Studio otra vez vemos que da un error porque es un permiso reservado.
+Finalmente, repasemos las preguntas respondidas hasta ahora:
+1. Cambiar grupo de permisos: Con la primera opción, podemos responder las preguntas 2, 3 y 4 donde podemos decir que no ocurre nada pues no es posible cambiar los grupos de permisos reservados o por defecto y, por tanto, los permisos declarados en el manifest se asignan al grupo asignado por Google o el OEM que lo declarase.
+2. Añadir permiso a dos grupos: Con esta podemos responder a la pregunta 5 y la respuesta es que no es posible hacerlo, no existe la opción de que un permiso pertenezca a 2 grupos en Android.
+3. Cambiar protection level: Aquí respondemos a la pregunta 7 y la respuesta es la de antes, no es posible modificar permisos reservados, por tanto, se asigna el protection level asignado por Google o el OEM que lo declaro.
+4. Asignar permiso normal a un grupo y Asignar permiso signature a un grupo: Con estas opciones respondemos a la pregunta 8 donde vemos que, si no es un permiso reservado si, es posible asignarlo a un grupo aunque tenga protection level normal o signature.
+<Permisos del dispositivo
+En esta sección, podemos conectar un dispositivo Android con depuración USB activada y ver sus permisos y grupos de permisos mediante un comando de adb. Con esta funcionalidad, podemos contestar a las preguntas 9 y 10 de forma que si, es posible obtener mediante adb tanto los permisos como los grupos de permisos soportados.
+>Ayuda/PC/ADB.png
+En cuanto a la otra parte de la pregunta, no es posible acceder al fichero que contiene esa información, si podemos verlo en el github de AOSP (Android Open Source Project), pero al compilar Android, este fichero se integra en el código y no es posible acceder a el.
+<Aplicaciones firmadas
+Finalmente, tenemos este apartado en el cual tenemos 3 opciones, las 2 primeras se encuentran en la parte superior donde vemos que podemos "Instalar apps firmadas dangerous" o "Instalar apps firmadas signature".
+>Ayuda/PC/Firmadas.png
+La primera opción instala App-Perm y una aplicación que estéticamente y funcionalmente es igual pero que solo declara el permiso dangerous creado por App-Perm firmadas ambas con el mismo certificado. Si abrimos una de ellas, concedemos el permiso dangerous y luego abrimos la otra, vemos que no se ha concedido también a esta app el permiso, por tanto podemos responder a la pregunta 11 y decir que no, no se comparten permisos dangerous entre apps firmadas con el mismo certificado.
+La segunda opción instala App-Perm y otra app con misma funcionalidad y estética pero esta vez solocitando solo el permiso signature declarado por App-Perm.Si abrimos App-Perm, vemos que efectivamente tiene el permiso solicitado y lo mismo pasa en la otra app, por tanto, podemos responder a la pregunta 12 diciendo que si, si una app obtiene un permiso signature, otra firmada con ese mismo certificado obtiene el permiso automáticamente.
+Finalmente tenemos una opción que nos dará información del certificado usado para firmar las 3 apps que usamos en esta sección de forma que podemos ver que es el mismo certificado para las 3.
+<Aplicación móvil
+En esta aplicación podemos comprobar algunas de las cosas que se han dicho en los apartados anteriores obteniendo la información desde el propio dispositivo.
+>Ayuda/Phone/Inicio.jpg
+Tenemos 5 opciones, la opción "Permisos", nos permite ver una lista de los permisos declarados en el manifiesto de Android y obtener la información disponible sobre ellos, nombre, grupo y protection level.
+>Ayuda/Phone/permisos.jpg
+La opción "Solicitar permisos" nos permite solicitar los permisos dangerous de forma que al volver a entrar en la opción "Permisos", veremos que la información cambia y los permisos dangerous previamente no concedidos ahora si lo están. La última opción, es la de "Revocar permisos" la cual nos lleva a los ajustes de la app por si es necesario en algún momento revocar los permisos ya concedidos.
+La opción de "grupos", nos permite ver los grupos de permisos disponibles y que permisos forman su grupo. La sigueinte opción, "nosysgrupos" nos permite ver los grupos que vería un usuario del sistema donde tenemos todos los permisos dangerous en un grupo llamado "Undefined" y el resto vacios.
+>Ayuda/Phone/grupos.jpg
+La utilidad de la app es comprobar por ejemplo la información que tenemos en la ventana "Grupos y permisos por defecto" o para que podamos ver que los cambios realizados no surgen efecto o como funcionan los permisos con aplicaciones firmadas.

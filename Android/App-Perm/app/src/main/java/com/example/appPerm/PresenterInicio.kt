@@ -3,16 +3,15 @@ package com.example.appPerm
 import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 
 class PresenterInicio constructor() {
 
-    private lateinit var modelo: Modelo
+    private lateinit var permisosMod: PermisosMod
     private lateinit var view: AppCompatActivity
 
     constructor(activity: AppCompatActivity) : this() {
         this.view = activity
-        modelo = Modelo(view.packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA))
+        permisosMod = PermisosMod()
     }
     //Vamos a la actividad permisos
     fun toPermisos() {
@@ -36,6 +35,6 @@ class PresenterInicio constructor() {
     }
     //Solicitamos los permisos al usuario
     fun solicitaPermisos() {
-        view.requestPermissions(modelo.getPermisos(), 101)
+        view.requestPermissions(permisosMod.getPermisos(), 101)
     }
 }
