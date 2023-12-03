@@ -53,13 +53,26 @@ class FinalContr():
     def compilar(self):
         self.modeloManifest.creaManifest()
         rutaProyecto = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm")
-
+        ruta_archivo = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm/local.properties")
         if platform.system() == "Windows":
-            
             # Si estás en Windows
+            contenido = "sdk.dir=../../Android/SDK"
+            # Intentar abrir el archivo en modo escritura
+            try:
+                with open(ruta_archivo, 'w') as archivo:
+                    archivo.write(contenido)
+            except IOError as e:
+                print(f"Error al crear el archivo: {e}")
             comando = f"{rutaProyecto}/gradlew.bat assembleDebug --stacktrace"
         elif platform.system() == "Linux":
             # Si estás en Linux
+            contenido = "sdk.dir=../../Android/SDKLinux"
+            # Intentar abrir el archivo en modo escritura
+            try:
+                with open(ruta_archivo, 'w') as archivo:
+                    archivo.write(contenido)
+            except IOError as e:
+                print(f"Error al crear el archivo: {e}")
             comando = f"{rutaProyecto}/gradlew assembleDebug --stacktrace"
 
         resultado = subprocess.run(comando, shell=True, cwd=rutaProyecto, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
