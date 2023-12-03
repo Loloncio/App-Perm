@@ -44,7 +44,7 @@ class PresenterPermisos constructor() {
 
     // Funcion que ibtiene una lista de todos los permisos declarados en el Manifest
     fun getPermisos(): Array<String> {
-        return permisosMod.getPermisos("com.example.appPermDang",view)
+        return permisosMod.getPermisos("com.example.appPerm",view)
     }
 
     //Obtenemos información de un permiso

@@ -1,5 +1,6 @@
 import os
 import sys
+import subprocess
 
 PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
@@ -12,6 +13,10 @@ from View.VistaFirmadas import VistaFirmadas
 from View.VistaAyuda import VistaAyuda
 
 class MenuContr:
+    def iniciaADB(self):
+        ruta_adb = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/Sdk/platform-tools/adb")
+        comando = f'{ruta_adb} start-server'
+        subprocess.run(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     def aDefecto(self, ventanaPrincipal):
         VistaDefecto(ventanaPrincipal)
         return

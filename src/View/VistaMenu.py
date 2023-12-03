@@ -56,7 +56,7 @@ class VistaMenu(ctk.CTkFrame):
         ayuda = ctk.CTkButton(self, text="",image= imagenAyuda,command=self.ayuda, text_color="black", corner_radius=5,width=40, height=40, font=textFont, fg_color="#D9D9D9")
 
         # Colocación de los botones en el Frame para los botones
-        cont = 0;
+        cont = 0
         for i in range(0,2):
             for j in range(0,4):
                 botones[cont].grid(row=i, column=j, padx=30, pady=40)
@@ -66,6 +66,7 @@ class VistaMenu(ctk.CTkFrame):
         mainText.pack()
         gridBotones.pack()
         ayuda.pack(side="bottom", anchor="e",padx = 10, pady = 10)
+        self.controlador.iniciaADB()
 
     # Funciones para los botones
     def defecto(self):

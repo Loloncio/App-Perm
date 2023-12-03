@@ -114,7 +114,7 @@ class VistaFinal(ctk.CTkToplevel):
     def compila(self, canvas, botonAbrir, botonInstalar):
         self.realizando.configure(text="Compilando apk...")
         resultado =  self.controlador.compilar()
-        self.DONE = True
+        self.done= True
         if resultado.returncode == 0:
             self.realizando.configure(text="APK compilado con éxito")
             self.resultado.configure(text = resultado.stdout, text_color="white", wraplength = self.width-150)
@@ -141,7 +141,7 @@ class VistaFinal(ctk.CTkToplevel):
         image = Image.open(imagePath)
         image = image.resize([100,100])
         angle = 0
-        while not self.DONE:
+        while not self.done:
             tkimage = ImageTk.PhotoImage(image.rotate(angle))
             canvas_obj = canvas.create_image(50, 50
                 , image=tkimage)

@@ -40,7 +40,11 @@ class FinalContr():
         nuevoGrupo = '\n<permission\
             \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"'\
             '\nandroid:protectionLevel="'+self.modeloPermisos.getProtection(permiso).lower()+'"'\
-            '\nandroid:permissionGroup="'+self.modeloPermisos.getGrupoCompleto(grupos[0])+'","'+self.modeloPermisos.getGrupoCompleto(grupos[1])+'"/>'\
+            '\nandroid:permissionGroup="'+self.modeloPermisos.getGrupoCompleto(grupos[0])+'"/>'\
+            '\n<permission\
+            \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"'\
+            '\nandroid:protectionLevel="'+self.modeloPermisos.getProtection(permiso).lower()+'"'\
+            '\nandroid:permissionGroup="'+self.modeloPermisos.getGrupoCompleto(grupos[1])+'"/>'\
             '\n<uses-permission android:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"/>'
         manifest = self.modeloManifest.getManifest1()+nuevoGrupo+self.modeloManifest.getManifest2()
         self.modeloManifest.setManifest(manifest)
@@ -48,11 +52,17 @@ class FinalContr():
     # Crea un archivo AndroidManifest.xml y se compila el apk con ese Manifest
     def compilar(self):
         self.modeloManifest.creaManifest()
-
         rutaProyecto = os.path.join(os.path.dirname(os.path.abspath(__file__)),"../../Android/App-Perm")
-        comando = f"{rutaProyecto}/gradlew.bat assembleDebug --stacktrace"
-        resultado = subprocess.run(comando, shell=True, cwd=rutaProyecto, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
+        if platform.system() == "Windows":
+            
+            # Si estás en Windows
+            comando = f"{rutaProyecto}/gradlew.bat assembleDebug --stacktrace"
+        elif platform.system() == "Linux":
+            # Si estás en Linux
+            comando = f"{rutaProyecto}/gradlew assembleDebug --stacktrace"
+
+        resultado = subprocess.run(comando, shell=True, cwd=rutaProyecto, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         return resultado
     # Abre en el explorador la ruta al archivo apk, funciona en Windows y Linux
     def abrirExplorador(self):

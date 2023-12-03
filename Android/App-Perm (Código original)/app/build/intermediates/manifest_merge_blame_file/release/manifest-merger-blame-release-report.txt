@@ -1,0 +1,901 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.appPerm"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="33"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-feature
+11-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:4:1-6:28
+12        android:name="android.hardware.camera"
+12-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:5:1-39
+13        android:required="false" />
+13-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:6:1-25
+14    <uses-feature
+14-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:7:1-9:28
+15        android:name="android.hardware.telephony"
+15-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:8:1-42
+16        android:required="false" />
+16-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:9:1-25
+17
+18    <permission-group
+18-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:10:5-13:38
+19        android:name="appperm.permission-group.TEST_GROUP"
+19-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:11:9-59
+20        android:description="@string/descripcion_grupo_prueba"
+20-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:12:9-63
+21        android:label="TEST_GROUP" />
+21-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:13:9-35
+22    <permission-group
+22-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:14:5-17:38
+23        android:name="appperm.permission-group.TEST_GROUP1"
+23-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:15:9-60
+24        android:description="@string/descripcion_grupo_prueba"
+24-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:16:9-63
+25        android:label="TEST_GROUP" />
+25-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:17:9-35
+26
+27    <permission
+27-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:18:5-22:60
+28        android:name="appperm.permission.TEST_PERMISSION1"
+28-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:19:9-59
+29        android:description="@string/descripción_prueba1"
+29-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:22:9-58
+30        android:permissionGroup="appperm.permission-group.TEST_GROUP"
+30-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:21:9-70
+31        android:protectionLevel="normal" />
+31-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:20:9-41
+32    <permission
+32-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:23:5-26:60
+33        android:name="appperm.permission.TEST_PERMISSION2"
+33-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:24:9-59
+34        android:description="@string/descripción_prueba2"
+34-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:26:9-58
+35        android:protectionLevel="dangerous" />
+35-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:25:9-44
+36    <permission
+36-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:27:5-31:60
+37        android:name="appperm.permission.TEST_PERMISSION3"
+37-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:28:9-59
+38        android:description="@string/descripción_prueba3"
+38-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:31:9-58
+39        android:permissionGroup="appperm.permission-group.TEST_GROUP"
+39-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:30:9-70
+40        android:protectionLevel="signature" />
+40-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:29:9-44
+41
+42    <uses-permission android:name="appperm.permission.TEST_PERMISSION1" />
+42-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:33:5-74
+42-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:33:22-72
+43    <uses-permission android:name="appperm.permission.TEST_PERMISSION2" />
+43-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:34:5-74
+43-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:34:22-72
+44    <uses-permission android:name="appperm.permission.TEST_PERMISSION3" />
+44-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:35:5-74
+44-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:35:22-72
+45    <uses-permission android:name="android.permission.GET_PERMISSIONS" />
+45-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:36:5-74
+45-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:36:22-71
+46    <uses-permission android:name="android.permission.CAMERA" />
+46-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:37:5-65
+46-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:37:22-62
+47    <uses-permission android:name="android.permission.GET_PERMISSIONS" />
+47-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:36:5-74
+47-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:36:22-71
+48    <uses-permission android:name="android.permission.GET_PERMISSIONS_REVOKE_RESULT" />
+48-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:39:5-88
+48-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:39:22-85
+49    <uses-permission android:name="android.permission.GET_META_DATA" />
+49-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:40:5-72
+49-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:40:22-69
+50    <uses-permission android:name="android.permission.ACCEPT_HANDOVER" />
+50-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:41:5-74
+50-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:41:22-71
+51    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+51-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:42:5-85
+51-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:42:22-82
+52    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+52-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:43:5-81
+52-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:43:22-78
+53    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+53-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:44:5-79
+53-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:44:22-76
+54    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+54-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:45:5-80
+54-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:45:22-77
+55    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+55-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:46:5-79
+55-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:46:22-76
+56    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+56-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:47:5-86
+56-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:47:22-83
+57    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+57-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:48:5-77
+57-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:48:22-74
+58    <uses-permission android:name="android.permission.BIND_CREDENTIAL_PROVIDER_SERVICE" />
+58-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:49:5-91
+58-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:49:22-88
+59    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+59-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:50:5-78
+59-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:50:22-75
+60    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+60-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:51:5-76
+60-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:51:22-73
+61    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+61-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:52:5-73
+61-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:52:22-70
+62    <uses-permission android:name="android.permission.BODY_SENSORS" />
+62-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:53:5-71
+62-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:53:22-68
+63    <uses-permission android:name="android.permission.BODY_SENSORS_BACKGROUND" />
+63-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:54:5-82
+63-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:54:22-79
+64    <uses-permission android:name="android.permission.BROADCAST_STICK" />
+64-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:55:5-74
+64-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:55:22-71
+65    <uses-permission android:name="android.permission.CALL_PHONE" />
+65-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:56:5-69
+65-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:56:22-66
+66    <uses-permission android:name="android.permission.CREDENTIAL_MANAGER_SET_ORIGIN" />
+66-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:57:5-88
+66-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:57:22-85
+67    <uses-permission android:name="android.permission.DELIVER_COMPANION_MESSAGES" />
+67-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:58:5-85
+67-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:58:22-82
+68    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE" />
+68-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:59:5-80
+68-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:59:22-77
+69    <uses-permission android:name="android.permission.ENFORCE_UPDATE_OWNERSHIP" />
+69-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:60:5-83
+69-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:60:22-80
+70    <uses-permission android:name="android.permission.EXECUTE_APP_ACTION" />
+70-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:61:5-77
+70-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:61:22-74
+71    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+71-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:62:5-71
+71-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:62:22-68
+72    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+72-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:63:5-85
+72-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:63:22-82
+73    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+73-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:64:5-88
+73-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:64:22-85
+74    <uses-permission android:name="android.permission.LAUNCH_CAPTURE_CONTENT_ACTIVITY_FOR_NOTE" />
+74-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:65:5-99
+74-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:65:22-96
+75    <uses-permission android:name="android.permission.MANAGE_DEVICE_LOCK_STATE" />
+75-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:66:5-83
+75-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:66:22-80
+76    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_ACCESSIBILITY" />
+76-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:67:5-93
+76-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:67:22-90
+77    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_ACCOUNT_MANAGEMENT" />
+77-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:68:5-98
+77-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:68:22-95
+78    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_ACROSS_USERS" />
+78-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:69:5-92
+78-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:69:22-89
+79    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_ACROSS_USERS_FULL" />
+79-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:70:5-97
+79-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:70:22-94
+80    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_ACROSS_USERS_SECURITY_CRITICAL" />
+80-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:71:5-110
+80-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:71:22-107
+81    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_AIRPLANE_MODE" />
+81-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:72:5-93
+81-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:72:22-90
+82    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_APPS_CONTROL" />
+82-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:73:5-92
+82-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:73:22-89
+83    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_APP_RESTRICTIONS" />
+83-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:74:5-96
+83-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:74:22-93
+84    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_APP_USER_DATA" />
+84-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:75:5-93
+84-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:75:22-90
+85    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_AUDIO_OUTPUT" />
+85-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:76:5-92
+85-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:76:22-89
+86    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_AUTOFILL" />
+86-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:77:5-88
+86-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:77:22-85
+87    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_BACKUP_SERVICE" />
+87-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:78:5-94
+87-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:78:22-91
+88    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_BLUETOOTH" />
+88-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:79:5-89
+88-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:79:22-86
+89    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_BUGREPORT" />
+89-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:80:5-89
+89-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:80:22-86
+90    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_CALLS" />
+90-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:81:5-85
+90-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:81:22-82
+91    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_CAMERA" />
+91-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:82:5-86
+91-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:82:22-83
+92    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_CERTIFICATES" />
+92-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:83:5-92
+92-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:83:22-89
+93    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_COMMON_CRITERIA_MODE" />
+93-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:84:5-100
+93-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:84:22-97
+94    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_DEBUGGING_FEATURES" />
+94-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:85:5-98
+94-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:85:22-95
+95    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_DEFAULT_SMS" />
+95-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:86:5-91
+95-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:86:22-88
+96    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_DEVICE_IDENTIFIERS" />
+96-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:87:5-98
+96-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:87:22-95
+97    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_DISPLAY" />
+97-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:88:5-87
+97-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:88:22-84
+98    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_FACTORY_RESET" />
+98-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:89:5-93
+98-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:89:22-90
+99    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_FUN" />
+99-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:90:5-83
+99-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:90:22-80
+100    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_INPUT_METHODS" />
+100-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:91:5-93
+100-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:91:22-90
+101    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_INSTALL_UNKNOWN_SOURCES" />
+101-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:92:5-103
+101-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:92:22-100
+102    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_KEEP_UNINSTALLED_PACKAGES" />
+102-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:93:5-105
+102-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:93:22-102
+103    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_KEYGUARD" />
+103-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:94:5-88
+103-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:94:22-85
+104    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_LOCALE" />
+104-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:95:5-86
+104-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:95:22-83
+105    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_LOCATION" />
+105-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:96:5-88
+105-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:96:22-85
+106    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_LOCK" />
+106-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:97:5-84
+106-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:97:22-81
+107    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_LOCK_CREDENTIALS" />
+107-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:98:5-96
+107-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:98:22-93
+108    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_LOCK_TASK" />
+108-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:99:5-89
+108-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:99:22-86
+109    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_METERED_DATA" />
+109-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:100:5-92
+109-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:100:22-89
+110    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_MICROPHONE" />
+110-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:101:5-90
+110-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:101:22-87
+111    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_MOBILE_NETWORK" />
+111-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:102:5-94
+111-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:102:22-91
+112    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_MODIFY_USERS" />
+112-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:103:5-92
+112-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:103:22-89
+113    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_MTE" />
+113-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:104:5-83
+113-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:104:22-80
+114    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_NEARBY_COMMUNICATION" />
+114-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:105:5-100
+114-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:105:22-97
+115    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_NETWORK_LOGGING" />
+115-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:106:5-95
+115-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:106:22-92
+116    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_ORGANIZATION_IDENTITY" />
+116-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:107:5-101
+116-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:107:22-98
+117    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_OVERRIDE_APN" />
+117-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:108:5-92
+117-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:108:22-89
+118    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_PACKAGE_STATE" />
+118-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:109:5-93
+118-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:109:22-90
+119    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_PHYSICAL_MEDIA" />
+119-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:110:5-94
+119-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:110:22-91
+120    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_PRINTING" />
+120-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:111:5-88
+120-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:111:22-85
+121    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_PRIVATE_DNS" />
+121-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:112:5-91
+121-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:112:22-88
+122    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_PROFILES" />
+122-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:113:5-88
+122-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:113:22-85
+123    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_PROFILE_INTERACTION" />
+123-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:114:5-99
+123-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:114:22-96
+124    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_PROXY" />
+124-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:115:5-85
+124-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:115:22-82
+125    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_QUERY_SYSTEM_UPDATES" />
+125-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:116:5-100
+125-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:116:22-97
+126    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_RESET_PASSWORD" />
+126-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:117:5-94
+126-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:117:22-91
+127    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_RESTRICT_PRIVATE_DNS" />
+127-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:118:5-100
+127-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:118:22-97
+128    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_RUNTIME_PERMISSIONS" />
+128-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:119:5-99
+128-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:119:22-96
+129    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_RUN_IN_BACKGROUND" />
+129-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:120:5-97
+129-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:120:22-94
+130    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SAFE_BOOT" />
+130-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:121:5-89
+130-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:121:22-86
+131    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SCREEN_CAPTURE" />
+131-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:122:5-94
+131-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:122:22-91
+132    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SCREEN_CONTENT" />
+132-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:123:5-94
+132-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:123:22-91
+133    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SECURITY_LOGGING" />
+133-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:124:5-96
+133-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:124:22-93
+134    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SETTINGS" />
+134-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:125:5-88
+134-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:125:22-85
+135    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SMS" />
+135-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:126:5-83
+135-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:126:22-80
+136    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_STATUS_BAR" />
+136-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:127:5-90
+136-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:127:22-87
+137    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SUPPORT_MESSAGE" />
+137-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:128:5-95
+137-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:128:22-92
+138    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SUSPEND_PERSONAL_APPS" />
+138-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:129:5-101
+138-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:129:22-98
+139    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SYSTEM_APPS" />
+139-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:130:5-91
+139-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:130:22-88
+140    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SYSTEM_DIALOGS" />
+140-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:131:5-94
+140-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:131:22-91
+141    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_SYSTEM_UPDATES" />
+141-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:132:5-94
+141-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:132:22-91
+142    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_TIME" />
+142-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:133:5-84
+142-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:133:22-81
+143    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_USB_DATA_SIGNALLING" />
+143-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:134:5-99
+143-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:134:22-96
+144    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_USB_FILE_TRANSFER" />
+144-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:135:5-97
+144-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:135:22-94
+145    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_USERS" />
+145-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:136:5-85
+145-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:136:22-82
+146    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_VPN" />
+146-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:137:5-83
+146-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:137:22-80
+147    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_WALLPAPER" />
+147-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:138:5-89
+147-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:138:22-86
+148    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_WIFI" />
+148-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:139:5-84
+148-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:139:22-81
+149    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_WINDOWS" />
+149-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:140:5-87
+149-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:140:22-84
+150    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_WIPE_DATA" />
+150-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:141:5-89
+150-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:141:22-86
+151    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+151-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:142:5-82
+151-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:142:22-79
+152    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" />
+152-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:143:5-78
+152-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:143:22-75
+153    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+153-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:144:5-77
+153-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:144:22-74
+154    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE" />
+154-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:145:5-81
+154-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:145:22-78
+155    <uses-permission android:name="android.permission.READ_CALENDAR" />
+155-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:146:5-72
+155-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:146:22-69
+156    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+156-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:147:5-72
+156-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:147:22-69
+157    <uses-permission android:name="android.permission.READ_CONTACTS" />
+157-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:148:5-72
+157-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:148:22-69
+158    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+158-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:149:5-80
+158-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:149:22-77
+159    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+159-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:150:5-75
+159-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:150:22-72
+160    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+160-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:151:5-76
+160-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:151:22-73
+161    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+161-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:152:5-75
+161-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:152:22-72
+162    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+162-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:153:5-90
+162-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:153:22-87
+163    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+163-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:154:5-77
+163-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:154:22-74
+164    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+164-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:155:5-75
+164-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:155:22-72
+165    <uses-permission android:name="android.permission.READ_SMS" />
+165-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:156:5-67
+165-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:156:22-64
+166    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+166-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:157:5-70
+166-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:157:22-67
+167    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+167-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:158:5-70
+167-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:158:22-67
+168    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+168-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:159:5-75
+168-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:159:22-72
+169    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+169-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:160:5-71
+169-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:160:22-68
+170    <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_GLASSES" />
+170-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:161:5-92
+170-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:161:22-89
+171    <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_NEARBY_DEVICE_STREAMING" />
+171-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:162:5-108
+171-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:162:22-105
+172    <uses-permission android:name="android.permission.RUN_USER_INITIATED_JOBS" />
+172-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:163:5-82
+172-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:163:22-79
+173    <uses-permission android:name="android.permission.SEND_SMS" />
+173-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:164:5-67
+173-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:164:22-64
+174    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+174-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:165:5-78
+174-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:165:22-75
+175    <uses-permission android:name="android.permission.TURN_SCREEN_ON" />
+175-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:166:5-73
+175-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:166:22-70
+176    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+176-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:167:5-90
+176-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:167:22-87
+177    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+177-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:168:5-72
+177-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:168:22-69
+178    <uses-permission android:name="android.permission.USE_SIP" />
+178-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:169:5-66
+178-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:169:22-63
+179    <uses-permission android:name="android.permission.UWB_RANGING" />
+179-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:170:5-70
+179-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:170:22-67
+180    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+180-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:171:5-73
+180-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:171:22-70
+181    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+181-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:172:5-73
+181-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:172:22-70
+182    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+182-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:173:5-73
+182-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:173:22-70
+183    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+183-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:174:5-81
+183-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:174:22-78
+184    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+184-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:175:5-75
+184-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:175:22-72
+185    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+185-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:176:5-74
+185-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:176:22-71
+186    <uses-permission android:name="android.permission.MANAGE_HOTWORD_DETECTION" />
+186-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:177:5-83
+186-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:177:22-80
+187    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+187-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:178:5-74
+187-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:178:22-71
+188    <uses-permission android:name="android.permission.BROADCAST_PHONE_ACCOUNT_REGISTRATION" />
+188-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:179:5-95
+188-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:179:22-92
+189    <uses-permission android:name="android.permission.BROADCAST_CALLLOG_INFO" />
+189-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:180:5-81
+189-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:180:22-78
+190    <uses-permission android:name="android.permission.PROCESS_PHONE_ACCOUNT_REGISTRATION" />
+190-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:181:5-93
+190-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:181:22-90
+191    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+191-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:182:5-90
+191-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:182:22-87
+192    <uses-permission android:name="android.permission.READ_GLOBAL_APP_SEARCH_DATA" />
+192-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:183:5-86
+192-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:183:22-83
+193    <uses-permission android:name="android.permission.BYPASS_ROLE_QUALIFICATION" />
+193-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:184:5-84
+193-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:184:22-81
+194    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+194-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:185:5-78
+194-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:185:22-75
+195    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />
+195-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:186:5-80
+195-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:186:22-77
+196    <uses-permission android:name="android.permission.ACCESS_RCS_USER_CAPABILITY_EXCHANGE" />
+196-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:187:5-94
+196-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:187:22-91
+197    <uses-permission android:name="android.permission.READ_PROFILE" />
+197-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:188:5-71
+197-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:188:22-68
+198    <uses-permission android:name="android.permission.GET_TASKS" />
+198-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:189:5-68
+198-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:189:22-65
+199    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE" />
+199-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:190:5-81
+199-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:190:22-78
+200    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+200-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:191:5-80
+200-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:191:22-77
+201    <uses-permission android:name="android.permission.PERFORM_IMS_SINGLE_REGISTRATION" />
+201-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:192:5-90
+201-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:192:22-87
+202    <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />
+202-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:193:5-78
+202-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:193:22-75
+203    <uses-permission android:name="android.permission.MANAGE_SAFETY_CENTER" />
+203-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:194:5-79
+203-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:194:22-76
+204    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+204-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:195:5-79
+204-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:195:22-76
+205    <uses-permission android:name="android.permission.GET_HISTORICAL_APP_OPS_STATS" />
+205-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:196:5-87
+205-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:196:22-84
+206    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+206-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:197:5-72
+206-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:197:22-69
+207    <uses-permission android:name="android.permission.PROVISION_MANAGED_DEVICE_SILENTLY" />
+207-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:198:5-92
+207-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:198:22-89
+208    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+208-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:199:5-82
+208-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:199:22-79
+209    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+209-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:200:5-75
+209-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:200:22-72
+210    <uses-permission android:name="android.permission.ASSOCIATE_COMPANION_DEVICES" />
+210-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:201:5-86
+210-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:201:22-83
+211    <uses-permission android:name="android.permission.OBSERVE_SENSOR_PRIVACY" />
+211-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:202:5-81
+211-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:202:22-78
+212    <uses-permission android:name="android.permission.WRITE_SMS" />
+212-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:203:5-68
+212-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:203:22-65
+213    <uses-permission android:name="android.permission.READ_INSTALL_SESSIONS" />
+213-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:204:5-80
+213-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:204:22-77
+214    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE" />
+214-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:205:5-81
+214-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:205:22-78
+215    <uses-permission android:name="android.permission.SET_DEFAULT_ACCOUNT_FOR_CONTACTS" />
+215-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:206:5-91
+215-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:206:22-88
+216    <uses-permission android:name="android.permission.FLASHLIGHT" />
+216-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:207:5-69
+216-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:207:22-66
+217    <uses-permission android:name="android.permission.PROCESS_CALLLOG_INFO" />
+217-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:208:5-79
+217-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:208:22-76
+218    <uses-permission android:name="android.permission.MAINLINE_NETWORK_STACK" />
+218-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:209:5-81
+218-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:209:22-78
+219    <uses-permission android:name="android.permission.CREATE_VIRTUAL_DEVICE" />
+219-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:210:5-80
+219-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:210:22-77
+220    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+220-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:211:5-80
+220-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:211:22-77
+221    <uses-permission android:name="android.permission.DOWNLOAD_CACHE_NON_PURGEABLE" />
+221-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:212:5-87
+221-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:212:22-84
+222    <uses-permission android:name="android.permission.HANDLE_CALL_INTENT" />
+222-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:213:5-77
+222-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:213:22-74
+223    <uses-permission android:name="android.permission.SEND_CALL_LOG_CHANGE" />
+223-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:214:5-79
+223-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:214:22-76
+224    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+224-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:215:5-79
+224-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:215:22-76
+225    <uses-permission android:name="android.permission.START_PRINT_SERVICE_CONFIG_ACTIVITY" />
+225-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:216:5-94
+225-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:216:22-91
+226    <uses-permission android:name="android.permission.SET_UNRESTRICTED_GESTURE_EXCLUSION" />
+226-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:217:5-93
+226-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:217:22-90
+227    <uses-permission android:name="android.permission.ACCESS_TELEPHONY_SIMINFO_DB" />
+227-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:218:5-86
+227-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:218:22-83
+228    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+228-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:219:5-77
+228-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:219:22-74
+229    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />
+229-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:220:5-77
+229-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:220:22-74
+230    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+230-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:221:5-91
+230-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:221:22-88
+231    <uses-permission android:name="android.permission.ACCESS_AMBIENT_CONTEXT_EVENT" />
+231-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:222:5-87
+231-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:222:22-84
+232    <uses-permission android:name="android.permission.DELIVER_COMPANION_MESSAGE" />
+232-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:223:5-84
+232-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:223:22-81
+233    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+233-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:224:5-75
+233-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:224:22-72
+234    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+234-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:225:5-89
+234-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:225:22-86
+235    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+235-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:226:5-79
+235-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:226:22-76
+236    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+236-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:227:5-85
+236-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:227:22-82
+237    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+237-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:228:5-76
+237-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:228:22-73
+238    <uses-permission android:name="android.permission.BLUETOOTH" />
+238-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:229:5-68
+238-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:229:22-65
+239    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+239-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:230:5-74
+239-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:230:22-71
+240    <uses-permission android:name="android.permission.CALL_COMPANION_APP" />
+240-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:231:5-77
+240-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:231:22-74
+241    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+241-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:232:5-79
+241-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:232:22-76
+242    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+242-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:233:5-86
+242-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:233:22-83
+243    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+243-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:234:5-76
+243-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:234:22-73
+244    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+244-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:235:5-75
+244-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:235:22-72
+245    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+245-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:236:5-76
+245-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:236:22-73
+246    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+246-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:237:5-77
+246-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:237:22-74
+247    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+247-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:224:5-75
+247-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:224:22-72
+248    <uses-permission android:name="android.permission.HIDE_OVERLAY_WINDOWS" />
+248-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:239:5-79
+248-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:239:22-76
+249    <uses-permission android:name="android.permission.INTERNET" />
+249-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:240:5-67
+249-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:240:22-64
+250    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+250-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:241:5-84
+250-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:241:22-81
+251    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+251-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:242:5-75
+251-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:242:22-72
+252    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+252-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:243:5-80
+252-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:243:22-77
+253    <uses-permission android:name="android.permission.NFC" />
+253-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:244:5-62
+253-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:244:22-59
+254    <uses-permission android:name="android.permission.NFC_PREFERRED_PAYMENT_INFO" />
+254-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:245:5-85
+254-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:245:22-82
+255    <uses-permission android:name="android.permission.NFC_TRANSACTION_EVENT" />
+255-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:246:5-80
+255-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:246:22-77
+256    <uses-permission android:name="android.permission.READ_ASSISTANT_APP_SEARCH_DATA" />
+256-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:247:5-89
+256-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:247:22-86
+257    <uses-permission android:name="android.permission.READ_HOME_APP_SEARCH_DATA" />
+257-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:248:5-84
+257-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:248:22-81
+258    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+258-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:249:5-77
+258-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:249:22-74
+259    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+259-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:250:5-74
+259-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:250:22-71
+260    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+260-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:251:5-81
+260-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:251:22-78
+261    <uses-permission android:name="android.permission.REORDER_TASKS" />
+261-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:252:5-72
+261-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:252:22-69
+262    <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_AUTOMOTIVE_PROJECTION" />
+262-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:253:5-106
+262-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:253:22-103
+263    <uses-permission android:name="android.permission.REQUEST_COMPANION_PROFILE_WATCH" />
+263-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:254:5-90
+263-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:254:22-87
+264    <uses-permission android:name="android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND" />
+264-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:255:5-94
+264-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:255:22-91
+265    <uses-permission android:name="android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
+265-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:256:5-118
+265-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:256:22-115
+266    <uses-permission android:name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" />
+266-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:257:5-99
+266-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:257:22-96
+267    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+267-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:258:5-82
+267-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:258:22-79
+268    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+268-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:259:5-95
+268-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:259:22-92
+269    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+269-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:260:5-83
+269-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:260:22-80
+270    <uses-permission android:name="android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE" />
+270-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:261:5-100
+270-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:261:22-97
+271    <uses-permission android:name="android.permission.REQUEST_PASSWORD_COMPLEXITY" />
+271-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:262:5-86
+271-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:262:22-83
+272    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+272-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:263:5-79
+272-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:263:22-76
+273    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+273-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:264:5-72
+273-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:264:22-69
+274    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+274-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:265:5-78
+274-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:265:22-75
+275    <uses-permission android:name="android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE" />
+275-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:266:5-93
+275-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:266:22-90
+276    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+276-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:267:5-78
+276-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:267:22-75
+277    <uses-permission android:name="android.permission.TRANSMIT_IR" />
+277-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:268:5-70
+277-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:268:22-67
+278    <uses-permission android:name="android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION" />
+278-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:269:5-94
+278-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:269:22-91
+279    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+279-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:270:5-74
+279-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:270:22-71
+280    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+280-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:271:5-81
+280-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:271:22-78
+281    <uses-permission android:name="android.permission.VIBRATE" />
+281-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:272:5-66
+281-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:272:22-63
+282    <uses-permission android:name="android.permission.WAKE_LOCK" />
+282-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:273:5-68
+282-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:273:22-65
+283    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+283-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:274:5-78
+283-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:274:22-75
+284
+285    <permission
+285-->[androidx.core:core:1.9.0] /home/Lolo/.gradle/caches/transforms-3/2052065a37b2bde695f73f3abcdb5008/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+286        android:name="com.example.appPerm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+286-->[androidx.core:core:1.9.0] /home/Lolo/.gradle/caches/transforms-3/2052065a37b2bde695f73f3abcdb5008/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+287        android:protectionLevel="signature" />
+287-->[androidx.core:core:1.9.0] /home/Lolo/.gradle/caches/transforms-3/2052065a37b2bde695f73f3abcdb5008/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+288
+289    <uses-permission android:name="com.example.appPerm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+289-->[androidx.core:core:1.9.0] /home/Lolo/.gradle/caches/transforms-3/2052065a37b2bde695f73f3abcdb5008/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+289-->[androidx.core:core:1.9.0] /home/Lolo/.gradle/caches/transforms-3/2052065a37b2bde695f73f3abcdb5008/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+290
+291    <application
+291-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:275:1-307:19
+292        android:allowBackup="true"
+292-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:276:2-28
+293        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+293-->[androidx.core:core:1.9.0] /home/Lolo/.gradle/caches/transforms-3/2052065a37b2bde695f73f3abcdb5008/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+294        android:dataExtractionRules="@xml/data_extraction_rules"
+294-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:277:2-58
+295        android:extractNativeLibs="false"
+296        android:fullBackupContent="@xml/backup_rules"
+296-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:278:2-47
+297        android:icon="@mipmap/ic_launcher"
+297-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:279:2-36
+298        android:label="@string/app_name"
+298-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:280:2-34
+299        android:roundIcon="@mipmap/ic_launcher_round"
+299-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:281:2-47
+300        android:supportsRtl="true"
+300-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:282:2-28
+301        android:theme="@style/Theme.AppPerm" >
+301-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:283:2-38
+302        <activity
+302-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:284:1-286:28
+303            android:name="com.example.appPerm.RevocarPermisos"
+303-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:285:1-32
+304            android:exported="false" />
+304-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:286:1-25
+305        <activity
+305-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:287:1-289:28
+306            android:name="com.example.appPerm.GruposNoSys"
+306-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:288:1-28
+307            android:exported="false" />
+307-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:289:1-25
+308        <activity
+308-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:290:1-292:28
+309            android:name="com.example.appPerm.Grupos"
+309-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:291:1-23
+310            android:exported="false" />
+310-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:292:1-25
+311        <activity
+311-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:293:1-295:28
+312            android:name="com.example.appPerm.Permisos"
+312-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:294:1-25
+313            android:exported="false" />
+313-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:295:1-25
+314        <activity
+314-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:296:1-306:13
+315            android:name="com.example.appPerm.Inicio"
+315-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:297:1-23
+316            android:exported="true" >
+316-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:298:1-24
+317            <intent-filter>
+317-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:299:1-302:17
+318                <action android:name="android.intent.action.MAIN" />
+318-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:300:1-53
+318-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:300:9-50
+319
+320                <category android:name="android.intent.category.LAUNCHER" />
+320-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:301:1-61
+320-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:301:11-58
+321            </intent-filter>
+322
+323            <meta-data
+323-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:303:1-305:22
+324                android:name="android.app.lib_name"
+324-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:304:3-38
+325                android:value="" />
+325-->/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/src/main/AndroidManifest.xml:305:3-19
+326        </activity>
+327
+328        <provider
+328-->[androidx.emoji2:emoji2:1.2.0] /home/Lolo/.gradle/caches/transforms-3/49ab8c38ba2198b36cefe4adc7561c80/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+329            android:name="androidx.startup.InitializationProvider"
+329-->[androidx.emoji2:emoji2:1.2.0] /home/Lolo/.gradle/caches/transforms-3/49ab8c38ba2198b36cefe4adc7561c80/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+330            android:authorities="com.example.appPerm.androidx-startup"
+330-->[androidx.emoji2:emoji2:1.2.0] /home/Lolo/.gradle/caches/transforms-3/49ab8c38ba2198b36cefe4adc7561c80/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+331            android:exported="false" >
+331-->[androidx.emoji2:emoji2:1.2.0] /home/Lolo/.gradle/caches/transforms-3/49ab8c38ba2198b36cefe4adc7561c80/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+332            <meta-data
+332-->[androidx.emoji2:emoji2:1.2.0] /home/Lolo/.gradle/caches/transforms-3/49ab8c38ba2198b36cefe4adc7561c80/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+333                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+333-->[androidx.emoji2:emoji2:1.2.0] /home/Lolo/.gradle/caches/transforms-3/49ab8c38ba2198b36cefe4adc7561c80/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+334                android:value="androidx.startup" />
+334-->[androidx.emoji2:emoji2:1.2.0] /home/Lolo/.gradle/caches/transforms-3/49ab8c38ba2198b36cefe4adc7561c80/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+335            <meta-data
+335-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/Lolo/.gradle/caches/transforms-3/8497c0c4cb0dcdb7a95079a246e6efc0/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+336                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+336-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/Lolo/.gradle/caches/transforms-3/8497c0c4cb0dcdb7a95079a246e6efc0/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+337                android:value="androidx.startup" />
+337-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/Lolo/.gradle/caches/transforms-3/8497c0c4cb0dcdb7a95079a246e6efc0/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+338        </provider>
+339    </application>
+340
+341</manifest>

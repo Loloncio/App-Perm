@@ -8,10 +8,14 @@ android:required="false" />
 android:name="android.hardware.telephony"
 android:required="false" />
 <permission            
-android:name="android.permission.BLUETOOTH_CONNECT"
-android:protectionLevel="dangerous"
+android:name="android.permission.DELIVER_COMPANION_MESSAGES"
+android:protectionLevel="normal"
+android:permissionGroup="appperm.permission-group.TEST_GROUP1"/>
+<permission            
+android:name="android.permission.DELIVER_COMPANION_MESSAGES"
+android:protectionLevel="normal"
 android:permissionGroup="android.permission-group.ACTIVITY_RECOGNITION"/>
-<uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+<uses-permission android:name="android.permission.DELIVER_COMPANION_MESSAGES"/>
 <application
  android:allowBackup="true"
  android:dataExtractionRules="@xml/data_extraction_rules"

@@ -1,0 +1,4 @@
+#Sun Dec 03 19:56:01 CET 2023
+base.0=/mnt/Almacén/TFG/Python/App-Perm/Android/App-Perm/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
