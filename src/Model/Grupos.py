@@ -36,3 +36,16 @@ class Grupos():
         for group in self.grupos.keys():
             if grupo in group:
                 return group
+
+    def getPermisosMovil(self):
+        self.gruposMovil = {}
+        ruta_csv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "./PermisosMovil.csv")
+        with open(ruta_csv) as file:
+            csv_reader = csv.DictReader(file, delimiter=';')
+            for row in csv_reader:
+                permiso = row['Permiso']
+                grupo = row['Grupo']
+                if grupo in self.gruposMovil:
+                    self.gruposMovil[grupo].append(permiso)
+                else:
+                    self.gruposMovil.update({grupo:[permiso]})

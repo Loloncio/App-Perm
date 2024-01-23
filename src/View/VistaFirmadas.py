@@ -37,13 +37,13 @@ class VistaFirmadas(ctk.CTkToplevel):
         frameBotonesDown = ctk.CTkFrame(master=self,fg_color="#504F4F", corner_radius=10, width = self.width-10, height=40);
         frameSalida = ctk.CTkScrollableFrame(master=self,fg_color="#504F4F", corner_radius= 10,width = ((self.width)-40),height=self.height-300);
         self.salida = ctk.CTkLabel(frameSalida, text="", text_color="white", font=infoFont, pady=60)
-        # Creación del botón para volver al menu principal
+        # Creación del botón para isntalar app con permisos dangerous
         instDang = ctk.CTkButton(frameBotonesUp, command=self.instalaDangerous, text="Instalar apps firmadas dangerous", font=buttonFont, corner_radius=10,
                                 fg_color="#D9D9D9", text_color="black", height=40)
-        # Creación del botón para volver al menu principal
+        # Creación del botón para isntalar app con permisos dangerous
         isntSign = ctk.CTkButton(frameBotonesUp, command=self.instalaSignature, text="Instalar apps firmadas signature", font=buttonFont, corner_radius=10,
                                 fg_color="#D9D9D9", text_color="black", height=40)
-        # Creación del botón para volver al menu principal
+        # Creación del botón para comprobar el certificado de las apks
         testFirma = ctk.CTkButton(frameBotonesDown, command=self.testFirma, text="Comprobar firmas", font=buttonFont, corner_radius=10,
                                 fg_color="#D9D9D9", text_color="black", height=40)
         # Creación del botón para volver al menu principal

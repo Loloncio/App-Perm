@@ -1,0 +1,2393 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:2:1-587:12
+INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:2:1-587:12
+INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:2:1-587:12
+INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:2:1-587:12
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\4e74155cfc984cdecda289ca6a725484\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Lolo\.gradle\caches\transforms-3\4c562f0cfe32346909ce664710862d97\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Lolo\.gradle\caches\transforms-3\9b71e260c173f4f894c645826275028c\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Lolo\.gradle\caches\transforms-3\b5a9639e2160951774c5f3b44893c029\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\c6eaf944a37857584d55621381bc446c\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Lolo\.gradle\caches\transforms-3\4c735791e3d18eab81ef953f80d26e76\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Lolo\.gradle\caches\transforms-3\23cfbd0e2317970248d24e23db5998f0\transformed\activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\aeb489d82879a19a8e773d441d3e8dd0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\82fc84be7dfc5873d7294e8fd441a25b\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\5d85866f664249cd930d31641ab1bbef\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\52a5c8dd28dc9a8ef13a8dc99ae8c134\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\66ecef0f50e394f19b563694703ee3ce\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\e4dfedaeebca7aac391b5c476a7fa2b9\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\b0644e11e1075eaa20037dec8ff5656f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\8f54571b931d710cfd090c039c296fe6\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\5f62135546bd040edf90054b4cb036f3\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\f9ad2accb9a2c7343cc0f3aa815a385d\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\eed82ebf2c05fb076539f7505ae0ec42\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\ecd2a7f1b4dc9da86eb07b6977e00090\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\14e94c8781f325f1f67c8c3fc264343a\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\c0134e89f5daba58cf6a14b75e60be97\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\dc44d8b82aaed509e07cdc7ec299c630\transformed\core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\0b615556ef416493c3098f76f2d28907\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Lolo\.gradle\caches\transforms-3\ea2270aa42e04683fac150c4e1eb7039\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\df229e3dc834d57e13e2eecd36e09423\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\8684b2c9a226c62edd187a710faf0c2e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\4581d6a549e6ea54095b15ceef64e285\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\ccf944d1f442e807e67723aaede14682\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\987edf5feea96afc0575d92d3a0dff6a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\532a9a615dd4ab68483e4abf5735563d\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\f4190d09f21d230929d86d1bb60b194b\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\a1cef0f402685f29312c7767fddea3e6\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\c3f5f4fd17bac6497fe4ecfba81d21c1\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\9a7fdc67788ad6e6f7d1457f74265cbe\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\f9759b91677078bc353a874025eac5cf\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\0c7e0ae4d3b29b7424248829eeece66a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\e0fcb55e8cc5c262dd0d23ba4eb92de4\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:3:1-47
+	android:versionCode
+		INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.camera
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:4:1-6:28
+	android:required
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:6:1-25
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:5:1-39
+uses-feature#android.hardware.telephony
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:7:1-9:28
+	android:required
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:9:1-25
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:8:1-42
+permission-group#appperm.permission-group.TEST_GROUP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:10:5-13:38
+	android:label
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:13:9-35
+	android:description
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:12:9-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:11:9-59
+permission-group#appperm.permission-group.TEST_GROUP1
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:14:5-17:38
+	android:label
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:17:9-35
+	android:description
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:16:9-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:15:9-60
+permission#appperm.permission.TEST_PERMISSION1
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:18:5-22:60
+	android:protectionLevel
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:20:9-41
+	android:permissionGroup
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:21:9-70
+	android:description
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:22:9-58
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:19:9-59
+permission#appperm.permission.TEST_PERMISSION2
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:23:5-26:60
+	android:protectionLevel
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:25:9-44
+	android:description
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:26:9-58
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:24:9-59
+permission#appperm.permission.TEST_PERMISSION3
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:27:5-31:60
+	android:protectionLevel
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:29:9-44
+	android:permissionGroup
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:30:9-70
+	android:description
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:31:9-58
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:28:9-59
+uses-permission#appperm.permission.TEST_PERMISSION1
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:33:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:33:22-72
+uses-permission#appperm.permission.TEST_PERMISSION2
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:34:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:34:22-72
+uses-permission#appperm.permission.TEST_PERMISSION3
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:35:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:35:22-72
+uses-permission#android.permission.GET_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:36:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:36:22-71
+uses-permission#appperm.permission.TEST1
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:40:5-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:40:22-61
+uses-permission#appperm.permission.TEST2
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:41:5-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:41:22-61
+uses-permission#appperm.permission.TEST3
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:42:5-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:42:22-61
+uses-permission#appperm.permission.TEST4
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:43:5-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:43:22-61
+uses-permission#appperm.permission.TEST5
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:44:5-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:44:22-61
+uses-permission#android.permission.ACCESS_MESSAGES_ON_ICC
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:45:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:45:22-78
+uses-permission#android.permission.BIND_CELL_BROADCAST_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:46:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:46:22-83
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:47:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:47:22-79
+uses-permission#android.permission.MANAGE_MEDIA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:48:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:48:22-68
+uses-permission#android.permission.READ_BASIC_PHONE_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:49:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:49:22-78
+uses-permission#android.permission.MANAGE_OWN_CALLS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:50:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:50:22-72
+uses-permission#android.permission.CALL_COMPANION_APP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:51:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:51:22-74
+uses-permission#android.permission.SYSTEM_CAMERA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:52:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:52:22-69
+uses-permission#android.permission.CAMERA_OPEN_CLOSE_LISTENER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:53:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:53:22-82
+uses-permission#android.permission.HIGH_SAMPLING_RATE_SENSORS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:54:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:54:22-82
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:55:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:55:22-71
+uses-permission#android.permission.USE_BIOMETRIC
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:56:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:56:22-69
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:57:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:57:22-68
+uses-permission#android.permission.WRITE_PROFILE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:58:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:58:22-69
+uses-permission#android.permission.READ_SOCIAL_STREAM
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:59:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:59:22-74
+uses-permission#android.permission.WRITE_SOCIAL_STREAM
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:60:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:60:22-75
+uses-permission#android.permission.READ_USER_DICTIONARY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:61:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:61:22-76
+uses-permission#android.permission.WRITE_USER_DICTIONARY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:62:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:62:22-77
+uses-permission#android.permission.WRITE_SMS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:63:5-67
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:63:22-65
+uses-permission#com.android.browser.permission.READ_HISTORY_BOOKMARKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:64:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:64:22-90
+uses-permission#com.android.browser.permission.WRITE_HISTORY_BOOKMARKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:65:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:65:22-91
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:66:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:66:22-77
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:67:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:67:22-71
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:68:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:68:22-71
+uses-permission#android.permission.SUBSCRIBED_FEEDS_READ
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:69:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:69:22-77
+uses-permission#android.permission.SUBSCRIBED_FEEDS_WRITE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:70:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:70:22-78
+uses-permission#android.permission.FLASHLIGHT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:71:5-68
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:71:22-66
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:72:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:72:22-75
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:73:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:73:22-86
+uses-permission#android.permission.BIND_TIME_ZONE_PROVIDER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:74:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:74:22-87
+uses-permission#android.permission.ACCESS_MOCK_LOCATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:75:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:75:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:76:5-66
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:76:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:77:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:77:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:78:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:78:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:79:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:79:22-73
+uses-permission#android.permission.MANAGE_IPSEC_TUNNELS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:80:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:80:22-76
+uses-permission#android.permission.MANAGE_TEST_NETWORKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:81:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:81:22-76
+uses-permission#android.permission.MANAGE_REMOTE_AUTH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:82:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:82:22-74
+uses-permission#android.permission.USE_REMOTE_AUTH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:83:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:83:22-71
+uses-permission#android.permission.REQUEST_NETWORK_SCORES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:84:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:84:22-78
+uses-permission#android.permission.NETWORK_AIRPLANE_MODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:85:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:85:22-77
+uses-permission#android.permission.NETWORK_STACK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:86:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:86:22-69
+uses-permission#android.permission.OBSERVE_NETWORK_POLICY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:87:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:87:22-78
+uses-permission#android.permission.NETWORK_FACTORY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:88:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:88:22-71
+uses-permission#android.permission.NETWORK_STATS_PROVIDER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:89:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:89:22-78
+uses-permission#android.permission.NETWORK_SETTINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:90:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:90:22-72
+uses-permission#android.permission.RADIO_SCAN_WITHOUT_LOCATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:91:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:91:22-83
+uses-permission#android.permission.NETWORK_SETUP_WIZARD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:92:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:92:22-76
+uses-permission#android.permission.NETWORK_MANAGED_PROVISIONING
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:93:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:93:22-84
+uses-permission#android.permission.NETWORK_BYPASS_PRIVATE_DNS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:94:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:94:22-82
+uses-permission#android.permission.WIFI_UPDATE_COEX_UNSAFE_CHANNELS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:95:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:95:22-88
+uses-permission#android.permission.WIFI_ACCESS_COEX_UNSAFE_CHANNELS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:96:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:96:22-88
+uses-permission#android.permission.MANAGE_WIFI_COUNTRY_CODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:97:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:97:22-80
+uses-permission#android.permission.CONTROL_OEM_PAID_NETWORK_PREFERENCE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:98:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:98:22-91
+uses-permission#android.permission.MANAGE_ETHERNET_NETWORKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:99:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:99:22-80
+uses-permission#android.permission.REGISTER_NSD_OFFLOAD_ENGINE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:100:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:100:22-83
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:101:5-67
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:101:22-65
+uses-permission#android.permission.SUSPEND_APPS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:102:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:102:22-68
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:103:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:103:22-71
+uses-permission#android.permission.BLUETOOTH_MAP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:104:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:104:22-69
+uses-permission#android.permission.BLUETOOTH_STACK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:105:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:105:22-71
+uses-permission#android.permission.VIRTUAL_INPUT_DEVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:106:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:106:22-76
+uses-permission#android.permission.NFC
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:107:5-61
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:107:22-59
+uses-permission#android.permission.NFC_TRANSACTION_EVENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:108:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:108:22-77
+uses-permission#android.permission.NFC_PREFERRED_PAYMENT_INFO
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:109:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:109:22-82
+uses-permission#android.permission.MANAGE_BLUETOOTH_WHEN_WIRELESS_CONSENT_REQUIRED
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:110:5-105
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:110:22-103
+uses-permission#android.permission.ENABLE_TEST_HARNESS_MODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:111:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:111:22-80
+uses-permission#android.permission.ACCOUNT_MANAGER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:112:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:112:22-71
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:113:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:113:22-83
+uses-permission#android.permission.VIBRATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:114:5-65
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:114:22-63
+uses-permission#android.permission.VIBRATE_ALWAYS_ON
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:115:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:115:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:116:5-67
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:116:22-65
+uses-permission#android.permission.TRANSMIT_IR
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:117:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:117:22-67
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:118:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:118:22-77
+uses-permission#android.permission.DETECT_SCREEN_CAPTURE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:119:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:119:22-77
+uses-permission#android.permission.TRIGGER_LOST_MODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:120:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:120:22-73
+uses-permission#android.permission.HARDWARE_TEST
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:121:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:121:22-69
+uses-permission#android.permission.MANAGE_DYNAMIC_SYSTEM
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:122:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:122:22-77
+uses-permission#android.permission.NET_ADMIN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:123:5-67
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:123:22-65
+uses-permission#android.permission.REMOTE_AUDIO_PLAYBACK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:124:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:124:22-77
+uses-permission#android.permission.OEM_UNLOCK_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:125:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:125:22-72
+uses-permission#android.permission.ACCESS_PDB_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:126:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:126:22-72
+uses-permission#android.permission.TEST_BLACKLISTED_PASSWORD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:127:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:127:22-81
+uses-permission#android.permission.CAMERA_INJECT_EXTERNAL_CAMERA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:128:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:128:22-85
+uses-permission#android.permission.GRANT_RUNTIME_PERMISSIONS_TO_TELEPHONY_DEFAULTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:129:5-105
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:129:22-103
+uses-permission#android.permission.USE_ICC_AUTH_WITH_DEVICE_IDENTIFIER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:130:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:130:22-91
+uses-permission#android.permission.READ_ACTIVE_EMERGENCY_SESSION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:131:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:131:22-85
+uses-permission#android.permission.LISTEN_ALWAYS_REPORTED_SIGNAL_STRENGTH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:132:5-96
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:132:22-94
+uses-permission#android.permission.BIND_CALL_STREAMING_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:133:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:133:22-83
+uses-permission#android.permission.MANAGE_ONGOING_CALLS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:134:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:134:22-76
+uses-permission#android.permission.BIND_PHONE_ACCOUNT_SUGGESTION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:135:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:135:22-93
+uses-permission#android.permission.BIND_CALL_DIAGNOSTIC_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:136:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:136:22-84
+uses-permission#android.permission.MANAGE_SENSORS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:137:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:137:22-70
+uses-permission#android.permission.BIND_SATELLITE_GATEWAY_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:138:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:138:22-86
+uses-permission#android.permission.BIND_TELEPHONY_DATA_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:139:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:139:22-83
+uses-permission#android.permission.BIND_TELEPHONY_NETWORK_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:140:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:140:22-86
+uses-permission#android.permission.BIND_EUICC_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:141:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:141:22-74
+uses-permission#android.permission.READ_CARRIER_APP_INFO
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:142:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:142:22-77
+uses-permission#android.permission.BIND_GBA_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:143:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:143:22-72
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:144:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:144:22-72
+uses-permission#android.permission.MANAGE_CRATES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:145:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:145:22-69
+uses-permission#android.permission.CACHE_CONTENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:146:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:146:22-69
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:147:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:147:22-72
+uses-permission#android.permission.REQUEST_PASSWORD_COMPLEXITY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:148:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:148:22-83
+uses-permission#android.permission.GET_TASKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:149:5-67
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:149:22-65
+uses-permission#android.permission.INTERACT_ACROSS_USERS_FULL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:150:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:150:22-82
+uses-permission#android.permission.INTERACT_ACROSS_PROFILES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:151:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:151:22-80
+uses-permission#android.permission.START_CROSS_PROFILE_ACTIVITIES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:152:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:152:22-86
+uses-permission#android.permission.CONFIGURE_INTERACT_ACROSS_PROFILES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:153:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:153:22-90
+uses-permission#android.permission.CREATE_USERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:154:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:154:22-68
+uses-permission#android.permission.MANAGE_SUBSCRIPTION_USER_ASSOCIATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:155:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:155:22-92
+uses-permission#android.permission.MANAGE_PROFILE_AND_DEVICE_OWNERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:156:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:156:22-88
+uses-permission#android.permission.QUERY_ADMIN_POLICY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:157:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:157:22-74
+uses-permission#android.permission.PROVISION_DEMO_DEVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:158:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:158:22-77
+uses-permission#android.permission.CLEAR_FREEZE_PERIOD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:159:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:159:22-75
+uses-permission#android.permission.FORCE_DEVICE_POLICY_MANAGER_LOGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:160:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:160:22-88
+uses-permission#android.permission.GET_DETAILED_TASKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:161:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:161:22-74
+uses-permission#android.permission.REORDER_TASKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:162:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:162:22-69
+uses-permission#android.permission.REMOVE_TASKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:163:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:163:22-68
+uses-permission#android.permission.MANAGE_ACTIVITY_STACKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:164:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:164:22-78
+uses-permission#android.permission.MANAGE_ACTIVITY_TASKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:165:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:165:22-77
+uses-permission#android.permission.START_ANY_ACTIVITY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:166:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:166:22-74
+uses-permission#android.permission.SEND_SHOW_SUSPENDED_APP_DETAILS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:167:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:167:22-87
+uses-permission#android.permission.START_ACTIVITY_AS_CALLER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:168:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:168:22-80
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:169:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:169:22-72
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:170:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:170:22-81
+uses-permission#android.permission.GET_INTENT_SENDER_INTENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:171:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:171:22-80
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:172:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:172:22-75
+uses-permission#android.permission.SYSTEM_APPLICATION_OVERLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:173:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:173:22-82
+uses-permission#android.permission.RUN_IN_BACKGROUND
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:174:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:174:22-73
+uses-permission#android.permission.USE_DATA_IN_BACKGROUND
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:175:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:175:22-78
+uses-permission#android.permission.REQUEST_COMPANION_RUN_IN_BACKGROUND
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:176:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:176:22-91
+uses-permission#android.permission.REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:177:5-117
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:177:22-115
+uses-permission#android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:178:5-98
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:178:22-96
+uses-permission#android.permission.REQUEST_COMPANION_PROFILE_WATCH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:179:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:179:22-87
+uses-permission#android.permission.REQUEST_COMPANION_PROFILE_GLASSES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:180:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:180:22-89
+uses-permission#android.permission.READ_PROJECTION_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:181:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:181:22-77
+uses-permission#android.permission.HIDE_OVERLAY_WINDOWS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:182:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:182:22-76
+uses-permission#android.permission.SET_WALLPAPER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:183:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:183:22-69
+uses-permission#android.permission.SET_WALLPAPER_HINTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:184:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:184:22-75
+uses-permission#android.permission.SUGGEST_TELEPHONY_TIME_AND_ZONE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:185:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:185:22-87
+uses-permission#android.permission.SUGGEST_MANUAL_TIME_AND_ZONE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:186:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:186:22-84
+uses-permission#android.permission.EXPAND_STATUS_BAR
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:187:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:187:22-73
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:188:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:188:22-85
+uses-permission#com.android.launcher.permission.UNINSTALL_SHORTCUT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:189:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:189:22-87
+uses-permission#android.permission.READ_SYNC_SETTINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:190:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:190:22-74
+uses-permission#android.permission.WRITE_SYNC_SETTINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:191:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:191:22-75
+uses-permission#android.permission.READ_SYNC_STATS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:192:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:192:22-71
+uses-permission#android.permission.SET_SCREEN_COMPATIBILITY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:193:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:193:22-80
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:194:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:194:22-70
+uses-permission#android.permission.WRITE_DEVICE_CONFIG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:195:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:195:22-75
+uses-permission#android.permission.WRITE_ALLOWLISTED_DEVICE_CONFIG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:196:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:196:22-87
+uses-permission#android.permission.READ_WRITE_SYNC_DISABLED_MODE_CONFIG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:197:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:197:22-92
+uses-permission#android.permission.READ_DEVICE_CONFIG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:198:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:198:22-74
+uses-permission#android.permission.READ_APP_SPECIFIC_LOCALES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:199:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:199:22-81
+uses-permission#android.permission.SET_APP_SPECIFIC_LOCALECONFIG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:200:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:200:22-85
+uses-permission#android.permission.MONITOR_DEVICE_CONFIG_ACCESS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:201:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:201:22-84
+uses-permission#android.permission.PERSISTENT_ACTIVITY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:202:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:202:22-75
+uses-permission#android.permission.GET_PACKAGE_SIZE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:203:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:203:22-72
+uses-permission#android.permission.SET_PREFERRED_APPLICATIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:204:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:204:22-82
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:205:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:205:22-78
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:206:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:206:22-72
+uses-permission#android.permission.STORAGE_INTERNAL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:207:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:207:22-72
+uses-permission#android.permission.ASEC_ACCESS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:208:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:208:22-67
+uses-permission#android.permission.ASEC_CREATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:209:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:209:22-67
+uses-permission#android.permission.ASEC_DESTROY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:210:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:210:22-68
+uses-permission#android.permission.ASEC_MOUNT_UNMOUNT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:211:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:211:22-74
+uses-permission#android.permission.ASEC_RENAME
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:212:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:212:22-67
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:213:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:213:22-76
+uses-permission#android.permission.BIND_RESUME_ON_REBOOT_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:214:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:214:22-85
+uses-permission#android.permission.BIND_JOB_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:215:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:215:22-72
+uses-permission#android.permission.RESET_SHORTCUT_MANAGER_THROTTLING
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:216:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:216:22-89
+uses-permission#android.permission.BIND_NETWORK_RECOMMENDATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:217:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:217:22-91
+uses-permission#android.permission.MANAGE_CREDENTIAL_MANAGEMENT_APP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:218:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:218:22-88
+uses-permission#android.permission.USE_ATTESTATION_VERIFICATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:219:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:219:22-92
+uses-permission#android.permission.VERIFY_ATTESTATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:220:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:220:22-74
+uses-permission#android.permission.BIND_ATTESTATION_VERIFICATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:221:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:221:22-93
+uses-permission#android.permission.REQUEST_UNIQUE_ID_ATTESTATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:222:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:222:22-85
+uses-permission#android.permission.CREDENTIAL_MANAGER_SET_ALLOWED_PROVIDERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:223:5-98
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:223:22-96
+uses-permission#android.permission.CREDENTIAL_MANAGER_SET_ORIGIN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:224:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:224:22-85
+uses-permission#android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:225:5-104
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:225:22-102
+uses-permission#android.permission.LAUNCH_CREDENTIAL_SELECTOR
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:226:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:226:22-82
+uses-permission#android.permission.BIND_TRACE_REPORT_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:227:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:227:22-81
+uses-permission#android.permission.APPROVE_INCIDENT_REPORTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:228:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:228:22-80
+uses-permission#android.permission.GET_PASSWORD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:229:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:229:22-68
+uses-permission#android.permission.DIAGNOSTIC
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:230:5-68
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:230:22-66
+uses-permission#android.permission.TRIGGER_SHELL_BUGREPORT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:231:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:231:22-79
+uses-permission#android.permission.TRIGGER_SHELL_PROFCOLLECT_UPLOAD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:232:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:232:22-88
+uses-permission#android.permission.STATUS_BAR_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:233:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:233:22-74
+uses-permission#android.permission.BIND_QUICK_SETTINGS_TILE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:234:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:234:22-80
+uses-permission#android.permission.BIND_CONTROLS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:235:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:235:22-69
+uses-permission#android.permission.FORCE_BACK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:236:5-68
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:236:22-66
+uses-permission#android.permission.MANAGE_APP_OPS_RESTRICTIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:237:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:237:22-83
+uses-permission#android.permission.MANAGE_APP_OPS_MODES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:238:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:238:22-76
+uses-permission#android.permission.INTERNAL_SYSTEM_WINDOW
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:239:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:239:22-78
+uses-permission#android.permission.UNLIMITED_TOASTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:240:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:240:22-72
+uses-permission#android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:241:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:241:22-87
+uses-permission#android.permission.MANAGE_APP_TOKENS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:242:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:242:22-73
+uses-permission#android.permission.REGISTER_WINDOW_MANAGER_LISTENERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:243:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:243:22-89
+uses-permission#android.permission.FREEZE_SCREEN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:244:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:244:22-69
+uses-permission#android.permission.INJECT_EVENTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:245:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:245:22-69
+uses-permission#android.permission.FILTER_EVENTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:246:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:246:22-69
+uses-permission#android.permission.RETRIEVE_WINDOW_TOKEN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:247:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:247:22-77
+uses-permission#android.permission.MODIFY_ACCESSIBILITY_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:248:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:248:22-81
+uses-permission#android.permission.ACT_AS_PACKAGE_FOR_ACCESSIBILITY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:249:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:249:22-88
+uses-permission#android.permission.CHANGE_ACCESSIBILITY_VOLUME
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:250:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:250:22-83
+uses-permission#android.permission.FRAME_STATS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:251:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:251:22-67
+uses-permission#android.permission.TEMPORARY_ENABLE_ACCESSIBILITY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:252:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:252:22-86
+uses-permission#android.permission.OPEN_ACCESSIBILITY_DETAILS_SETTINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:253:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:253:22-91
+uses-permission#android.permission.SET_ACTIVITY_WATCHER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:254:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:254:22-76
+uses-permission#android.permission.GET_TOP_ACTIVITY_INFO
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:255:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:255:22-77
+uses-permission#android.permission.SET_SYSTEM_AUDIO_CAPTION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:256:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:256:22-80
+uses-permission#android.permission.READ_INPUT_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:257:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:257:22-72
+uses-permission#android.permission.BIND_INPUT_METHOD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:258:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:258:22-73
+uses-permission#android.permission.TEST_INPUT_METHOD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:259:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:259:22-73
+uses-permission#android.permission.BIND_MIDI_DEVICE_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:260:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:260:22-80
+uses-permission#android.permission.BIND_ACCESSIBILITY_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:261:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:261:22-82
+uses-permission#android.permission.BIND_PRINT_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:262:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:262:22-74
+uses-permission#android.permission.BIND_PRINT_RECOMMENDATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:263:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:263:22-89
+uses-permission#android.permission.READ_PRINT_SERVICES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:264:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:264:22-75
+uses-permission#android.permission.READ_PRINT_SERVICE_RECOMMENDATIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:265:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:265:22-90
+uses-permission#android.permission.BIND_NFC_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:266:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:266:22-72
+uses-permission#android.permission.BIND_QUICK_ACCESS_WALLET_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:267:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:267:22-88
+uses-permission#android.permission.BIND_PRINT_SPOOLER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:268:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:268:22-82
+uses-permission#android.permission.BIND_COMPANION_DEVICE_MANAGER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:269:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:269:22-93
+uses-permission#android.permission.BIND_COMPANION_DEVICE_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:270:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:270:22-85
+uses-permission#android.permission.BIND_RUNTIME_PERMISSION_PRESENTER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:271:5-99
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:271:22-97
+uses-permission#android.permission.BIND_TEXT_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:272:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:272:22-73
+uses-permission#android.permission.BIND_ATTENTION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:273:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:273:22-78
+uses-permission#android.permission.BIND_ROTATION_RESOLVER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:274:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:274:22-86
+uses-permission#android.permission.BIND_VPN_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:275:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:275:22-72
+uses-permission#android.permission.BIND_GAME_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:276:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:276:22-73
+uses-permission#android.permission.BIND_VOICE_INTERACTION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:277:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:277:22-78
+uses-permission#android.permission.BIND_HOTWORD_DETECTION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:278:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:278:22-86
+uses-permission#android.permission.BIND_VISUAL_QUERY_DETECTION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:279:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:279:22-91
+uses-permission#android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:280:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:280:22-90
+uses-permission#android.permission.BIND_AUTOFILL_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:281:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:281:22-77
+uses-permission#android.permission.BIND_FIELD_CLASSIFICATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:282:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:282:22-89
+uses-permission#android.permission.BIND_CREDENTIAL_PROVIDER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:283:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:283:22-88
+uses-permission#android.permission.BIND_AUTOFILL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:284:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:284:22-69
+uses-permission#android.permission.BIND_AUTOFILL_FIELD_CLASSIFICATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:285:5-100
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:285:22-98
+uses-permission#android.permission.BIND_INLINE_SUGGESTION_RENDER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:286:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:286:22-93
+uses-permission#android.permission.BIND_TEXTCLASSIFIER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:287:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:287:22-83
+uses-permission#android.permission.BIND_REMOTE_LOCKSCREEN_VALIDATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:288:5-99
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:288:22-97
+uses-permission#android.permission.BIND_SELECTION_TOOLBAR_RENDER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:289:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:289:22-93
+uses-permission#android.permission.BIND_CONTENT_CAPTURE_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:290:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:290:22-84
+uses-permission#android.permission.BIND_TRANSLATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:291:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:291:22-80
+uses-permission#android.permission.BIND_CONTENT_SUGGESTIONS_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:292:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:292:22-88
+uses-permission#android.permission.BIND_WALLPAPER_EFFECTS_GENERATION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:293:5-99
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:293:22-97
+uses-permission#android.permission.BIND_MUSIC_RECOGNITION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:294:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:294:22-86
+uses-permission#android.permission.BIND_AUGMENTED_AUTOFILL_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:295:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:295:22-87
+uses-permission#android.permission.BIND_REMOTE_DISPLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:296:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:296:22-75
+uses-permission#android.permission.BIND_ROUTE_PROVIDER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:297:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:297:22-75
+uses-permission#android.permission.BIND_DEVICE_ADMIN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:298:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:298:22-73
+uses-permission#android.permission.MANAGE_DEVICE_ADMINS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:299:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:299:22-76
+uses-permission#android.permission.SET_ORIENTATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:300:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:300:22-71
+uses-permission#android.permission.SET_POINTER_SPEED
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:301:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:301:22-73
+uses-permission#android.permission.SET_INPUT_CALIBRATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:302:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:302:22-77
+uses-permission#android.permission.SET_KEYBOARD_LAYOUT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:303:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:303:22-75
+uses-permission#android.permission.USE_EXACT_ALARM
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:304:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:304:22-71
+uses-permission#android.permission.TABLET_MODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:305:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:305:22-67
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:306:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:306:22-80
+uses-permission#android.permission.REQUEST_DELETE_PACKAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:307:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:307:22-79
+uses-permission#android.permission.INSTALL_TEST_ONLY_PACKAGE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:308:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:308:22-81
+uses-permission#android.permission.INSTALL_DPC_PACKAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:309:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:309:22-76
+uses-permission#android.permission.READ_INSTALLED_SESSION_PATHS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:310:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:310:22-84
+uses-permission#com.android.permission.USE_SYSTEM_DATA_LOADERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:311:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:311:22-83
+uses-permission#android.permission.CLEAR_APP_USER_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:312:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:312:22-75
+uses-permission#android.permission.GET_APP_GRANTED_URI_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:313:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:313:22-87
+uses-permission#android.permission.CLEAR_APP_GRANTED_URI_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:314:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:314:22-89
+uses-permission#android.permission.MANAGE_SCOPED_ACCESS_DIRECTORY_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:315:5-100
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:315:22-98
+uses-permission#android.permission.FORCE_PERSISTABLE_URI_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:316:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:316:22-89
+uses-permission#android.permission.INTERNAL_DELETE_CACHE_FILES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:317:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:317:22-83
+uses-permission#android.permission.KEEP_UNINSTALLED_PACKAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:318:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:318:22-81
+uses-permission#android.permission.GRANT_RUNTIME_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:319:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:319:22-81
+uses-permission#android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:320:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:320:22-89
+uses-permission#android.permission.REVOKE_RUNTIME_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:321:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:321:22-82
+uses-permission#android.permission.REVOKE_POST_NOTIFICATIONS_WITHOUT_KILL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:322:5-96
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:322:22-94
+uses-permission#android.permission.GET_RUNTIME_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:323:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:323:22-79
+uses-permission#android.permission.RESTORE_RUNTIME_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:324:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:324:22-83
+uses-permission#android.permission.ADJUST_RUNTIME_PERMISSIONS_POLICY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:325:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:325:22-89
+uses-permission#android.permission.UPGRADE_RUNTIME_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:326:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:326:22-83
+uses-permission#android.permission.WHITELIST_RESTRICTED_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:327:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:327:22-88
+uses-permission#android.permission.WHITELIST_AUTO_REVOKE_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:328:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:328:22-89
+uses-permission#android.permission.MANAGE_ONE_TIME_PERMISSION_SESSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:329:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:329:22-91
+uses-permission#android.permission.MANAGE_ROLE_HOLDERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:330:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:330:22-75
+uses-permission#android.permission.MANAGE_DEFAULT_APPLICATIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:331:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:331:22-83
+uses-permission#android.permission.OBSERVE_ROLE_HOLDERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:332:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:332:22-76
+uses-permission#android.permission.MANAGE_COMPANION_DEVICES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:333:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:333:22-80
+uses-permission#android.permission.REQUEST_OBSERVE_COMPANION_DEVICE_PRESENCE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:334:5-99
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:334:22-97
+uses-permission#android.permission.DELIVER_COMPANION_MESSAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:335:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:335:22-82
+uses-permission#android.permission.USE_COMPANION_TRANSPORTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:336:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:336:22-80
+uses-permission#android.permission.ACCESS_SURFACE_FLINGER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:337:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:337:22-78
+uses-permission#android.permission.ROTATE_SURFACE_FLINGER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:338:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:338:22-78
+uses-permission#android.permission.WAKEUP_SURFACE_FLINGER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:339:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:339:22-78
+uses-permission#android.permission.READ_FRAME_BUFFER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:340:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:340:22-73
+uses-permission#android.permission.MODIFY_TOUCH_MODE_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:341:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:341:22-79
+uses-permission#android.permission.ACCESS_INPUT_FLINGER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:342:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:342:22-76
+uses-permission#android.permission.DISABLE_INPUT_DEVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:343:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:343:22-76
+uses-permission#android.permission.CONFIGURE_WIFI_DISPLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:344:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:344:22-78
+uses-permission#android.permission.CONTROL_WIFI_DISPLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:345:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:345:22-76
+uses-permission#android.permission.CONFIGURE_DISPLAY_COLOR_MODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:346:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:346:22-84
+uses-permission#android.permission.CONTROL_DISPLAY_BRIGHTNESS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:347:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:347:22-82
+uses-permission#android.permission.OVERRIDE_DISPLAY_MODE_REQUESTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:348:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:348:22-86
+uses-permission#android.permission.MODIFY_REFRESH_RATE_SWITCHING_TYPE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:349:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:349:22-90
+uses-permission#android.permission.MODIFY_USER_PREFERRED_DISPLAY_MODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:350:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:350:22-90
+uses-permission#android.permission.MODIFY_HDR_CONVERSION_MODE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:351:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:351:22-82
+uses-permission#android.permission.CONTROL_ALWAYS_ON_VPN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:352:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:352:22-77
+uses-permission#android.permission.QUERY_AUDIO_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:353:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:353:22-73
+uses-permission#android.permission.CAPTURE_VIDEO_OUTPUT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:354:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:354:22-76
+uses-permission#android.permission.CAPTURE_SECURE_VIDEO_OUTPUT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:355:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:355:22-83
+uses-permission#android.permission.BRICK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:356:5-63
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:356:22-61
+uses-permission#android.permission.DEVICE_POWER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:357:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:357:22-68
+uses-permission#android.permission.NET_TUNNELING
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:358:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:358:22-69
+uses-permission#android.permission.FACTORY_TEST
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:359:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:359:22-68
+uses-permission#android.permission.BROADCAST_PACKAGE_REMOVED
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:360:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:360:22-81
+uses-permission#android.permission.BROADCAST_SMS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:361:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:361:22-69
+uses-permission#android.permission.BROADCAST_WAP_PUSH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:362:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:362:22-74
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:363:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:363:22-92
+uses-permission#android.permission.STATSCOMPANION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:364:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:364:22-70
+uses-permission#android.permission.MODIFY_SETTINGS_OVERRIDEABLE_BY_RESTORE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:365:5-97
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:365:22-95
+uses-permission#android.permission.CONFIRM_FULL_BACKUP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:366:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:366:22-75
+uses-permission#android.permission.MANAGE_SLICE_PERMISSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:367:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:367:22-80
+uses-permission#android.permission.CHANGE_BACKGROUND_DATA_SETTING
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:368:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:368:22-86
+uses-permission#android.permission.GLOBAL_SEARCH_CONTROL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:369:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:369:22-77
+uses-permission#android.permission.BIND_SETTINGS_SUGGESTIONS_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:370:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:370:22-89
+uses-permission#android.permission.LAUNCH_MULTI_PANE_SETTINGS_DEEP_LINK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:371:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:371:22-92
+uses-permission#android.permission.ALLOW_PLACE_IN_MULTI_PANE_SETTINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:372:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:372:22-90
+uses-permission#android.permission.READ_DREAM_SUPPRESSION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:373:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:373:22-78
+uses-permission#android.permission.COPY_PROTECTED_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:374:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:374:22-75
+uses-permission#android.permission.MANAGE_NETWORK_POLICY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:375:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:375:22-77
+uses-permission#android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:376:5-98
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:376:22-96
+uses-permission#android.permission.BIND_PACKAGE_VERIFIER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:377:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:377:22-77
+uses-permission#android.permission.PACKAGE_ROLLBACK_AGENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:378:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:378:22-78
+uses-permission#android.permission.TEST_MANAGE_ROLLBACKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:379:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:379:22-77
+uses-permission#android.permission.SET_HARMFUL_APP_WARNINGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:380:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:380:22-80
+uses-permission#android.permission.BIND_INTENT_FILTER_VERIFIER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:381:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:381:22-83
+uses-permission#android.permission.BIND_DOMAIN_VERIFICATION_AGENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:382:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:382:22-86
+uses-permission#android.permission.UPDATE_DOMAIN_VERIFICATION_USER_SELECTION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:383:5-99
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:383:22-97
+uses-permission#android.permission.ACCESS_CONTENT_PROVIDERS_EXTERNALLY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:384:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:384:22-91
+uses-permission#android.permission.ACCESS_NOTIFICATION_POLICY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:385:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:385:22-82
+uses-permission#android.permission.MANAGE_NOTIFICATIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:386:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:386:22-76
+uses-permission#android.permission.MANAGE_NOTIFICATION_LISTENERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:387:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:387:22-85
+uses-permission#android.permission.USE_COLORIZED_NOTIFICATIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:388:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:388:22-83
+uses-permission#android.permission.ACCESS_KEYGUARD_SECURE_STORAGE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:389:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:389:22-86
+uses-permission#android.permission.SET_INITIAL_LOCK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:390:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:390:22-72
+uses-permission#android.permission.SET_AND_VERIFY_LOCKSCREEN_CREDENTIALS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:391:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:391:22-93
+uses-permission#android.permission.RESET_FINGERPRINT_LOCKOUT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:392:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:392:22-81
+uses-permission#android.permission.TEST_BIOMETRIC
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:393:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:393:22-70
+uses-permission#android.permission.MANAGE_BIOMETRIC
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:394:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:394:22-72
+uses-permission#android.permission.USE_BIOMETRIC_INTERNAL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:395:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:395:22-78
+uses-permission#android.permission.MANAGE_BIOMETRIC_DIALOG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:396:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:396:22-79
+uses-permission#android.permission.CONTROL_KEYGUARD
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:397:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:397:22-72
+uses-permission#android.permission.TRUST_LISTENER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:398:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:398:22-70
+uses-permission#android.permission.BIND_TRUST_AGENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:399:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:399:22-72
+uses-permission#android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:400:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:400:22-90
+uses-permission#android.permission.BIND_NOTIFICATION_ASSISTANT_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:401:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:401:22-91
+uses-permission#android.permission.BIND_CHOOSER_TARGET_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:402:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:402:22-83
+uses-permission#android.permission.BIND_RESOLVER_RANKER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:403:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:403:22-84
+uses-permission#android.permission.BIND_CONDITION_PROVIDER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:404:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:404:22-87
+uses-permission#android.permission.BIND_DREAM_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:405:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:405:22-74
+uses-permission#android.permission.BIND_CACHE_QUOTA_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:406:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:406:22-80
+uses-permission#android.permission.MANAGE_MEDIA_PROJECTION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:407:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:407:22-79
+uses-permission#android.permission.READ_INSTALL_SESSIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:408:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:408:22-77
+uses-permission#android.permission.ACCESS_VOICE_INTERACTION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:409:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:409:22-88
+uses-permission#android.permission.START_VIEW_PERMISSION_USAGE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:410:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:410:22-83
+uses-permission#android.permission.START_REVIEW_PERMISSION_DECISIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:411:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:411:22-89
+uses-permission#android.permission.START_VIEW_APP_FEATURES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:412:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:412:22-79
+uses-permission#android.permission.QUERY_DO_NOT_ASK_CREDENTIALS_ON_BOOT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:413:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:413:22-92
+uses-permission#android.permission.KILL_UID
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:414:5-66
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:414:22-64
+uses-permission#android.permission.PEERS_MAC_ADDRESS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:415:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:415:22-73
+uses-permission#android.permission.ACCESS_INSTANT_APPS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:416:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:416:22-75
+uses-permission#android.permission.VIEW_INSTANT_APPS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:417:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:417:22-73
+uses-permission#android.permission.MANAGE_BIND_INSTANT_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:418:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:418:22-83
+uses-permission#android.permission.BIND_SOUND_TRIGGER_DETECTION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:419:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:419:22-92
+uses-permission#android.permission.READ_BLOCKED_NUMBERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:420:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:420:22-76
+uses-permission#android.permission.WRITE_BLOCKED_NUMBERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:421:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:421:22-77
+uses-permission#android.permission.BIND_VR_LISTENER_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:422:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:422:22-80
+uses-permission#android.permission.RESTRICTED_VR_ACCESS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:423:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:423:22-76
+uses-permission#android.permission.ACCESS_VR_MANAGER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:424:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:424:22-73
+uses-permission#android.permission.ACCESS_VR_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:425:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:425:22-71
+uses-permission#android.permission.UPDATE_LOCK_TASK_PACKAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:426:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:426:22-81
+uses-permission#android.permission.MANAGE_AUTO_FILL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:427:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:427:22-72
+uses-permission#android.permission.MANAGE_CONTENT_CAPTURE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:428:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:428:22-78
+uses-permission#android.permission.MANAGE_ROTATION_RESOLVER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:429:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:429:22-80
+uses-permission#android.permission.MANAGE_SPEECH_RECOGNITION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:430:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:430:22-81
+uses-permission#android.permission.MANAGE_CONTENT_SUGGESTIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:431:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:431:22-82
+uses-permission#android.permission.MANAGE_APP_PREDICTIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:432:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:432:22-78
+uses-permission#android.permission.MANAGE_SEARCH_UI
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:433:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:433:22-72
+uses-permission#android.permission.MANAGE_SMARTSPACE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:434:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:434:22-73
+uses-permission#android.permission.MODIFY_THEME_OVERLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:435:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:435:22-76
+uses-permission#android.permission.INSTANT_APP_FOREGROUND_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:436:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:436:22-86
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:437:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:437:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_CAMERA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:438:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:438:22-81
+uses-permission#android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:439:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:439:22-91
+uses-permission#android.permission.FOREGROUND_SERVICE_DATA_SYNC
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:440:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:440:22-84
+uses-permission#android.permission.FOREGROUND_SERVICE_LOCATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:441:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:441:22-83
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:442:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:442:22-89
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:443:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:443:22-91
+uses-permission#android.permission.FOREGROUND_SERVICE_MICROPHONE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:444:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:444:22-85
+uses-permission#android.permission.FOREGROUND_SERVICE_PHONE_CALL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:445:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:445:22-85
+uses-permission#android.permission.FOREGROUND_SERVICE_HEALTH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:446:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:446:22-81
+uses-permission#android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:447:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:447:22-91
+uses-permission#android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:448:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:448:22-90
+uses-permission#android.permission.FOREGROUND_SERVICE_FILE_MANAGEMENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:449:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:449:22-90
+uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:450:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:450:22-86
+uses-permission#android.permission.ACCESS_SHORTCUTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:451:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:451:22-72
+uses-permission#android.permission.UNLIMITED_SHORTCUTS_API_CALLS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:452:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:452:22-85
+uses-permission#android.permission.MANAGE_AUDIO_POLICY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:453:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:453:22-75
+uses-permission#android.permission.MANAGE_CAMERA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:454:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:454:22-69
+uses-permission#android.permission.DISABLE_HIDDEN_API_CHECKS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:455:5-83
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:455:22-81
+uses-permission#android.permission.BIND_CARRIER_MESSAGING_CLIENT_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:456:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:456:22-93
+uses-permission#android.permission.BIND_EXTERNAL_STORAGE_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:457:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:457:22-85
+uses-permission#android.permission.MANAGE_APPOPS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:458:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:458:22-69
+uses-permission#android.permission.READ_CLIPBOARD_IN_BACKGROUND
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:459:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:459:22-84
+uses-permission#android.permission.MANAGE_CLIPBOARD_ACCESS_NOTIFICATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:460:5-94
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:460:22-92
+uses-permission#android.permission.SUPPRESS_CLIPBOARD_ACCESS_NOTIFICATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:461:5-96
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:461:22-94
+uses-permission#android.permission.MANAGE_ACCESSIBILITY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:462:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:462:22-76
+uses-permission#android.permission.GRANT_PROFILE_OWNER_DEVICE_IDS_ACCESS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:463:5-95
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:463:22-93
+uses-permission#android.permission.MARK_DEVICE_ORGANIZATION_OWNED
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:464:5-88
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:464:22-86
+uses-permission#android.permission.SMS_FINANCIAL_TRANSACTIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:465:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:465:22-82
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:466:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:466:22-78
+uses-permission#android.permission.RECEIVE_DEVICE_CUSTOMIZATION_READY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:467:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:467:22-90
+uses-permission#android.permission.AMBIENT_WALLPAPER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:468:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:468:22-73
+uses-permission#android.permission.REVIEW_ACCESSIBILITY_SERVICES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:469:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:469:22-85
+uses-permission#android.permission.ACCESS_SHARED_LIBRARIES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:470:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:470:22-79
+uses-permission#android.permission.MONITOR_INPUT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:471:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:471:22-69
+uses-permission#android.permission.ASSOCIATE_INPUT_DEVICE_TO_DISPLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:472:5-91
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:472:22-89
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:473:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:473:22-74
+uses-permission#android.permission.PEEK_DROPBOX_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:474:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:474:22-73
+uses-permission#android.permission.ADD_TRUSTED_DISPLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:475:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:475:22-75
+uses-permission#android.permission.ADD_ALWAYS_UNLOCKED_DISPLAY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:476:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:476:22-83
+uses-permission#android.permission.ACCESS_LOCUS_ID_USAGE_STATS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:477:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:477:22-83
+uses-permission#android.permission.MANAGE_APP_HIBERNATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:478:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:478:22-78
+uses-permission#android.permission.RESET_APP_ERRORS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:479:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:479:22-72
+uses-permission#android.permission.INPUT_CONSUMER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:480:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:480:22-70
+uses-permission#android.permission.CONTROL_DEVICE_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:481:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:481:22-76
+uses-permission#android.permission.BIND_DISPLAY_HASHING_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:482:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:482:22-84
+uses-permission#android.permission.MANAGE_TOAST_RATE_LIMITING
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:483:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:483:22-82
+uses-permission#android.permission.SET_GAME_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:484:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:484:22-72
+uses-permission#android.permission.GET_PEOPLE_TILE_PREVIEW
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:485:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:485:22-79
+uses-permission#android.permission.READ_PEOPLE_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:486:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:486:22-72
+uses-permission#android.permission.READ_NEARBY_STREAMING_POLICY
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:487:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:487:22-84
+uses-permission#android.permission.SET_CLIP_SOURCE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:488:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:488:22-71
+uses-permission#android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:489:5-93
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:489:22-91
+uses-permission#android.permission.ENFORCE_UPDATE_OWNERSHIP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:490:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:490:22-80
+uses-permission#android.permission.CAPTURE_BLACKOUT_CONTENT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:491:5-82
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:491:22-80
+uses-permission#android.permission.LAUNCH_DEVICE_MANAGER_SETUP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:492:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:492:22-83
+uses-permission#android.permission.UPDATE_DEVICE_MANAGEMENT_RESOURCES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:493:5-92
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:493:22-90
+uses-permission#android.permission.BIND_AMBIENT_CONTEXT_DETECTION_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:494:5-96
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:494:22-94
+uses-permission#android.permission.MAKE_UID_VISIBLE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:495:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:495:22-72
+uses-permission#android.permission.HANDLE_QUERY_PACKAGE_RESTART
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:496:5-86
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:496:22-84
+uses-permission#android.permission.REMAP_MODIFIER_KEYS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:497:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:497:22-75
+uses-permission#android.permission.MONITOR_KEYBOARD_BACKLIGHT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:498:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:498:22-82
+uses-permission#android.permission.BIND_WEARABLE_SENSING_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:499:5-87
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:499:22-85
+uses-permission#android.permission.RUN_USER_INITIATED_JOBS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:500:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:500:22-79
+uses-permission#android.permission.GET_APP_METADATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:501:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:501:22-72
+uses-permission#android.permission.STAGE_HEALTH_CONNECT_REMOTE_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:502:5-90
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:502:22-88
+uses-permission#android.permission.DELETE_STAGED_HEALTH_CONNECT_REMOTE_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:503:5-98
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:503:22-96
+uses-permission#android.permission.MIGRATE_HEALTH_CONNECT_DATA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:504:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:504:22-83
+uses-permission#android.permission.LOG_FOREGROUND_RESOURCE_USE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:505:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:505:22-83
+uses-permission#android.permission.ACCESS_GPU_SERVICE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:506:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:506:22-74
+uses-permission#android.permission.GET_ANY_PROVIDER_TYPE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:507:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:507:22-77
+uses-permission#android.permission.SYNC_FLAGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:508:5-68
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:508:22-66
+uses-permission#android.permission.WRITE_FLAGS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:509:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:509:22-67
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:510:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:510:22-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:511:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:511:22-70
+uses-permission#android.permission.READ_CALENDAR
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:512:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:512:22-69
+uses-permission#android.permission.WRITE_CALENDAR
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:513:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:513:22-70
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:514:5-66
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:514:22-64
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:515:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:515:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:516:5-66
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:516:22-64
+uses-permission#android.permission.RECEIVE_WAP_PUSH
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:517:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:517:22-72
+uses-permission#android.permission.RECEIVE_MMS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:518:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:518:22-67
+uses-permission#android.permission.READ_CELL_BROADCASTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:519:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:519:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:520:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:520:22-77
+uses-permission#android.permission.READ_MEDIA_AUDIO
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:521:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:521:22-72
+uses-permission#android.permission.READ_MEDIA_VIDEO
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:522:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:522:22-72
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:523:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:523:22-73
+uses-permission#android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:524:5-89
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:524:22-87
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:525:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:525:22-78
+uses-permission#android.permission.ACCESS_MEDIA_LOCATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:526:5-79
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:526:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:527:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:527:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:528:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:528:22-78
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:529:5-84
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:529:22-82
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:530:5-71
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:530:22-69
+uses-permission#android.permission.WRITE_CALL_LOG
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:531:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:531:22-70
+uses-permission#android.permission.PROCESS_OUTGOING_CALLS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:532:5-80
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:532:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:533:5-74
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:533:22-72
+uses-permission#android.permission.READ_PHONE_NUMBERS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:534:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:534:22-74
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:535:5-68
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:535:22-66
+uses-permission#com.android.voicemail.permission.ADD_VOICEMAIL
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:536:5-85
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:536:22-83
+uses-permission#android.permission.USE_SIP
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:537:5-65
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:537:22-63
+uses-permission#android.permission.ANSWER_PHONE_CALLS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:538:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:538:22-74
+uses-permission#android.permission.ACCEPT_HANDOVER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:539:5-73
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:539:22-71
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:540:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:540:22-68
+uses-permission#android.permission.ACTIVITY_RECOGNITION
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:541:5-78
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:541:22-76
+uses-permission#android.permission.CAMERA
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:542:5-64
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:542:22-62
+uses-permission#android.permission.BODY_SENSORS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:543:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:543:22-68
+uses-permission#android.permission.BODY_SENSORS_BACKGROUND
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:544:5-81
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:544:22-79
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:545:5-76
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:545:22-74
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:546:5-72
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:546:22-70
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:547:5-75
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:547:22-73
+uses-permission#android.permission.BLUETOOTH_ADVERTISE
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:548:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:548:22-75
+uses-permission#android.permission.UWB_RANGING
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:549:5-69
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:549:22-67
+uses-permission#android.permission.NEARBY_WIFI_DEVICES
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:550:5-77
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:550:22-75
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:551:5-70
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:551:22-68
+application
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:553:5-585:19
+INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:553:5-585:19
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\4e74155cfc984cdecda289ca6a725484\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\4e74155cfc984cdecda289ca6a725484\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Lolo\.gradle\caches\transforms-3\4c562f0cfe32346909ce664710862d97\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Lolo\.gradle\caches\transforms-3\4c562f0cfe32346909ce664710862d97\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\ccf944d1f442e807e67723aaede14682\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\ccf944d1f442e807e67723aaede14682\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\987edf5feea96afc0575d92d3a0dff6a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\987edf5feea96afc0575d92d3a0dff6a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:560:2-28
+	android:label
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:558:2-34
+	android:fullBackupContent
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:556:2-47
+	android:roundIcon
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:559:2-47
+	android:icon
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:557:2-36
+	android:allowBackup
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:554:2-28
+	android:theme
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:561:2-38
+	android:dataExtractionRules
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:555:2-58
+activity#com.example.appPerm.RevocarPermisos
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:562:1-564:28
+	android:exported
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:564:1-25
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:563:1-32
+activity#com.example.appPerm.GruposNoSys
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:565:1-567:28
+	android:exported
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:567:1-25
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:566:1-28
+activity#com.example.appPerm.Grupos
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:568:1-570:28
+	android:exported
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:570:1-25
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:569:1-23
+activity#com.example.appPerm.Permisos
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:571:1-573:28
+	android:exported
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:573:1-25
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:572:1-25
+activity#com.example.appPerm.Inicio
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:574:1-584:13
+	android:exported
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:576:1-24
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:575:1-23
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:577:1-580:17
+action#android.intent.action.MAIN
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:578:1-53
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:578:9-50
+category#android.intent.category.LAUNCHER
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:579:1-61
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:579:11-58
+meta-data#android.app.lib_name
+ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:581:1-583:22
+	android:value
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:583:3-19
+	android:name
+		ADDED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:582:3-38
+uses-sdk
+INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\4e74155cfc984cdecda289ca6a725484\transformed\material-1.9.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\4e74155cfc984cdecda289ca6a725484\transformed\material-1.9.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Lolo\.gradle\caches\transforms-3\4c562f0cfe32346909ce664710862d97\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Lolo\.gradle\caches\transforms-3\4c562f0cfe32346909ce664710862d97\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Lolo\.gradle\caches\transforms-3\9b71e260c173f4f894c645826275028c\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Lolo\.gradle\caches\transforms-3\9b71e260c173f4f894c645826275028c\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Lolo\.gradle\caches\transforms-3\b5a9639e2160951774c5f3b44893c029\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Lolo\.gradle\caches\transforms-3\b5a9639e2160951774c5f3b44893c029\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\c6eaf944a37857584d55621381bc446c\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\c6eaf944a37857584d55621381bc446c\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Lolo\.gradle\caches\transforms-3\4c735791e3d18eab81ef953f80d26e76\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Lolo\.gradle\caches\transforms-3\4c735791e3d18eab81ef953f80d26e76\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Lolo\.gradle\caches\transforms-3\23cfbd0e2317970248d24e23db5998f0\transformed\activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\Lolo\.gradle\caches\transforms-3\23cfbd0e2317970248d24e23db5998f0\transformed\activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\aeb489d82879a19a8e773d441d3e8dd0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\aeb489d82879a19a8e773d441d3e8dd0\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\82fc84be7dfc5873d7294e8fd441a25b\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\82fc84be7dfc5873d7294e8fd441a25b\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\5d85866f664249cd930d31641ab1bbef\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\5d85866f664249cd930d31641ab1bbef\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\52a5c8dd28dc9a8ef13a8dc99ae8c134\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\52a5c8dd28dc9a8ef13a8dc99ae8c134\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\66ecef0f50e394f19b563694703ee3ce\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\66ecef0f50e394f19b563694703ee3ce\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\e4dfedaeebca7aac391b5c476a7fa2b9\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\e4dfedaeebca7aac391b5c476a7fa2b9\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\b0644e11e1075eaa20037dec8ff5656f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\b0644e11e1075eaa20037dec8ff5656f\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\8f54571b931d710cfd090c039c296fe6\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\8f54571b931d710cfd090c039c296fe6\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\5f62135546bd040edf90054b4cb036f3\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\5f62135546bd040edf90054b4cb036f3\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\f9ad2accb9a2c7343cc0f3aa815a385d\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\f9ad2accb9a2c7343cc0f3aa815a385d\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\eed82ebf2c05fb076539f7505ae0ec42\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\eed82ebf2c05fb076539f7505ae0ec42\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\ecd2a7f1b4dc9da86eb07b6977e00090\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\ecd2a7f1b4dc9da86eb07b6977e00090\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\14e94c8781f325f1f67c8c3fc264343a\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\14e94c8781f325f1f67c8c3fc264343a\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\c0134e89f5daba58cf6a14b75e60be97\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\c0134e89f5daba58cf6a14b75e60be97\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\dc44d8b82aaed509e07cdc7ec299c630\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\dc44d8b82aaed509e07cdc7ec299c630\transformed\core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\0b615556ef416493c3098f76f2d28907\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\0b615556ef416493c3098f76f2d28907\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Lolo\.gradle\caches\transforms-3\ea2270aa42e04683fac150c4e1eb7039\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Lolo\.gradle\caches\transforms-3\ea2270aa42e04683fac150c4e1eb7039\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\df229e3dc834d57e13e2eecd36e09423\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\df229e3dc834d57e13e2eecd36e09423\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\8684b2c9a226c62edd187a710faf0c2e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\8684b2c9a226c62edd187a710faf0c2e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\4581d6a549e6ea54095b15ceef64e285\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\4581d6a549e6ea54095b15ceef64e285\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\ccf944d1f442e807e67723aaede14682\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\ccf944d1f442e807e67723aaede14682\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\987edf5feea96afc0575d92d3a0dff6a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\987edf5feea96afc0575d92d3a0dff6a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\532a9a615dd4ab68483e4abf5735563d\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\532a9a615dd4ab68483e4abf5735563d\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\f4190d09f21d230929d86d1bb60b194b\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\f4190d09f21d230929d86d1bb60b194b\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\a1cef0f402685f29312c7767fddea3e6\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\Lolo\.gradle\caches\transforms-3\a1cef0f402685f29312c7767fddea3e6\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\c3f5f4fd17bac6497fe4ecfba81d21c1\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Lolo\.gradle\caches\transforms-3\c3f5f4fd17bac6497fe4ecfba81d21c1\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\9a7fdc67788ad6e6f7d1457f74265cbe\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\9a7fdc67788ad6e6f7d1457f74265cbe\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\f9759b91677078bc353a874025eac5cf\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\f9759b91677078bc353a874025eac5cf\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\0c7e0ae4d3b29b7424248829eeece66a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\0c7e0ae4d3b29b7424248829eeece66a\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\e0fcb55e8cc5c262dd0d23ba4eb92de4\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Lolo\.gradle\caches\transforms-3\e0fcb55e8cc5c262dd0d23ba4eb92de4\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\987edf5feea96afc0575d92d3a0dff6a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Lolo\.gradle\caches\transforms-3\987edf5feea96afc0575d92d3a0dff6a\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.example.appPerm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.example.appPerm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\Lolo\.gradle\caches\transforms-3\2052065a37b2bde695f73f3abcdb5008\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78

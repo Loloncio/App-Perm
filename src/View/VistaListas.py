@@ -131,6 +131,8 @@ class VistaListas(ctk.CTkToplevel):
         self.parent.deiconify()
         self.destroy()
 
+    def aMenu(self):
+        self.volver()
     def confirmar(self):
         if self.permiso == "":
             self.errores.configure(text="Debes seleccionar un permiso.")

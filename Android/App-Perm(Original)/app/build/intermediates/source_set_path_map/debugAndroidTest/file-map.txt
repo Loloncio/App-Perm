@@ -1,0 +1,6 @@
+com.example.appPerm.test.app-core-1.5.0-0 C:\Users\Lolo\.gradle\caches\transforms-3\645808635d5f9e4931d1c6ab86dfa016\transformed\core-1.5.0\res
+com.example.appPerm.test.app-annotation-experimental-1.3.0-1 C:\Users\Lolo\.gradle\caches\transforms-3\ea2270aa42e04683fac150c4e1eb7039\transformed\annotation-experimental-1.3.0\res
+com.example.appPerm.test.app-androidTest-2 D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\build\generated\res\resValues\androidTest\debug
+com.example.appPerm.test.app-mergeDebugAndroidTestResources-3 D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.appPerm.test.app-mergeDebugAndroidTestResources-4 D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.appPerm.test.app-merged_res-5 D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\build\intermediates\merged_res\debugAndroidTest

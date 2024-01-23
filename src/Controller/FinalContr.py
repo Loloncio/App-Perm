@@ -26,11 +26,19 @@ class FinalContr():
     # Creamos un permiso para el manifest que tendrá un unico permiso, grupo y protectionLevel, el permiso
     # y el protection level los ha elegido el usuario.
     def creaManifestProtection(self, permiso, protection):
-        nuevoProtection = '\n<permission\
+        print(self.modeloPermisos.getGrupo(permiso))
+        if(self.modeloPermisos.getGrupo(permiso) != ''):
+            nuevoProtection = '\n<permission\
             \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+\
             '"\nandroid:protectionLevel="'+protection.lower()+\
             '"\nandroid:permissionGroup="'+self.modeloPermisos.getGrupo(permiso)+'"/>'\
             '\n<uses-permission android:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"/>'
+        else:
+            nuevoProtection = '\n<permission\
+            \nandroid:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+\
+            '"\nandroid:protectionLevel="'+protection.lower()+'"/>'\
+            '\n<uses-permission android:name="'+self.modeloPermisos.getPermisoCompleto(permiso)+'"/>'
+
         manifest = self.modeloManifest.getManifest1()+nuevoProtection+self.modeloManifest.getManifest2()
         self.modeloManifest.setManifest(manifest)
         return

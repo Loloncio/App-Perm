@@ -56,11 +56,11 @@ class PresenterGrupos constructor() {
     fun infoGrupo(grupo: String?, callback: (List<String>) -> Unit) {
         if (grupo != null) {
             view.packageManager.getPlatformPermissionsForGroup(grupo, view.mainExecutor) { group ->
-                val cadenas: MutableList<String> = mutableListOf<String>()
-                cadenas.add("Permisos en el grupo $grupo:\n")
+                val infoGrupo: MutableList<String> = mutableListOf<String>()
+                infoGrupo.add("Permisos en el grupo $grupo:\n")
                 //Comprobamos si el grupo tiene o no permisos
                 if (group.isEmpty()) {
-                    cadenas.add("Este grupo no contiene permisos")
+                    infoGrupo.add("Este grupo no contiene permisos")
                 } else {
                     for (permiso in group) {
                         //Miramos el protection level del permiso
@@ -72,10 +72,10 @@ class PresenterGrupos constructor() {
                                 4 -> "Internal"
                                 else -> "Desconocido"
                             }
-                        cadenas.add("$permiso\n$protection\n")
+                        infoGrupo.add("$permiso\n$protection\n")
                     }
                 }
-                callback(cadenas)
+                callback(infoGrupo)
             }
         }
     }
