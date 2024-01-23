@@ -50,8 +50,16 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 
 ## TODO
 
-1. Final.py
+1. VistaFinal.py
 	<ul>
 		<li>Arreglar bug por el cual a veces no se muestra nada hasta que no se ha compilado el apk</li>
-		<li>Aquí podría ir un emulador android o un botón para abrir uno si fuese posible</li>
+	</ul>
+2. VistaCompara.py
+	<ul>
+		<li>Obtener lsita csv del dispositivo</li>
+		<li>Comparar los grupos de permisos</li>
+	</ul>
+3. General
+	<ul>
+		<li>Arreglar problema en pantallas con alto dpi o altas resoluciones por el cual la interfaz no se adapta correctamente</li>
 	</ul>
