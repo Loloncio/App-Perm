@@ -1656,78 +1656,79 @@
 577-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:559:2-47
 578        android:supportsRtl="true"
 578-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:560:2-28
-579        android:theme="@style/Theme.AppPerm" >
-579-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:561:2-38
-580        <activity
-580-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:562:1-564:28
-581            android:name="com.example.appPerm.RevocarPermisos"
-581-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:563:1-32
-582            android:exported="false" />
-582-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:564:1-25
-583        <activity
-583-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:565:1-567:28
-584            android:name="com.example.appPerm.GruposNoSys"
-584-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:566:1-28
-585            android:exported="false" />
-585-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:567:1-25
-586        <activity
-586-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:568:1-570:28
-587            android:name="com.example.appPerm.Grupos"
-587-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:569:1-23
-588            android:exported="false" />
-588-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:570:1-25
-589        <activity
-589-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:571:1-573:28
-590            android:name="com.example.appPerm.Permisos"
-590-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:572:1-25
-591            android:exported="false" />
-591-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:573:1-25
-592        <activity
-592-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:574:1-584:13
-593            android:name="com.example.appPerm.Inicio"
-593-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:575:1-23
-594            android:exported="true" >
-594-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:576:1-24
-595            <intent-filter>
-595-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:577:1-580:17
-596                <action android:name="android.intent.action.MAIN" />
-596-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:578:1-53
-596-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:578:9-50
-597
-598                <category android:name="android.intent.category.LAUNCHER" />
-598-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:579:1-61
-598-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:579:11-58
-599            </intent-filter>
-600
-601            <meta-data
-601-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:581:1-583:22
-602                android:name="android.app.lib_name"
-602-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:582:3-38
-603                android:value="" />
-603-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:583:3-19
-604        </activity>
-605
-606        <provider
-606-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-607            android:name="androidx.startup.InitializationProvider"
-607-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-608            android:authorities="com.example.appPerm.androidx-startup"
-608-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-609            android:exported="false" >
-609-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-610            <meta-data
-610-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-611                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-611-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-612                android:value="androidx.startup" />
-612-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-613            <meta-data
-613-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-614                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-614-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-615                android:value="androidx.startup" />
-615-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-616        </provider>
-617    </application>
-618
-619</manifest>
+579        android:testOnly="true"
+580        android:theme="@style/Theme.AppPerm" >
+580-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:561:2-38
+581        <activity
+581-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:562:1-564:28
+582            android:name="com.example.appPerm.RevocarPermisos"
+582-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:563:1-32
+583            android:exported="false" />
+583-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:564:1-25
+584        <activity
+584-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:565:1-567:28
+585            android:name="com.example.appPerm.GruposNoSys"
+585-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:566:1-28
+586            android:exported="false" />
+586-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:567:1-25
+587        <activity
+587-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:568:1-570:28
+588            android:name="com.example.appPerm.Grupos"
+588-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:569:1-23
+589            android:exported="false" />
+589-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:570:1-25
+590        <activity
+590-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:571:1-573:28
+591            android:name="com.example.appPerm.Permisos"
+591-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:572:1-25
+592            android:exported="false" />
+592-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:573:1-25
+593        <activity
+593-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:574:1-584:13
+594            android:name="com.example.appPerm.Inicio"
+594-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:575:1-23
+595            android:exported="true" >
+595-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:576:1-24
+596            <intent-filter>
+596-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:577:1-580:17
+597                <action android:name="android.intent.action.MAIN" />
+597-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:578:1-53
+597-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:578:9-50
+598
+599                <category android:name="android.intent.category.LAUNCHER" />
+599-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:579:1-61
+599-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:579:11-58
+600            </intent-filter>
+601
+602            <meta-data
+602-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:581:1-583:22
+603                android:name="android.app.lib_name"
+603-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:582:3-38
+604                android:value="" />
+604-->D:\TFG\Python\App-Perm\Android\App-Perm(Original)\app\src\main\AndroidManifest.xml:583:3-19
+605        </activity>
+606
+607        <provider
+607-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+608            android:name="androidx.startup.InitializationProvider"
+608-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+609            android:authorities="com.example.appPerm.androidx-startup"
+609-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+610            android:exported="false" >
+610-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+611            <meta-data
+611-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+612                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+612-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+613                android:value="androidx.startup" />
+613-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Lolo\.gradle\caches\transforms-3\49ab8c38ba2198b36cefe4adc7561c80\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+614            <meta-data
+614-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+615                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+615-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+616                android:value="androidx.startup" />
+616-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Lolo\.gradle\caches\transforms-3\8497c0c4cb0dcdb7a95079a246e6efc0\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+617        </provider>
+618    </application>
+619
+620</manifest>

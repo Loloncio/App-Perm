@@ -59,7 +59,3 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 		<li>Obtener lsita csv del dispositivo</li>
 		<li>Comparar los grupos de permisos</li>
 	</ul>
-3. General
-	<ul>
-		<li>Arreglar problema en pantallas con alto dpi o altas resoluciones por el cual la interfaz no se adapta correctamente</li>
-	</ul>

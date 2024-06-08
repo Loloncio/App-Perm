@@ -3,10 +3,12 @@
 # En función de quien lo llame, mostrara unas listas u otras y hará unas
 # cosas u otras
 # Autor: Alejandro de la Cruz Garijo
-import tkinter as tk
+
 import customtkinter as ctk
 import os
 import sys
+import ctypes
+import time
 
 PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
@@ -16,7 +18,7 @@ from Controller.ListasContr import ListasContr
 
 class VistaListas(ctk.CTkToplevel):
     controlador = ListasContr()
-    def __init__(self, parent, opt, *args, **kwargs):
+    def __init__(self, parent, opt, geometry, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.permiso = ""
         self.grupo = []
@@ -25,11 +27,13 @@ class VistaListas(ctk.CTkToplevel):
         self.errores = None
         self.height = 720
         self.width = 1280
+        self.updated = time.time()
         self.parent = parent
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
         self.parent.withdraw()
-        self.geometry("1280x720")
+        scale_factor = ctypes.windll.shcore.GetScaleFactorForDevice(0)/100
+        self.geometry(""+str(geometry[0]//scale_factor)+"x"+str(geometry[1]//scale_factor)+"+"+str(geometry[2])+"+"+str(geometry[3]))
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
         self.title("Modificar permisos")
@@ -60,11 +64,11 @@ class VistaListas(ctk.CTkToplevel):
 
         # Creación de frames para las listas
         for i in range(0,3):
-            listas.append(ctk.CTkScrollableFrame(master=self,fg_color="#504F4F"))
+            listas.append(ctk.CTkScrollableFrame(master=self,fg_color="#504F4F",width=max(100, self.width // 3 - 30),height=self.height - 180))
         # Creación de etiquetas para las cabeceras
         for i in textoEtiquetas:
             etiquetas.append(ctk.CTkLabel(self, text=i, text_color="white", fg_color="#504F4F",
-                                corner_radius=10, font=headersFont,height=100))
+                                corner_radius=10, font=headersFont,height=100,width=max(100, self.width // 3 - 6)))
         # Creación de checkboxes para los permisos
         for i in textoPermisos:
             permisos.append(ctk.CTkCheckBox(listas[0], text=i, text_color="white", font= textFont,
@@ -215,16 +219,17 @@ class VistaListas(ctk.CTkToplevel):
                     checkbox.deselect()
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
     def ajustarTamanos(self, event, etiquetas, listas, confirmacion, volver):
-        anchoVentana = self.winfo_width()  # Ancho de la ventana
-        altoVentana = self.winfo_height()  # Alto de la ventana
-        if(self.height != altoVentana or self.width != anchoVentana):
-            self.height = altoVentana
-            self.width = anchoVentana
-            for i, j in zip(etiquetas, listas):
-                i.configure(width=max(100, anchoVentana // 3 - 6))
-                j.configure(width=max(100, anchoVentana // 3 - 30))
-                j.configure(height=altoVentana - 180)
-                confirmacion.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
-                volver.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
-            # Actualiza la ventana
-            self.update_idletasks()
+        if(time.time()- self.updated > 0.5 ):
+            scale_factor = ctypes.windll.shcore.GetScaleFactorForDevice(0)/100
+            anchoVentana = self.winfo_width()//scale_factor  # Ancho de la ventana
+            altoVentana = self.winfo_height()//scale_factor  # Alto de la ventana
+            if(self.height != altoVentana or self.width != anchoVentana):
+                self.height = altoVentana
+                self.width = anchoVentana
+                for i, j in zip(etiquetas, listas):
+                    i.configure(width=max(100, anchoVentana // 3 - 6))
+                    j.configure(width=max(100, anchoVentana // 3 - 30))
+                    j.configure(height=altoVentana - 180)
+                    confirmacion.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
+                    volver.configure(width=max(50, (anchoVentana // 3 - 6) // 2))
+            self.updated = time.time()

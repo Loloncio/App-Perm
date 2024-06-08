@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 class PermisosMod constructor() {
     private var permisos = arrayOf(
+        Manifest.permission.READ_EXTERNAL_STORAGE,
+        Manifest.permission.WRITE_EXTERNAL_STORAGE,
         "appperm.permission.TEST_PERMISSION3",
         Manifest.permission.ACCEPT_HANDOVER,
         Manifest.permission.ACCESS_COARSE_LOCATION,
@@ -31,7 +33,6 @@ class PermisosMod constructor() {
         Manifest.permission.READ_CALENDAR,
         Manifest.permission.READ_CALL_LOG,
         Manifest.permission.READ_CONTACTS,
-        Manifest.permission.READ_EXTERNAL_STORAGE,
         Manifest.permission.READ_MEDIA_AUDIO,
         Manifest.permission.READ_MEDIA_IMAGES,
         Manifest.permission.READ_MEDIA_VIDEO,
@@ -48,7 +49,6 @@ class PermisosMod constructor() {
         Manifest.permission.WRITE_CALENDAR,
         Manifest.permission.WRITE_CALL_LOG,
         Manifest.permission.WRITE_CONTACTS,
-        Manifest.permission.WRITE_EXTERNAL_STORAGE,
         )
 
     fun getPermisos(): Array<String> {

@@ -23,7 +23,7 @@ class Grupos : AppCompatActivity() {
 
         val listaGrupos: ListView = findViewById(R.id.PermissionGroups)
         grupoView = findViewById(R.id.PermissionsInGroup)
-
+        presenter.saveGroupos()
         //Obtenemos una lista con el nombre de todos los grupos y la mostramos en la lista
         val nombreGrupos: MutableList<String> = presenter.getGrupos()
         adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, nombreGrupos)
@@ -50,8 +50,6 @@ class Grupos : AppCompatActivity() {
                 }
             }
         }
-        // Mostramos en los logs los grupos que tienen permisos y que permisos contiene.
-        presenter.getPermissionsInGroups()
     }
 
     // Método para que funcione el botón de vuelta al menu

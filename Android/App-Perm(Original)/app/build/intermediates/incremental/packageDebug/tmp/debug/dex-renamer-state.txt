@@ -1,4 +1,4 @@
-#Tue Jan 23 20:30:46 CET 2024
+#Sun Jan 28 20:56:50 CET 2024
 base.0=D\:\\TFG\\Python\\App-Perm\\Android\\App-Perm(Original)\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\TFG\\Python\\App-Perm\\Android\\App-Perm(Original)\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=D\:\\TFG\\Python\\App-Perm\\Android\\App-Perm(Original)\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex

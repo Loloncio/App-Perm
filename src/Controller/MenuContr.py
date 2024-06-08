@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 
+
 PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
                os.pardir))
@@ -17,18 +18,18 @@ class MenuContr:
         ruta_adb = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../Android/Sdk/platform-tools/adb")
         comando = f'{ruta_adb} start-server'
         subprocess.run(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    def aDefecto(self, ventanaPrincipal):
-        VistaDefecto(ventanaPrincipal)
+    def aDefecto(self, ventanaPrincipal, geometry):
+        VistaDefecto(ventanaPrincipal, geometry)
         return
-    def aListas(self, ventanaMenu, opcion):
-        VistaListas(ventanaMenu.parent, opcion)
+    def aListas(self, ventanaMenu, opcion, geometry):
+        VistaListas(ventanaMenu.parent, opcion, geometry)
         return
-    def aFirmadas(self, ventanaPrincipal):
-        VistaFirmadas(ventanaPrincipal)
+    def aFirmadas(self, ventanaPrincipal, geometry):
+        VistaFirmadas(ventanaPrincipal, geometry)
         return
-    def aADB(self, ventanaPrincipal):
-        VistaADB(ventanaPrincipal)
+    def aADB(self, ventanaPrincipal, geometry):
+        VistaADB(ventanaPrincipal, geometry)
         return
-    def aAyuda(self, ventanaPrincipal):
-        VistaAyuda(ventanaPrincipal)
+    def aAyuda(self, ventanaPrincipal, geometry):
+        VistaAyuda(ventanaPrincipal, geometry)
         return

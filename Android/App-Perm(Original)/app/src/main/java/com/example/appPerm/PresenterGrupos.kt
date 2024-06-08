@@ -6,7 +6,6 @@ import android.content.pm.PermissionGroupInfo
 import android.os.Environment
 import android.util.Log
 import android.view.MenuItem
-import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
@@ -74,19 +73,36 @@ class PresenterGrupos constructor() {
                             }
                         cadenas.add("$permiso\n$protection\n")
                     }
+
                 }
                 callback(cadenas)
             }
         }
     }
 
+    fun getPermisos(grupo: String?, callback: (List<String>) -> Unit) {
+        if (grupo != null) {
+            view.packageManager.getPlatformPermissionsForGroup(grupo, view.mainExecutor) { group ->
+                val permisos: MutableList<String> = mutableListOf<String>()
+
+                //Comprobamos si el grupo tiene o no permisos
+                if (group.isEmpty()) {
+                    callback(permisos)
+                } else {
+                    for (permiso in group) {
+                        permisos.add(permiso)
+                    }
+                    callback(permisos)
+                }
+            }
+        }
+    }
+
     // Muestra en los logs información de todos los permisos ordenados por pertenencia a cada grupo.
-    @OptIn(DelicateCoroutinesApi::class)
-    fun getPermissionsInGroups() {
+    fun saveGroupos() {
         if(!compruebaCarpeta("TFG"))
             return
-        val packageManager = view.packageManager
-        val listaGrupos = mutableListOf<String>()
+        val listaGrupos = getGrupos()
         val carpetaTFG = File(Environment.getExternalStorageDirectory(), "TFG")
         val rutaCompleta = File(carpetaTFG, "Grupos.csv")
 
@@ -97,32 +113,22 @@ class PresenterGrupos constructor() {
 
             // Escribir una línea de cabecera en el archivo CSV
             bufferedWriter.write("Grupo;Permisos")
-            bufferedWriter.newLine()
-            GlobalScope.launch(Dispatchers.Main) {
-                grupos = packageManager.getAllPermissionGroups(PackageManager.GET_META_DATA)
-                for (grupo in grupos) {
-                    val nombreGrupo = grupo.name
-                    withContext(Dispatchers.IO) {
-                        packageManager.getPlatformPermissionsForGroup(
-                            nombreGrupo, view.mainExecutor
-                        ) { group ->
-                            var permisos = ""
-                            for (grupo in group){
-                                permisos +="$grupo,"
-                            }
-                            permisos = permisos.dropLast(1)
-                            listaGrupos.add("$nombreGrupo;$permisos")
-                        }
+            bufferedWriter.close()
+            outputStreamWriter.close()
+            fileOutputStream.close()
+
+            for (grupo in listaGrupos) {
+                getPermisos(grupo) { permisos ->
+                    var text = "\n$grupo;"
+                    if(permisos.isNotEmpty()){
+                        for (permiso in permisos)
+                            text += "$permiso,"
+                        text = text.substring(0, text.length - 1)
                     }
+                    rutaCompleta.appendText(text)
                 }
-                for (grupo in listaGrupos) {
-                    bufferedWriter.write(grupo)
-                    bufferedWriter.newLine()
-                }
-                bufferedWriter.close()
-                outputStreamWriter.close()
-                fileOutputStream.close()
             }
+
             Log.d("CSV", "Archivo CSV creado exitosamente en: ${rutaCompleta.absolutePath}")
         } catch (e: IOException) {
             e.printStackTrace()

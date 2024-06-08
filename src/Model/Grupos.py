@@ -4,6 +4,8 @@
 # Autor: Alejandro de la Cruz Garijo
 import csv
 import os
+import pandas as pd
+
 class Grupos():
     # Abrimos el csv con los datos y creamos un diccionario con los grupos como clave y
     # una lista de sus permsios como valor
@@ -37,15 +39,21 @@ class Grupos():
             if grupo in group:
                 return group
 
-    def getPermisosMovil(self):
-        self.gruposMovil = {}
+    def getGruposPermisosMovil(self):
         ruta_csv = os.path.join(os.path.dirname(os.path.abspath(__file__)), "./PermisosMovil.csv")
-        with open(ruta_csv) as file:
-            csv_reader = csv.DictReader(file, delimiter=';')
-            for row in csv_reader:
-                permiso = row['Permiso']
-                grupo = row['Grupo']
-                if grupo in self.gruposMovil:
-                    self.gruposMovil[grupo].append(permiso)
-                else:
-                    self.gruposMovil.update({grupo:[permiso]})
+        # Lee los datos de los dos archivos CSV.
+        data1 = pd.read_csv(ruta_csv, delimiter=";")
+        # Crea un diccionario con los permisos de los grupos en el primer archivo CSV.
+        group_permissions_1 = {}
+        for row in data1.itertuples():
+            key = row[1]
+            if(type(row.Permisos)!=type(1.0)):
+                value = row.Permisos.split(",")
+                group_permissions_1[key] = value
+            else:
+                value = ""
+
+        return group_permissions_1
+
+    def getGruposPermisos(self):
+        return self.grupos

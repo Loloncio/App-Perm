@@ -44,7 +44,7 @@ class PresenterPermisos constructor() {
 
     // Funcion que ibtiene una lista de todos los permisos declarados en el Manifest
     fun getPermisos(): Array<String> {
-        return permisosMod.getPermisos("com.example.appPerm",view)
+        return permisosMod.getPermisos("com.example.appPerm", view)
     }
 
     //Obtenemos información de un permiso
@@ -77,7 +77,7 @@ class PresenterPermisos constructor() {
     }
 
     fun creaInfoPermisos() {
-        if(!compruebaCarpeta("TFG"))
+        if (!compruebaCarpeta("TFG"))
             return
         val listaPermisosInfo = mutableListOf<String>()
         val carpetaTFG = File(Environment.getExternalStorageDirectory(), "TFG")

@@ -70,31 +70,40 @@ class VistaMenu(ctk.CTkFrame):
 
     # Funciones para los botones
     def defecto(self):
-        self.controlador.aDefecto(self.parent)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aDefecto(self.parent, geometry)
         return
     def cambioGrupo(self):
-        self.controlador.aListas(self, 1)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aListas(self, 1, geometry)
         return
     def permisoADosGrupos(self):
-        self.controlador.aListas(self, 2)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aListas(self, 2, geometry)
         return
     def cambiaProtLevel(self):
-        self.controlador.aListas(self, 3)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aListas(self, 3, geometry)
         return
     def normalAGrupo(self):
-        self.controlador.aListas(self, 4)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aListas(self, 4, geometry)
         return
     def signaAGrupo(self):
-        self.controlador.aListas(self, 5)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aListas(self, 5, geometry)
         return
     def verDispositivo(self):
-        self.controlador.aADB(self.parent)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aADB(self.parent, geometry)
         return
     def appsFirmadas(self):
-        self.controlador.aFirmadas(self.parent)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aFirmadas(self.parent, geometry)
         return
     def ayuda(self):
-        self.controlador.aAyuda(self.parent)
+        geometry = [self.winfo_width(), self.winfo_height(), self.winfo_x(), self.winfo_y()]
+        self.controlador.aAyuda(self.parent, geometry)
         return
 
 if __name__ == "__main__":

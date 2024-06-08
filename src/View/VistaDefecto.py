@@ -9,27 +9,30 @@
 # Autor: Alejandro de la Cruz Garijo
 import os
 import sys
+import ctypes
+import time
 
 PROJECT_ROOT = os.path.abspath(os.path.join(
                os.path.dirname(__file__),
                os.pardir))
 sys.path.append(PROJECT_ROOT)
 
-import tkinter as tk
 import customtkinter as ctk
 from Controller.DefectoContr import DefectoContr
 
 class VistaDefecto(ctk.CTkToplevel):
     controlador = DefectoContr()
-    def __init__(self, parent, *args, **kwargs):
+    def __init__(self, parent, geometry, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
         self.height = 720
         self.width = 1280
+        self.updated = time.time()
         self.parent = parent
         # Ajustes de ventana principal
         self.protocol("WM_DELETE_WINDOW", self.cerrar)
         self.parent.withdraw()
-        self.geometry("1280x720")
+        scale_factor = ctypes.windll.shcore.GetScaleFactorForDevice(0)/100
+        self.geometry(""+str(geometry[0]//scale_factor)+"x"+str(geometry[1]//scale_factor)+"+"+str(geometry[2])+"+"+str(geometry[3]))
         self.minsize(width=1280,height=720)
         self.configure(fg_color = "#1E1E1E")
         self.title("Permisos y grupos por defecto")
@@ -82,11 +85,17 @@ class VistaDefecto(ctk.CTkToplevel):
         # Creación del botón para volver al menu principal
         volver = ctk.CTkButton(self, command=self.volver, text="Volver", font=leftFont, corner_radius=10,
                                 fg_color="#1E1E1E", text_color="white", height=40)
+        comparacion = ctk.CTkButton(self, command=self.compara, text="Comparar grupos", font=leftFont, corner_radius=10,
+                                fg_color="#1E1E1E", text_color="white", height=40)
+        instala = ctk.CTkButton(self, command=self.instalaApp, text="Instalar AppPerm", font=leftFont, corner_radius=10,
+                                fg_color="#1E1E1E", text_color="white", height=40)
         # Colocación de los frame base para las listas
         for i in range(3):
             frames[i].grid(column= 0, row = i, columnspan=2, padx=3, pady=3,)
         # Colocación del botón de vuelta
-        volver.grid(column = 0, row = 3, pady = 3, padx = 20, sticky="w")
+        volver.grid(column = 0, row = 3,pady = 5, padx = 10, sticky="w")
+        instala.grid(column = 1, row = 3,pady = 5, sticky="w")
+        comparacion.grid(column = 1, row = 3,pady = 5,padx = 10, sticky="e")
         # Colocación de los frames donde pondremos las listas de botones y el resultado de la elección
         for i in range(3):
             scrolls[i].grid(row = 0, column=0, padx = 5)
@@ -140,20 +149,25 @@ class VistaDefecto(ctk.CTkToplevel):
     def instalaApp(self):
         self.controlador.isntalaApp()
 
+    def compara(self):
+        self.controlador.aCompara(self)
+        return
+
     # Función para ajustar los tamaños al cambiar el tamaño de la ventana
     def ajustarTamanos(self, event, frames, scrolls, labels):
-        anchoVentana = self.winfo_width()
-        altoVentana = self.winfo_height()
-        # Si se ha generado un evento configure (como hacer scroll) pero no cambia el tamaño de pantalla,
-        # no hacemos nada.
-        if(self.height != altoVentana or self.width != anchoVentana):
-            self.height = altoVentana
-            self.width = anchoVentana
+        if(time.time()- self.updated > 0.5 ):
+            scale_factor = ctypes.windll.shcore.GetScaleFactorForDevice(0)/100
+            anchoVentana = self.winfo_width()//scale_factor  # Ancho de la ventana
+            altoVentana = self.winfo_height()//scale_factor  # Alto de la ventana
+            # Si se ha generado un evento configure (como hacer scroll) pero no cambia el tamaño de pantalla,
+            # no hacemos nada.
+            if(self.height != altoVentana or self.width != anchoVentana):
+                self.height = altoVentana
+                self.width = anchoVentana
 
-            for i in range(3):
-                frames[i].configure(width = anchoVentana-10,height=altoVentana/3-10)
-                labels[i].configure(width = (anchoVentana/2)-20,height=altoVentana/3-46)
-                scrolls[i].configure(width = (anchoVentana/2)-40,height=altoVentana/3-46)
-                scrolls[i+3].configure(width = (anchoVentana/2)-40,height=altoVentana/3-46)
-            # Actualiza la ventana
-            self.update_idletasks()
+                for i in range(3):
+                    frames[i].configure(width = anchoVentana-10,height=altoVentana/3-10)
+                    labels[i].configure(width = (anchoVentana/2)-20,height=altoVentana/3-46)
+                    scrolls[i].configure(width = (anchoVentana/2)-40,height=altoVentana/3-46)
+                    scrolls[i+3].configure(width = (anchoVentana/2)-40,height=altoVentana/3-46)
+            self.updated = time.time()

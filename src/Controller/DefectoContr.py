@@ -10,6 +10,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(
 sys.path.append(PROJECT_ROOT)
 from Model.Grupos import Grupos
 from Model.Permisos import Permisos
+from View.VistaCompara import VistaCompara
 
 class DefectoContr():
     # Cargamos los modelos de datos necesarios
@@ -71,3 +72,7 @@ class DefectoContr():
 
         print("Salida: ", resultado.stdout)
         print("Error: ", resultado.stderr)
+
+    def aCompara(self, ventanaPrincipal):
+        VistaCompara(ventanaPrincipal)
+        return

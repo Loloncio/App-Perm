@@ -28,7 +28,7 @@ class Permisos : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, permisos)
         listaPermisos.adapter = adapter
 
-        // Cuando se pulsa un elemento de la lista mostramos información dle permiso
+        // Cuando se pulsa un elemento de la lista mostramos información del permiso
         listaPermisos.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             val permiso = adapter.getItem(position)
             if (permiso != null) {
