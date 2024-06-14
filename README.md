@@ -32,7 +32,7 @@ Esta aplicación tiene por objetivo poder probar algunas preguntas que pueden su
 ## Funcionalidad
 El proyecto constará de una aplicación Python y una app Android. La app Android ya está creada, con la aplicación Python endremos que crear distintos AndroidManifest.xml que usaremos en esa app. La aplicación Python también deberá compilar e instalar esa app Android. A partir de ahora cuando digamos app, estaremos refiriendonos a la app Android y cuando digamos aplicación, estaremos hablando de la aplicación Python. Las funciones que deberá realizar la aplicación serán:
 
-* Mostrar permisos y grupos de permisos por defecto: En este caso se compilará e instalará la app original donde el usuario podrá ver los grupos y grupos de permisos y que permisos están asociados a que grupo. Al mismo tiempo, en la aplicación se mostrará esa misma lista que ya se ha obtenido previamente.
+* Mostrar permisos y grupos de permisos por defecto: En este caso se compilará e instalará la app original donde el usuario podrá ver los grupos y grupos de permisos y que permisos están asociados a que grupo. Al mismo tiempo, en la aplicación se mostrará esa misma lista que ya se ha obtenido previamente. También, permitirá comparar la lista de permisos con los permisos del dispositivo para ver diferencias en la pertenencia de los permisos dangerous a distintos grupos.
 
 * Añadir un permiso a otro grupo de permisos: La aplicación creará un AndroidManifest.xml con esa orden, a continuación, se sustituirá el manifest original por ese nuevo, se compilará, se instalará y se devolverá éxito o el mensaje de error al instalar.
 
@@ -47,15 +47,3 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 * Ver los permisos y grupos del dispositivo: Se hará mediante adb, se manda el comando y se muestra el resultado en la aplicación, es decir, en este caso no haríamos nada de la app Android.
 
 * Pruebas con apps firmadas: En este caso se abrirá una pestaña similar al menu principal con más opciones sobre estas pruebas, instlar una app firmada con permisos dangerous o una con permisos signature y otra opción para comprobar que las firmas de las apks es la misma.
-
-## TODO
-
-1. VistaFinal.py
-	<ul>
-		<li>Arreglar bug por el cual a veces no se muestra nada hasta que no se ha compilado el apk</li>
-	</ul>
-2. VistaCompara.py
-	<ul>
-		<li>Obtener lsita csv del dispositivo</li>
-		<li>Comparar los grupos de permisos</li>
-	</ul>
