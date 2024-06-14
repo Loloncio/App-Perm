@@ -6,7 +6,6 @@
 ## Índice
 - #### [Objetivos del proyecto](https://github.com/Loloncio/App-Perm/tree/main#objetivos-del-proyecto-1)
 - #### [Funcionalidad](https://github.com/Loloncio/App-Perm/tree/main#funcionalidad-1)
-- #### [TODO](https://github.com/Loloncio/App-Perm/tree/main#todo-1)
 
 ## Objetivos del proyecto
 Esta aplicación tiene por objetivo poder probar algunas preguntas que pueden surgir al iniciarse en los permisos de Android:
