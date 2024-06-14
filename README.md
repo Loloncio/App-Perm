@@ -6,6 +6,7 @@
 ## Índice
 - #### [Objetivos del proyecto](https://github.com/Loloncio/App-Perm/tree/main#objetivos-del-proyecto-1)
 - #### [Funcionalidad](https://github.com/Loloncio/App-Perm/tree/main#funcionalidad-1)
+- #### [Funcionalidad](https://github.com/Loloncio/App-Perm/tree/main#Ejecución-1)
 
 ## Objetivos del proyecto
 Esta aplicación tiene por objetivo poder probar algunas preguntas que pueden surgir al iniciarse en los permisos de Android:
@@ -46,3 +47,9 @@ El proyecto constará de una aplicación Python y una app Android. La app Androi
 * Ver los permisos y grupos del dispositivo: Se hará mediante adb, se manda el comando y se muestra el resultado en la aplicación, es decir, en este caso no haríamos nada de la app Android.
 
 * Pruebas con apps firmadas: En este caso se abrirá una pestaña similar al menu principal con más opciones sobre estas pruebas, instlar una app firmada con permisos dangerous o una con permisos signature y otra opción para comprobar que las firmas de las apks es la misma.
+
+## Ejecución
+
+Para ejecutar la aplicación, será necesario tener python 3 e instalar las librerías indicadas en rquirements.txt.
+
+Una vez cumplidas esas condiciones, ejecutar src/View/Vistamenu.py con python.
